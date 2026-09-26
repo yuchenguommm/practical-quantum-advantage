@@ -85,6 +85,8 @@ The 2026 study has a [published JACS version](https://doi.org/10.1021/jacs.6c047
 
 The first reproducibility milestone is a public, versioned Hamiltonian bundle for one emitter and both spin sectors, with checksums and a script that regenerates the reported classical gap. A new Hamiltonian generated from a similar geometry would be a useful independent benchmark, but its results could not be labelled a reproduction of the published Q1 calculation.
 
+The [community task for a public emitter Hamiltonian](https://github.com/yuchenguommm/practical-quantum-advantage/issues/14) lists the file inventory and acceptance checks. Contributors can point to an existing public bundle or submit a new, clearly labelled benchmark through a pull request.
+
 ## What would settle it
 
 The front matter states the full benchmark. Start by obtaining public geometry, basis, selected orbitals and Hamiltonian for one emitter. Reproduce the reported classical result and measure the full S0/T1 workflow time, then test the strongest competing classical solvers on the same instance and accuracy. Only then compile phase estimation or another fault-tolerant method for that Hamiltonian, including state preparation, repeated runs and error correction. Display cost versus error for both approaches and add a written buyer requirement. The current evidence does not support an arbitrary 0.05 eV crossover line or a universal T-gate budget.
