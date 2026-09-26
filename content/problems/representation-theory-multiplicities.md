@@ -3,39 +3,42 @@ type: problem
 id: representation-theory-multiplicities
 title: Representation-theoretic multiplicities (Kronecker, plethysm, Littlewood–Richardson)
 title_zh: 表示论重数（Kronecker 系数、plethysm、Littlewood–Richardson）
-summary: Kronecker coefficients and their relatives count multiplicities in tensor products and restrictions of group representations and are central to algebraic combinatorics and geometric complexity theory. Bravyi, Chowdhury, Gosset, Havlíček and Zhu showed the normalised coefficients are quantum-estimable and conjectured a speedup; Panova gave a classical polynomial-time algorithm for the same quantity in 2025, closing the conjecture. The remaining question is which multiplicities, if any, stay quantum-only.
-summary_zh: Kronecker 系数及其推广计数群表示张量积与限制中的重数，是代数组合学和几何复杂度理论的核心对象。Bravyi、Chowdhury、Gosset、Havlíček 与 Zhu 证明归一化系数可用量子机估计并猜想有加速；Panova 在 2025 年给出同一量的经典多项式算法，猜想被关闭。剩下的问题是还有哪些重数（如果有的话）只有量子能算。
+summary: Quantum algorithms compute certain multiplicities efficiently when representation-dimension ratios are polynomial. Panova proved classical polynomial-time exact algorithms for important Kronecker and plethysm subfamilies, refuting specific speedup conjectures. Her theorems do not cover every polynomial-ratio family; no surviving family with a proved classical separation or a demonstrated mathematical use has been identified.
+summary_zh: 当表示维数之比为多项式时，量子算法可高效计算部分表示论重数。Panova 为重要的 Kronecker 和 plethysm 子族给出了经典多项式时间精确算法，推翻了具体加速猜想；其定理并未覆盖所有多项式维数比的输入族。尚未找到兼具明确经典困难证据和数学用途的剩余子族。
 status: seed
-last_verified: 2026-09-26
-verdict: no-go
+last_verified: 2026-09-27
+verdict: surviving
 dimensions:
-  classical_hardness: {level: none, note: "the normalised Kronecker coefficient that the quantum algorithm estimates has a classical polynomial-time algorithm (Panova 2025); exact coefficients are #P-hard for both sides"}
-  quantum_easiness: {level: proven, note: "normalised multiplicities estimable to additive error in BQP; positivity in QMA; plethysm in #BQP; but the estimated quantity is now classically accessible"}
-  willingness_to_pay: {level: none, note: "buyers are mathematicians; additive approximations of normalised coefficients are not what they need"}
+  classical_hardness: {level: unknown, note: "exact Kronecker and plethysm coefficients are #P-hard in general, but Panova gives classical polynomial algorithms on important quantum-accessible subfamilies; generic hardness does not transfer to the remaining polynomial-ratio families"}
+  quantum_easiness: {level: conditional, note: "exact multiplicity algorithms are polynomial only when the relevant representation-dimension ratio is polynomial; inverse-polynomial additive estimation of a normalized Kronecker sampling probability is a separate BQP task"}
+  willingness_to_pay: {level: none, note: "mathematical motivation is clear, but no buyer or concrete use for the particular normalized additive output is documented"}
 related:
   problems: [topological-invariants, integer-factoring-hidden-subgroup]
   methods: [phase-estimation]
+  questions: [representation-multiplicity-remaining-families]
 references:
   - {arxiv: "2302.11454", title: "Quantum complexity of the Kronecker coefficients", authors: "S. Bravyi, A. Chowdhury, D. Gosset, V. Havlíček, G. Zhu", year: 2023, note: "PRX Quantum 5, 010329 (2024)"}
   - {arxiv: "2407.17649", title: "Quantum Algorithms for Representation-Theoretic Multiplicities", authors: "M. Larocca, V. Havlíček", year: 2024}
-  - {arxiv: "2502.20253", title: "Polynomial time classical versus quantum algorithms for representation theoretic multiplicities", authors: "G. Panova", year: 2025}
+  - {arxiv: "2502.20253", title: "Polynomial time classical versus quantum algorithms for representation theoretic multiplicities", authors: "G. Panova", year: 2025, note: "v2, Theorems 1.1–1.2 and Section 7.1 delimit the classical subfamilies and remaining gap"}
   - {arxiv: "2602.08441", title: "Plethysm is in #BQP", authors: "M. Christandl, A. W. Harrow, G. Panova, P. M. Posta, M. Walter", year: 2026, note: "CCC 2026"}
 ---
 
 ## Best classical
 
-The Kronecker coefficient g(λ, μ, ν) is the multiplicity of the irreducible representation of the symmetric group S_n labelled by ν in the tensor product of those labelled by λ and μ. Computing it exactly is #P-hard, and even deciding positivity is not known to be in NP; the absence of a combinatorial formula has been open since Murnaghan in 1938 and became a bottleneck for geometric complexity theory's approach to VP versus VNP. Littlewood–Richardson coefficients, by contrast, have a combinatorial rule and positivity is in P; plethysm coefficients sit in between.
+The Kronecker coefficient `g(λ, μ, ν)` counts the multiplicity of one symmetric-group representation inside a tensor product of two others. Exact Kronecker and plethysm coefficients are #P-hard on general inputs [1–4]. This worst-case fact alone says nothing about a subfamily selected because a quantum algorithm runs quickly on it.
 
-Panova's 2025 result is the decisive classical fact: for the normalised quantity that the quantum algorithm estimates, the Kronecker coefficient divided by the appropriate dimension factor with additive error 1/poly, there is a classical polynomial-time algorithm, using character theory and the structure of the symmetric group rather than any quantum ingredient [3]. The paper explicitly refutes the speedup conjecture of Larocca and Havlíček for this setting.
+Panova's Theorem 1.1 computes the **exact** Kronecker coefficient in classical polynomial time when one of the three Specht-module dimensions satisfies `f^ν ≤ n^k` for a fixed `k`. Its stated bound is `O(D(k) n^(4k²+1) log n)`, with a large `k`-dependent constant [3]. Theorem 1.2 does the same for the special plethysm coefficient `a^λ_(d,m)` when `d` and the length of `λ` are fixed, or `f^λ ≤ n^k`. These results refute specified superpolynomial-speedup conjectures in [2]. They leave open inputs where all relevant dimensions grow superpolynomially yet their ratio is polynomial: [3, Section 7.1] explicitly says its Kronecker theorem does not cover that possibility. No well-parameterized surviving family is supplied there.
 
 ## Best quantum
 
-Bravyi, Chowdhury, Gosset, Havlíček and Zhu showed that Kronecker coefficients can be written as dimensions of eigenspaces of a Hamiltonian built from the quantum Fourier transform over S_n, so that the normalised coefficient is estimable to additive error in BQP, exact computation lies in #BQP, and positivity lies in QMA; they conjectured this was a task with no efficient classical algorithm [1]. Larocca and Havlíček generalised the construction to multiplicities of arbitrary group representations, including plethysm and higher tensor products [2]. Christandl, Harrow, Panova, Posta and Walter subsequently placed plethysm coefficients in #BQP [4]. All of these are correct as complexity-class memberships; none now implies a speedup, because the estimated quantity has a classical algorithm [3].
+There are **three different output tasks**. For exact multiplicities, the algorithms in [2] run in polynomial time only on inputs whose specified representation-dimension ratio is polynomial. For example, a Kronecker algorithm has cost depending on `f^μ f^ν / f^λ`; one small dimension is sufficient in a highlighted family, but it is not necessary for that ratio to be polynomial [2, 3]. For a normalized **additive estimate**, [1, Lemma 2] samples a distribution with probability `p(λ) = f^λ g(λ, μ, ν)/(f^μ f^ν)` and estimates a chosen probability to inverse-polynomial additive error. That estimate can be too coarse to recover an exact coefficient or decide positivity when the probability is small. Finally, putting exact multiplicities in #BQP or positivity in QMA is a complexity-class **upper bound**, not a polynomial-time algorithm that returns the exact integer on every input [1, 4].
+
+Panova's classical theorems concern exact computation on restricted inputs. They do not, by themselves, prove a classical polynomial algorithm for the normalized additive task on **all** inputs. Conversely, a quantum additive estimate does not solve the #P-hard exact problem in general.
 
 ## What survives
 
-Two questions remain open and are listed in this repository's open-theory survey: whether some family of multiplicities (plethysm, or GL_n tensor products in the normalised sense) escapes Panova's argument, which relies on symmetric-group structure; and whether positivity of Kronecker coefficients lies in NP, which would be a result about QMA versus NP and not about speedup. There is also a mismatch of demand: additive approximation of a normalised coefficient, which is exponentially small in the interesting cases, is not what an algebraic combinatorialist wants; they want exact values, positivity, or a formula.
+One route is an explicit partition family with a polynomial quantum dimension ratio that falls outside Panova's classical theorems. Another is a normalized additive task with a demonstrated mathematical use at exactly the algorithm's precision. For the concrete small-dimension families, the classical polynomial algorithms are decisive despite potentially large exponents. For the remaining families, neither a classical lower bound nor a matching efficient classical algorithm is known here [2, 3]. Exact values, positivity and a useful formula remain distinct mathematical goals.
 
 ## Verdict
 
-No-go. The one quantity the quantum algorithm computes is now classically polynomial [3]; exact values are #P-hard for everyone; and the intended users do not need additive approximations. The page would reopen if a multiplicity family were shown to be BQP-hard or DQC1-hard to approximate in the normalised sense, with Panova's technique provably failing on it.
+Surviving as a foundational question, with major subfamilies closed. The earlier `no-go` verdict treated Panova's restricted exact algorithms as covering every quantum-accessible family and conflated them with the separate normalized additive task. A strong case needs an explicit partition family for which the quantum dimension ratio stays polynomial, the desired output remains mathematically informative, and the strongest classical algorithms are demonstrably slower on that **same** family. No superpolynomial classical lower bound or such benchmark is known here. The [open question](../questions/representation-multiplicity-remaining-families.html) specifies what a contributor should test.
