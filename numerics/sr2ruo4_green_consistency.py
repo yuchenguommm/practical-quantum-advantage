@@ -114,6 +114,12 @@ def main():
             "up_down_max_abs_difference_by_orbital": [
                 float(np.max(value)) for value in spin_differences
             ],
+            "max_up_down_abs_difference": float(max(
+                np.max(value) for value in spin_differences
+            )),
+            "at_least_one_raw_spin_channel_abs_error_lower_bound": float(
+                max(np.max(value) for value in spin_differences) / 2
+            ),
             "up_down_lowest_frequency_abs_difference_by_orbital": [
                 float(value[0]) for value in spin_differences
             ],
@@ -129,7 +135,7 @@ def main():
         "method": "Trapezoidal Fourier transform of archived G_tau at 80 positive fermionic Matsubara frequencies; compare with archived G; replace only diagonal samples with |G_tau|>1 by neighbor mean as a sensitivity test.",
         "limitations": [
             "The stored G(iw) may have been calculated from the same G(tau); agreement is internal consistency, not independent validation.",
-            "Spin and orbital output asymmetries in a symmetric input are empirical discrepancies in one archived run, not statistical confidence intervals.",
+            "The spin bound follows from |G_up-G_dn| <= |G_up-G_exact|+|G_dn-G_exact| for a spin-symmetric model. It applies to at least one unsymmetrized archived channel at one frequency, not a symmetrized estimator or a rerun; it is not a statistical confidence interval.",
             "Interpolation is diagnostic only and does not recover an unbiased CT-HYB estimator or uncertainty bars.",
             "A canonical diagonal fermionic G(tau) should have magnitude at most one; this test does not diagnose the cause of the outliers.",
         ],
