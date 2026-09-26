@@ -28,6 +28,8 @@ An OLED emitter is an industrially meaningful molecule, but the published Ir/Pt 
 
 Our [reanalysis script](https://github.com/yuchenguommm/practical-quantum-advantage/blob/main/numerics/oled_genin_benchmark.py) transcribes the public supplementary gaps and recomputes the five reported method errors. It does not run an electronic-structure solver. On Q1, the measured gap is 1.974 eV and iQCC+PT at the benchmark active space gives 1.988 eV, a 0.014 eV error. Q1's CAS(70,70) **singlet solver alone** took 107.10 hours; CAS(100,100) took 199.37 hours [1]. These timings are not the full gap cost. The paper gives no same-Hamiltonian quantum phase-estimation estimate, and the geometry and integral files needed for an independent solver comparison are not provided in the tables we used.
 
+The [paired-error sensitivity calculation](https://github.com/yuchenguommm/practical-quantum-advantage/blob/main/numerics/oled_paired_error_robustness.md) finds that iQCC+PT improves on TD-B3LYP for 12 of these 14 named emitters. The all-cohort mean absolute-error difference is 0.0711 eV from the rounded supplement, with a 0.0656–0.0832 eV range after leaving out any single molecule. This supports a within-cohort accuracy gain of the classically run iQCC+PT workflow. It does not establish prospective performance on a new scaffold, an identical Hamiltonian across methods, or a quantum-hardware gain.
+
 ## What is known
 
 | Evidence | Result | What it does not establish |

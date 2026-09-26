@@ -1,0 +1,141 @@
+{
+  "source": "Genin et al., arXiv:2512.13657v2, Supplementary Table SI.1-2",
+  "units": "eV",
+  "bootstrap_seed": 20260927,
+  "bootstrap_replicates": 20000,
+  "bootstrap_design": "Resample 7 Ir and 7 Pt molecule pairs with replacement within their own family; keep the published predictions fixed.",
+  "td_b3lyp_mae_from_rounded_table": 0.12100000000000008,
+  "iqcc_pt_mae_from_rounded_table": 0.049857142857142836,
+  "mean_paired_absolute_error_improvement_ev": 0.07114285714285724,
+  "iqcc_pt_lower_error_count": 12,
+  "td_b3lyp_lower_error_count": 2,
+  "ties": 0,
+  "by_family": {
+    "Ir": {
+      "td_b3lyp_mae_ev": 0.14300000000000015,
+      "iqcc_pt_mae_ev": 0.042571428571428545,
+      "paired_improvement_ev": 0.1004285714285716,
+      "iqcc_pt_lower_error_count": 7
+    },
+    "Pt": {
+      "td_b3lyp_mae_ev": 0.099,
+      "iqcc_pt_mae_ev": 0.05714285714285713,
+      "paired_improvement_ev": 0.04185714285714288,
+      "iqcc_pt_lower_error_count": 5
+    }
+  },
+  "leave_one_molecule_out_improvement_range_ev": [
+    0.0656153846153847,
+    0.08323076923076936
+  ],
+  "stratified_bootstrap_percentile_interval_95_ev": [
+    0.04171428571428575,
+    0.09971428571428587
+  ],
+  "per_molecule": [
+    {
+      "molecule": "Q1",
+      "family": "Ir",
+      "td_b3lyp_abs_error_ev": 0.05800000000000005,
+      "iqcc_pt_abs_error_ev": 0.014000000000000012,
+      "td_minus_iqcc_abs_error_ev": 0.04400000000000004
+    },
+    {
+      "molecule": "Q2",
+      "family": "Ir",
+      "td_b3lyp_abs_error_ev": 0.129,
+      "iqcc_pt_abs_error_ev": 0.04899999999999993,
+      "td_minus_iqcc_abs_error_ev": 0.08000000000000007
+    },
+    {
+      "molecule": "Q3",
+      "family": "Ir",
+      "td_b3lyp_abs_error_ev": 0.15500000000000025,
+      "iqcc_pt_abs_error_ev": 0.02499999999999991,
+      "td_minus_iqcc_abs_error_ev": 0.13000000000000034
+    },
+    {
+      "molecule": "Q4",
+      "family": "Ir",
+      "td_b3lyp_abs_error_ev": 0.12700000000000022,
+      "iqcc_pt_abs_error_ev": 0.008000000000000007,
+      "td_minus_iqcc_abs_error_ev": 0.11900000000000022
+    },
+    {
+      "molecule": "Q5",
+      "family": "Ir",
+      "td_b3lyp_abs_error_ev": 0.19300000000000006,
+      "iqcc_pt_abs_error_ev": 0.09299999999999997,
+      "td_minus_iqcc_abs_error_ev": 0.10000000000000009
+    },
+    {
+      "molecule": "Q6",
+      "family": "Ir",
+      "td_b3lyp_abs_error_ev": 0.20900000000000007,
+      "iqcc_pt_abs_error_ev": 0.08599999999999985,
+      "td_minus_iqcc_abs_error_ev": 0.12300000000000022
+    },
+    {
+      "molecule": "Q7",
+      "family": "Ir",
+      "td_b3lyp_abs_error_ev": 0.13000000000000034,
+      "iqcc_pt_abs_error_ev": 0.02300000000000013,
+      "td_minus_iqcc_abs_error_ev": 0.1070000000000002
+    },
+    {
+      "molecule": "Q8",
+      "family": "Pt",
+      "td_b3lyp_abs_error_ev": 0.038000000000000256,
+      "iqcc_pt_abs_error_ev": 0.053999999999999826,
+      "td_minus_iqcc_abs_error_ev": -0.01599999999999957
+    },
+    {
+      "molecule": "Q9",
+      "family": "Pt",
+      "td_b3lyp_abs_error_ev": 0.14000000000000012,
+      "iqcc_pt_abs_error_ev": 0.09200000000000008,
+      "td_minus_iqcc_abs_error_ev": 0.04800000000000004
+    },
+    {
+      "molecule": "Q10",
+      "family": "Pt",
+      "td_b3lyp_abs_error_ev": 0.042999999999999705,
+      "iqcc_pt_abs_error_ev": 0.129,
+      "td_minus_iqcc_abs_error_ev": -0.0860000000000003
+    },
+    {
+      "molecule": "Q11",
+      "family": "Pt",
+      "td_b3lyp_abs_error_ev": 0.02300000000000013,
+      "iqcc_pt_abs_error_ev": 0.020000000000000018,
+      "td_minus_iqcc_abs_error_ev": 0.0030000000000001137
+    },
+    {
+      "molecule": "Q12",
+      "family": "Pt",
+      "td_b3lyp_abs_error_ev": 0.1479999999999997,
+      "iqcc_pt_abs_error_ev": 0.058000000000000274,
+      "td_minus_iqcc_abs_error_ev": 0.08999999999999941
+    },
+    {
+      "molecule": "Q13",
+      "family": "Pt",
+      "td_b3lyp_abs_error_ev": 0.18100000000000005,
+      "iqcc_pt_abs_error_ev": 0.03799999999999981,
+      "td_minus_iqcc_abs_error_ev": 0.14300000000000024
+    },
+    {
+      "molecule": "Q14",
+      "family": "Pt",
+      "td_b3lyp_abs_error_ev": 0.1200000000000001,
+      "iqcc_pt_abs_error_ev": 0.008999999999999897,
+      "td_minus_iqcc_abs_error_ev": 0.11100000000000021
+    }
+  ],
+  "limitations": [
+    "The 14 emitters are a selected, related cohort, not a random sample of future commercial molecules.",
+    "The bootstrap holds both method predictions fixed and does not include geometry, model-selection or experimental systematic uncertainty.",
+    "iQCC+PT was run on classical processors, so this is a comparison of two classical workflows, not quantum advantage.",
+    "The source table rounds gaps to 0.001 eV; the paper reports 0.0501 eV from unrounded values."
+  ]
+}
