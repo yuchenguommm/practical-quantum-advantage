@@ -10,12 +10,12 @@ last_verified: 2026-09-27
 verdict: promising
 dimensions:
   classical_hardness: {level: crypto, note: "best known general classical factoring algorithms are subexponential; no superpolynomial lower bound against classical algorithms is known"}
-  quantum_easiness: {level: proven, note: "Shor 1994; Regev's O(n^3/2)-gate variant proven correct unconditionally by Pilatte; abelian HSP fully polynomial; unit and S-unit groups of arbitrary-degree number fields polynomial"}
+  quantum_easiness: {level: proven, note: "Shor 1994; Regev's O(n^3/2)-gate variant proven correct unconditionally by Pilatte; this grade is for factoring and discrete logs, not the separately assessed number-field class-group task"}
   willingness_to_pay: {level: unknown, note: "NIST's post-quantum standard documents defensive migration; no public procurement or price for quantum factoring itself is cited"}
 resources: {logical_qubits: "~1,400 active (RSA-2048)", gates: "~6.5e9 Toffoli", note: "Gidney 2025 conditional engineering estimate: under 1e6 physical qubits and under one week at 0.1% physical error, 1 μs code cycles and 10 μs control reaction; the same estimate does not apply to class groups"}
 related:
   applications: [cryptanalysis]
-  problems: [combinatorial-optimization, representation-theory-multiplicities]
+  problems: [combinatorial-optimization, representation-theory-multiplicities, number-field-s-units-class-groups]
   methods: [phase-estimation, dqi]
   questions: [first-hand-payment-evidence]
 references:
@@ -31,13 +31,13 @@ references:
 
 The general number field sieve factors an n-bit integer in subexponential time, and no 2048-bit RSA modulus has been factored classically. Prime-field discrete logarithms also have subexponential classical algorithms. Generic elliptic-curve discrete logarithms require square-root search in the group size. None of these observations proves a superpolynomial classical lower bound; cryptography relies on the practical hardness of selected parameter sizes.
 
-For number-field class groups and units, classical algorithms and quantum results have different assumptions and input models. Their asymptotic relationship merits its own benchmark. This page does not transfer the RSA-2048 circuit estimate to those tasks.
+Number-field class groups and S-units have different assumptions and input models. See their [separate assessment](../problems/number-field-s-units-class-groups.html). The RSA-2048 circuit estimate does not transfer to those tasks.
 
 ## Best quantum
 
 Shor's algorithm factors and takes discrete logarithms in quantum polynomial time through period finding. Regev's later construction uses Õ(n^{3/2}) gates per run, with multiple runs and a number-theoretic correctness condition [1]. Ragavan and Vaikuntanathan reduced its space requirement [2]; Pilatte proved the correctness condition, without proving a classical lower bound or a practical circuit advantage [3]. Gidney's 2025 RSA-2048 estimate uses fewer than one million noisy physical qubits and under a week under specified error and timing assumptions [4].
 
-Beyond factoring, quantum algorithms for number-field unit groups, class groups and S-units connect hidden-subgroup methods with computational number theory [5]. These could help construct class-number tables and test mathematical conjectures. Their input and output encodings, complexity assumptions and classical comparisons must be checked separately. No RSA-like resource estimate is cited here for them.
+Beyond factoring, quantum algorithms for [number-field S-units and class groups](../problems/number-field-s-units-class-groups.html) connect continuous hidden-subgroup methods with computational number theory [5]. The given-S theorem and the GRH-dependent class-group corollary are assessed separately on that page.
 
 ## Who pays
 
@@ -45,4 +45,4 @@ Intelligence and security agencies are potential users of cryptanalysis, but thi
 
 ## Verdict
 
-Promising as a **foundational computational problem**. Factoring and discrete logarithms have independently important outputs, quantum polynomial time is proved, and the best known classical algorithms have much worse scaling. The superpolynomial classical lower bound remains unproved, so this verdict does not assert an unconditional separation. Gidney's RSA-2048 engineering model has about 1,400 active logical qubits and billions of Toffoli gates [4]; those are conditional estimates. The linked [cryptanalysis application](../applications/cryptanalysis.html) remains `surviving` because direct willingness to pay for a quantum attack is undocumented. Number-field class-group and S-unit tasks need their own classical and quantum comparison before inheriting this verdict.
+Promising as a **foundational computational problem**. Factoring and discrete logarithms have independently important outputs, quantum polynomial time is proved, and the best known classical algorithms have much worse scaling. The superpolynomial classical lower bound remains unproved, so this verdict does not assert an unconditional separation. Gidney's RSA-2048 engineering model has about 1,400 active logical qubits and billions of Toffoli gates [4]; those are conditional estimates. The linked [cryptanalysis application](../applications/cryptanalysis.html) remains `surviving` because direct willingness to pay for a quantum attack is undocumented. Number-field class-group and S-unit tasks have their [own assessment](../problems/number-field-s-units-class-groups.html) and do not inherit this verdict.
