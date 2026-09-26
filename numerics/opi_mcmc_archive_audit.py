@@ -43,6 +43,18 @@ def audit_file(path: Path) -> dict:
     threshold = math.floor(meta["predicted_fraction"] * m)
     if meta["predN"] != threshold:
         raise ValueError(f"threshold mismatch: {path}")
+    r = meta["r"]
+    code_ell = (n + 1) // 2  # MaxOPIProblem default in the pinned upstream commit
+    unique_ell = n // 2  # floor((d-1)/2) for Reed-Solomon distance d=n+1
+
+    def formula(ell: int) -> float:
+        return (
+            math.sqrt((ell / m) * (1 - r / p))
+            + math.sqrt((r / p) * (1 - ell / m))
+        ) ** 2
+
+    if not math.isclose(meta["predicted_fraction"], formula(code_ell), abs_tol=1e-12):
+        raise ValueError(f"archived fraction disagrees with upstream default ell: {path}")
     ids = [row["rhs_idx"] for row in rows]
     if sorted(ids) != list(range(100)):
         raise ValueError(f"missing or repeated RHS index: {path}")
@@ -67,6 +79,11 @@ def audit_file(path: Path) -> dict:
         "output_qubits": n * math.ceil(math.log2(p)),
         "rate_n_over_m": n / m,
         "predicted_fraction": meta["predicted_fraction"],
+        "upstream_default_ell": code_ell,
+        "unique_decoder_ell": unique_ell,
+        "default_exceeds_unique_radius": code_ell > unique_ell,
+        "unique_radius_formula_fraction": formula(unique_ell),
+        "unique_radius_floor_target": math.floor(formula(unique_ell) * m),
         "integer_success_rule": f"score > {threshold}",
         "instances": len(times),
         "successful": len(times),
@@ -107,6 +124,7 @@ def main() -> None:
             "Archived p=53 trajectories cited as the largest size in the paper are absent from this checkout.",
             "The p/2 coefficient regime differs from the n/p~0.1 example with 0.7179 vs 0.55 satisfaction.",
             "Output-qubit equivalents exclude ancillas and input-oracle circuitry.",
+            "For odd n, the pinned upstream default ell=(n+1)//2 exceeds the paper's ell=floor(n/2) unique-decoding radius; archived Gibbs trajectories sample the higher-ell weighting and cannot be relabeled as lower-ell runs.",
             "The fit is descriptive for these ten sizes, not an asymptotic lower bound or hardware crossover.",
         ],
     }
