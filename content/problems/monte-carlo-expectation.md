@@ -3,14 +3,14 @@ type: problem
 id: monte-carlo-expectation
 title: Monte Carlo expectation values and sampling
 title_zh: 蒙特卡洛期望值与采样
-summary: For bounded-variance expectation estimation, amplitude estimation offers a near-quadratic query improvement over plain Monte Carlo, provided a coherent sampler and payoff oracle can be built. Runtime depends on that oracle and the classical competitor. Published derivative-pricing circuits need thousands of logical qubits and tens of millions of T layers; their quoted one-second comparison is an assumption, and the 2021 paper's 10 MHz statement conflicts with its own depth table.
-summary_zh: 对有界方差的期望值估计，若能构造相干采样及收益函数电路，振幅估计相对普通蒙特卡洛有接近二次的查询次数改善。实际时间取决于电路和经典对照。已发表的衍生品定价电路需要数千逻辑比特、数千万层 T 门；其一秒对照属于论文假设，而且 2021 年论文的 1,000 万层每秒说法与本身的深度表格不符。
+summary: In the sampling-oracle model, classical bounded-variance mean estimation needs order 1/ε² samples while a coherent quantum sampler and its inverse permit near-1/ε queries. This is a proved query separation, not an end-to-end advantage for an explicit application. A compiled autocallable pricing route is separately assessed as uneconomic under its one-second comparator.
+summary_zh: 在只提供抽样接口的模型中，有界方差均值估计的经典查询次数按 1/ε² 增长；若能相干实现采样电路及其逆电路，量子查询次数接近 1/ε。这是严格的查询复杂度差距，尚未证明具体应用的端到端优势。已编译的自赎回产品定价方案在其一秒对照假设下另行评为不经济。
 status: seed
-last_verified: 2026-09-26
-verdict: uneconomic
+last_verified: 2026-09-27
+verdict: surviving
 dimensions:
-  classical_hardness: {level: none, note: "Monte Carlo is embarrassingly parallel; quasi-Monte Carlo and variance reduction often beat the 1/ε² baseline in practice; tensor-network and parallel-tempering samplers are the real classical competitors for MCMC"}
-  quantum_easiness: {level: proven, note: "amplitude estimation gives O(1/ε) with a bounded-variance oracle (Montanaro); the oracle, i.e. the model evaluation in quantum arithmetic, is the entire cost"}
+  classical_hardness: {level: lower-bound, note: "Ω(1/ε²) classical samples for a black-box bounded Bernoulli mean at constant success; this does not lower-bound known-structure algorithms, quasi-Monte Carlo, variance reduction or parallel wall time"}
+  quantum_easiness: {level: conditional, note: "Montanaro gives near-O(σ/ε) calls when the randomized subroutine and its inverse have efficient coherent circuits; full oracle and error-correction cost are not bounded by query count"}
   willingness_to_pay: {level: second-hand, note: "Goldman Sachs co-authored the pricing estimates; a one-second classical comparator is assumed, while a desk-defined purchase threshold is not documented"}
 resources: {logical_qubits: "8,000 in one derivative-pricing benchmark; 4,700 in later QSP study", gates: "autocallable T-depth 5.4e7 (2021) or 4.5e7 (later QSP, different error settings)", note: "at an assumed one-second runtime, the respective T-layer rates are 54 and 45 MHz; 2021 text also says 10 MHz, contrary to its table"}
 related:
@@ -30,11 +30,11 @@ references:
 
 ## Best classical
 
-Plain Monte Carlo reaches error ε in O(σ²/ε²) samples, and the samples are independent, so the work parallelises perfectly across cores and GPUs. Quasi-Monte Carlo, control variates, importance sampling and multilevel schemes routinely beat the 1/ε² baseline for smooth integrands. For sampling from Boltzmann distributions the practical competitors are not naive Metropolis but parallel tempering, cluster updates and, since 2025, tensor-network and belief-propagation samplers that have reproduced hardware "beyond-classical" sampling claims. The classical side is not obstructed; it is merely large.
+Plain Monte Carlo reaches additive error ε in O(σ²/ε²) samples at constant success, and independent samples parallelise across cores and GPUs. In the **sampling-only black-box model**, this ε exponent is optimal: distinguishing two Bernoulli means separated by order ε needs Ω(1/ε²) independent outcomes [1, Introduction]. This is a lower bound on sample queries, not on wall time or on classical computation when the distribution has a usable formula. Quasi-Monte Carlo, control variates, importance sampling and multilevel methods can substantially improve the concrete task after using its structure. For Boltzmann sampling, parallel tempering, cluster updates and tensor-network samplers are relevant alternatives; that sampling task has a different input and output from estimating a mean.
 
 ## Best quantum
 
-Montanaro's algorithm estimates the expected output of any randomised or quantum subroutine with bounded variance to error ε using O(1/ε) calls, a near-quadratic speedup over the classical sample complexity, and extends to partition functions via quantum walks [1]. The construction is proven and general. Its cost is the oracle: the model (a stochastic path, a risk factor simulation, a likelihood) must be evaluated in quantum arithmetic inside a coherent circuit, and the O(1/ε) calls are sequential.
+Montanaro's algorithm estimates the expected output of a bounded-variance subroutine to error ε using roughly σ/ε calls, up to logarithmic factors [1]. Its oracle model assumes a coherent implementation of the subroutine **and its inverse**. If the subroutine is a classical stochastic path generator, its randomness, model and payoff must be compiled into a reversible circuit; that construction has a cost not captured by query count. The calls are sequential in amplitude estimation. In the black-box model the query gap is proved; it does not certify a speedup for a named payoff, distribution or material property.
 
 The break-even arithmetic of Babbush and colleagues [2] uses a distance-30 surface code with 1 μs cycles, yielding about 170 μs per logical Toffoli in their model. Their *illustrative quantum primitive* contains 100 Toffolis, so one quantum step takes 17 ms; they assign its classical counterpart 33 ns. With those assumptions a quadratic speedup crosses one classical core after 5.2×10⁵ quantum steps and 2.4 hours. A separately compiled simulated-annealing example needs 6.3×10⁷ steps and 320 days. Their Table 1 gives 100 days and 880 years respectively when the classical speedup factor is 10³. These are scenario calculations, not universal lower bounds for expectation estimation. More parallel classical capacity worsens this comparison, while faster quantum gates or a cheaper oracle can improve it.
 
@@ -44,4 +44,4 @@ For sampling rather than expectation, Layden et al.'s quantum-enhanced MCMC uses
 
 ## Verdict
 
-Uneconomic for the compiled finance examples under their one-second benchmark assumption. The query speedup itself is real, but a broad verdict for all Monte Carlo problems would require matched instance-level costs. A favourable candidate would need an efficiently reversible oracle, a documented classical bottleneck after variance reduction and parallelism, and a buyer-valued output at a tolerable quantum runtime.
+Surviving as a **foundational computational task**: the sampling-only query lower bound and quantum near-quadratic query improvement are rigorous [1]. The proved gap requires coherent access to the sampler and its inverse and says nothing by itself about physical runtime or known-structure classical algorithms. The [autocallable application](../applications/derivative-pricing.html) remains `uneconomic` under its published one-second comparator and current circuit constructions [3, 4]. A concrete application would need a fully specified instance, an efficiently reversible oracle, a measured classical bottleneck after variance reduction and parallelism, and an output whose accuracy has an explicit use.
