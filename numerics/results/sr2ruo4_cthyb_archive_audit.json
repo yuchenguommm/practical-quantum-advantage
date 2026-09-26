@@ -1,0 +1,52 @@
+{
+  "source_archive": "https://raw.githubusercontent.com/TRIQS/benchmarks/e51cbe48ac0e7106c5b9e0b1b80e17af58e4548f/Sr2RuO4/results/cthyb.h5",
+  "source_current_script": "https://raw.githubusercontent.com/TRIQS/benchmarks/e51cbe48ac0e7106c5b9e0b1b80e17af58e4548f/common/cthyb",
+  "sha256": "2fe7dbc3bb1d58f6816b61e6dd182196c34354eac5bda04cdfd117952e7f443d",
+  "beta": 25.0,
+  "impurity_spin_orbitals": 6,
+  "archive_n_cycles": 10000000,
+  "embedded_script_n_cycles": 10000000,
+  "repository_script_n_cycles": 1000000,
+  "archive_num_threads_label": 280,
+  "num_threads_interpretation": "The script assigns mpi.size to this field, so the value counts MPI processes; it is not a hardware-thread count.",
+  "archive_wall_seconds": 2536.0680210590363,
+  "delta_tau_shape": [
+    10001,
+    3,
+    3,
+    2
+  ],
+  "g_tau_shape": [
+    10001,
+    3,
+    3,
+    2
+  ],
+  "max_abs_delta_tau_diagonal": 0.6230787245210331,
+  "max_abs_delta_tau_off_diagonal": 4.370288376156522e-13,
+  "off_diagonal_to_diagonal_ratio": 7.014022793854832e-13,
+  "g_tau_diagonal_bound_check": {
+    "up": {
+      "diagonal_points_abs_gt_1": 2,
+      "max_abs_diagonal": 1.0914429417246825,
+      "worst_orbital_zero_based": 2,
+      "worst_tau": 2.9,
+      "worst_value_real": -1.0914429417246825
+    },
+    "dn": {
+      "diagonal_points_abs_gt_1": 2,
+      "max_abs_diagonal": 2.890410350637864,
+      "worst_orbital_zero_based": 1,
+      "worst_tau": 24.0975,
+      "worst_value_real": -2.890410350637864
+    }
+  },
+  "average_sign_recorded": false,
+  "limitations": [
+    "The near-diagonal bath is specific to this archived non-SOC input; it does not determine the Monte Carlo average sign.",
+    "Some archived diagonal G(tau) values exceed magnitude one, the bound for a normalized canonical fermionic Green's function; the archive's estimator or serialization must be checked before treating it as a benchmark reference.",
+    "The recorded wall time and MPI count are one run, not a cost-versus-error curve.",
+    "The archive stores a Green's function but no independent quantum calculation or finite-bath convergence series.",
+    "The current repository script uses a different n_cycles value from the archived run."
+  ]
+}

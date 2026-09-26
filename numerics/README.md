@@ -1,5 +1,15 @@
 # Reproducing the DMFT bath-input check
 
+## Sr2RuO4 public CT-HYB archive audit
+
+`sr2ruo4_archive_audit.py` downloads the pinned public 8 MB `TRIQS/benchmarks/Sr2RuO4/results/cthyb.h5` and verifies its SHA-256, then reads the HDF5 metadata, input `Delta_tau`, and output `G_tau`. It compares the archived run's embedded script with the current script at the same commit. Requires NumPy and h5py:
+
+```sh
+python numerics/sr2ruo4_archive_audit.py --output numerics/results/sr2ruo4_cthyb_archive_audit.json
+```
+
+The archive reports ten million Monte Carlo cycles, 280 MPI processes and 2536 seconds. The current repository script specifies one million cycles; the embedded original script agrees with the archive. The particular non-SOC bath has negligible off-diagonal hybridisation, and the archive contains four isolated diagonal `G(tau)` entries exceeding magnitude one. The script records the worst coordinates. It does not determine the average sign or repair the Green's-function output. A new solver comparison should first reproduce a physically consistent curve with error bars; no quantum or finite-bath result is produced here.
+
 ## OLED calibration sensitivity
 
 `oled_genin2026_dft_si1.csv` transcribes the six DFT columns of Supplementary Table SI.1-3 in [arXiv:2512.13657v2](https://arxiv.org/html/2512.13657). `oled_genin2026_si1.csv` contains the measured and other calculated gaps from SI.1-2. The script checks that each transcribed DFT column reproduces the published Table 2 MAE within rounding, then fits either a mean offset or a two-parameter affine map inside each leave-one-molecule-out fold. It also tests transfer between the seven Ir and seven Pt molecules. With NumPy installed, run:
