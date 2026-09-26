@@ -58,6 +58,15 @@ The 100-system-qubit row is a concrete starting point for a near-term experiment
 
 The paper reports `0.0501 eV` for iQCC+PT from its unrounded values; our `0.0499 eV` uses the displayed three-decimal gaps. The iQCC+PT result remains the lowest MAE in these selected comparisons. Calibration narrows the **observed** gap to some conventional methods, especially for a functional with a large systematic offset. RO-ωB97X was selected for this table *after inspecting six functionals*, so its cross-validated number has method-selection bias. Fourteen related molecules are too few for a prospective error guarantee, and the Ir/Pt holdout trains on only seven cases. DFT and iQCC may also use different geometries [1, SI.1-3]. This check changes the classical comparison that a buyer should test; it does not produce a quantum cost or prove a commercially usable calibrated DFT model.
 
+**Nested method selection.** To prevent a held-out experimental value from selecting its own DFT baseline, we compared all six published DFT columns under three fixed fitting rules within each outer training set: raw, additive offset and affine. Inner leave-one-molecule-out MAE selected the method and rule; they were then fitted on all outer-training molecules. The [script, 14 predictions and selected pipelines](https://github.com/yuchenguommm/practical-quantum-advantage/blob/main/numerics/results/oled_genin2026_nested_dft_selection.json) give:
+
+| Outer test | Inner-selected DFT pipeline | Outer MAE (eV) | What this tests |
+|---|---|---:|---|
+| One molecule, repeated 14 times | RO-ωB97X + offset in all 14 folds | `0.0735` | Transfer among related emitters within this cohort |
+| Ir family, then Pt family | TD-B3LYP + affine for Ir; TD-B3LYP + offset for Pt | `0.2302` | Two-fold transfer across metal families with seven training molecules |
+
+For perspective, the paper's classically run iQCC+PT has `0.0499 eV` raw MAE from rounded rows on the complete cohort, and its *separately fitted* Ir/Pt offset holdout has `0.0843 eV`. These are descriptive contrasts, not a single competition with identical training and selection protocols. The nested method choice removes **within-fold** target leakage; the 18 candidate pipelines and this analysis were devised after seeing the study, so retrospective analysis still cannot establish an unseen-molecule error. The large family-holdout error also rules out claiming that the `0.0735 eV` number transfers reliably between Ir and Pt chemistries. A new external cohort is the next meaningful test.
+
 A smaller alternative is the earlier nine-complex Ir benchmark at CAS(36,36), which maps to 72 active-space qubits [3]. Its iQCC+PT and fine-tuned DFT mean absolute deviations were 0.201 and 0.192 eV, respectively [3, Table 1]. A 72-qubit demonstration would still need to beat a measured classical baseline on the same molecular Hamiltonian; reproducing the already classically simulated circuit would only verify implementation. The older cohort has different molecules and methods, so its accuracy figures cannot be combined with Q1's active-space sweep.
 
 ## Input availability audit

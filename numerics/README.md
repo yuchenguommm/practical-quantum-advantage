@@ -10,6 +10,14 @@ python numerics/oled_calibration_sensitivity.py --output numerics/results/oled_g
 
 The output includes all ten methods and both calibration rules. The six DFT methods were inspected as a group, so selecting the smallest cross-validated error after the fact is optimistic. These 14 related molecules are not an independent prospective test, and no method runtime is measured here. This sensitivity check is a classical comparator for the OLED application, not a quantum algorithm result.
 
+`oled_nested_dft_selection.py` adds a nested classical method-selection check. For each outer held-out molecule, its inner folds compare the six DFT methods with raw, offset and affine predictions using only the other 13 molecules. A second outer test holds out all Ir and then all Pt compounds, selecting on just the seven training molecules each time. It writes every selected pipeline and prediction:
+
+```sh
+python numerics/oled_nested_dft_selection.py --output numerics/results/oled_genin2026_nested_dft_selection.json
+```
+
+This prevents each outer test target from influencing its own fitted offset, slope or method choice. The candidate set and analysis were still devised after inspecting the publication; the two metal-family folds are especially noisy. Do not interpret the resulting MAEs as prospective screening guarantees or compare their wall times with iQCC.
+
 ## DMFT bath-input check
 
 The scripts `dmft_semicircle_bath.py` and `dmft_semicircle_bath_fit.py` examine the *input bath* of the two-orbital Kanamori model in [Eidelstein, Gull and Cohen, arXiv:1907.08570](https://arxiv.org/abs/1907.08570), Eqs. 5 and the continuous-band paragraph following it. The parameters are `t=1`, `D=2`, `r=1`. The model has four interacting spin orbitals; at `r=1`, its orbital hybridisation matrix has rank one for each spin.
