@@ -10,6 +10,14 @@ python numerics/sr2ruo4_archive_audit.py --output numerics/results/sr2ruo4_cthyb
 
 The archive reports ten million Monte Carlo cycles, 280 MPI processes and 2536 seconds. The current repository script specifies one million cycles; the embedded original script agrees with the archive. The particular non-SOC bath has negligible off-diagonal hybridisation, and the archive contains four isolated diagonal `G(tau)` entries exceeding magnitude one. The script records the worst coordinates. It does not determine the average sign or repair the Green's-function output. A new solver comparison should first reproduce a physically consistent curve with error bars; no quantum or finite-bath result is produced here.
 
+`sr2ruo4_finite_bath_fit.py` fits the **same archive's noninteracting hybridisation input**, using a nonnegative-weight sum of negative-energy bath poles. It needs NumPy, SciPy and h5py. The script verifies the archive and pinned Wannier file by SHA-256, fits 352 selected imaginary-time points and checks 9649 held-out points. It independently reconstructs the Matsubara hybridisation from the archived `G0_iw`, onsite Wannier matrix and `mu=5.3938` in the pinned model:
+
+```sh
+python numerics/sr2ruo4_finite_bath_fit.py --output numerics/results/sr2ruo4_finite_bath_fit.json
+```
+
+The JSON supplies bath energies and couplings for one to five bath levels per spin per orbital, along with held-out `Delta(tau)` and first-80-frequency `Delta(iw)` errors. It uses 6 impurity spin orbitals and 6n bath spin orbitals for n levels per spin and orbital. At n=2 the 18-mode input fit is below `1e-4` maximum held-out imaginary-time error. This is a finite-bath **input** approximation, not an interacting Green's-function result; the published `G_tau` anomaly and its uncertainty must be resolved before an accuracy or runtime crossover can be assessed.
+
 ## OLED calibration sensitivity
 
 `oled_genin2026_dft_si1.csv` transcribes the six DFT columns of Supplementary Table SI.1-3 in [arXiv:2512.13657v2](https://arxiv.org/html/2512.13657). `oled_genin2026_si1.csv` contains the measured and other calculated gaps from SI.1-2. The script checks that each transcribed DFT column reproduces the published Table 2 MAE within rounding, then fits either a mean offset or a two-parameter affine map inside each leave-one-molecule-out fold. It also tests transfer between the seven Ir and seven Pt molecules. With NumPy installed, run:

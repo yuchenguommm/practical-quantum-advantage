@@ -1,0 +1,257 @@
+{
+  "source": "https://raw.githubusercontent.com/TRIQS/benchmarks/e51cbe48ac0e7106c5b9e0b1b80e17af58e4548f/Sr2RuO4/results/cthyb.h5",
+  "sha256": "2fe7dbc3bb1d58f6816b61e6dd182196c34354eac5bda04cdfd117952e7f443d",
+  "wannier_sha256": "f60b863bcd9c40d042e15cdfa942444dbf0ba2f656aec2bbd44ed52bb4942562",
+  "beta": 25.0,
+  "target": "archived up-spin diagonal Delta(tau), orbital 0 and degenerate orbitals 1/2",
+  "fit": "positive-weight negative-energy bath poles, nonlinear least squares on selected imaginary-time points",
+  "training_points": 352,
+  "held_out_points": 9649,
+  "orbital_1_2_max_difference": 3.893804723098526e-10,
+  "max_delta_tau_fourier_vs_g0_first_80": 6.821851240585006e-06,
+  "max_positive_diagonal_delta_tau": 7.632692530634276e-05,
+  "limitations": [
+    "The archive Delta(tau) has small positive ringing near tau=0; positive-weight finite baths cannot reproduce that exactly.",
+    "This is a held-out input-kernel fit, not interacting-G convergence or a quantum computation.",
+    "The 80 Matsubara values derived from archived G0 and pinned Wannier onsite terms independently cross-check the Delta(tau) fit. The separate numerical Fourier transform of Delta(tau) has endpoint ringing and integration error.",
+    "The selected multi-start optimizer does not certify minimal bath size.",
+    "Any scalar bath fit must still be checked against Matsubara Delta, the interacting Green's function, and the full DMFT loop."
+  ],
+  "rows": [
+    {
+      "bath_levels_per_spin_per_orbital": 1,
+      "system_fermion_modes": 12,
+      "worst_max_abs_error_held_out_tau": 0.002643408293045324,
+      "orbitals": [
+        {
+          "orbital_zero_based": 0,
+          "bath_energies": [
+            -6.4162062186055495
+          ],
+          "couplings": [
+            0.7875282176663014
+          ],
+          "max_abs_error_all_tau": 0.002878030900371642,
+          "max_abs_error_held_out_tau": 0.002643408293045324,
+          "rms_error_held_out_tau": 0.00013107608558968726,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 0.0005145200434611063,
+          "lowest_matsubara_abs_error_from_archived_tau": 0.0005145200434611063,
+          "max_abs_error_first_80_matsubara_from_g0": 0.0005124129988292996,
+          "fit_success": true
+        },
+        {
+          "orbital_zero_based": 1,
+          "bath_energies": [
+            -5.5844162687550485
+          ],
+          "couplings": [
+            0.45425396567624354
+          ],
+          "max_abs_error_all_tau": 0.000186391190620111,
+          "max_abs_error_held_out_tau": 0.00017323881883099523,
+          "rms_error_held_out_tau": 8.93336301804047e-06,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 3.651505120692852e-05,
+          "lowest_matsubara_abs_error_from_archived_tau": 3.651505120692852e-05,
+          "max_abs_error_first_80_matsubara_from_g0": 3.591736803506598e-05,
+          "fit_success": true
+        }
+      ]
+    },
+    {
+      "bath_levels_per_spin_per_orbital": 2,
+      "system_fermion_modes": 18,
+      "worst_max_abs_error_held_out_tau": 7.502314554597789e-05,
+      "orbitals": [
+        {
+          "orbital_zero_based": 0,
+          "bath_energies": [
+            -5.479884650053512,
+            -7.284917496260841
+          ],
+          "couplings": [
+            0.5075030660544274,
+            0.6045283781610046
+          ],
+          "max_abs_error_all_tau": 7.632692530634276e-05,
+          "max_abs_error_held_out_tau": 7.502314554597789e-05,
+          "rms_error_held_out_tau": 3.741128078980823e-06,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 9.411091300377784e-06,
+          "lowest_matsubara_abs_error_from_archived_tau": 9.411091300377784e-06,
+          "max_abs_error_first_80_matsubara_from_g0": 7.3129058106383575e-06,
+          "fit_success": true
+        },
+        {
+          "orbital_zero_based": 1,
+          "bath_energies": [
+            -5.327347854349004,
+            -6.039151064028588
+          ],
+          "couplings": [
+            0.35503325009349096,
+            0.2836772620589339
+          ],
+          "max_abs_error_all_tau": 1.5152259338778463e-05,
+          "max_abs_error_held_out_tau": 1.4847499622595278e-05,
+          "rms_error_held_out_tau": 6.806661839492537e-07,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 2.209855429673082e-06,
+          "lowest_matsubara_abs_error_from_archived_tau": 1.1193135357459587e-06,
+          "max_abs_error_first_80_matsubara_from_g0": 5.206598635468574e-07,
+          "fit_success": true
+        }
+      ]
+    },
+    {
+      "bath_levels_per_spin_per_orbital": 3,
+      "system_fermion_modes": 24,
+      "worst_max_abs_error_held_out_tau": 7.502314554597789e-05,
+      "orbitals": [
+        {
+          "orbital_zero_based": 0,
+          "bath_energies": [
+            -5.418299763982007,
+            -7.216635828310366,
+            -74.33705180337876
+          ],
+          "couplings": [
+            0.4858067736209483,
+            0.6220010441824806,
+            0.014355626750711057
+          ],
+          "max_abs_error_all_tau": 7.632692530634276e-05,
+          "max_abs_error_held_out_tau": 7.502314554597789e-05,
+          "rms_error_held_out_tau": 3.241601775085832e-06,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 6.489035118478094e-06,
+          "lowest_matsubara_abs_error_from_archived_tau": 5.614047849855234e-06,
+          "max_abs_error_first_80_matsubara_from_g0": 3.512057668717399e-06,
+          "fit_success": true
+        },
+        {
+          "orbital_zero_based": 1,
+          "bath_energies": [
+            -5.194029641577035,
+            -5.871712841781676,
+            -86.12224855432791
+          ],
+          "couplings": [
+            0.2859355175059896,
+            0.35319468004465127,
+            0.005585901163861328
+          ],
+          "max_abs_error_all_tau": 1.5152259338778463e-05,
+          "max_abs_error_held_out_tau": 1.4847499622595278e-05,
+          "rms_error_held_out_tau": 6.378832861663373e-07,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 2.0731716982715392e-06,
+          "lowest_matsubara_abs_error_from_archived_tau": 3.1015514130012127e-07,
+          "max_abs_error_first_80_matsubara_from_g0": 3.0556514070946845e-07,
+          "fit_success": true
+        }
+      ]
+    },
+    {
+      "bath_levels_per_spin_per_orbital": 4,
+      "system_fermion_modes": 30,
+      "worst_max_abs_error_held_out_tau": 7.502314554597789e-05,
+      "orbitals": [
+        {
+          "orbital_zero_based": 0,
+          "bath_energies": [
+            -5.418271861824137,
+            -7.216550399673406,
+            -7.21666619877762,
+            -74.2819820935119
+          ],
+          "couplings": [
+            0.48579698755727313,
+            0.4492176732555476,
+            0.43023041271098167,
+            0.01435770919756586
+          ],
+          "max_abs_error_all_tau": 7.632692530634276e-05,
+          "max_abs_error_held_out_tau": 7.502314554597789e-05,
+          "rms_error_held_out_tau": 3.2415523229104732e-06,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 6.488598940014495e-06,
+          "lowest_matsubara_abs_error_from_archived_tau": 5.612351164844028e-06,
+          "max_abs_error_first_80_matsubara_from_g0": 3.510359557409119e-06,
+          "fit_success": true
+        },
+        {
+          "orbital_zero_based": 1,
+          "bath_energies": [
+            -5.193776717094293,
+            -5.871421844417586,
+            -5.871608245405524,
+            -85.88836202948653
+          ],
+          "couplings": [
+            0.2858165984378991,
+            0.26235543405778283,
+            0.23660952290215406,
+            0.005587764360206112
+          ],
+          "max_abs_error_all_tau": 1.5152259338778463e-05,
+          "max_abs_error_held_out_tau": 1.4847499622595278e-05,
+          "rms_error_held_out_tau": 6.379199062694046e-07,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 2.072870262261642e-06,
+          "lowest_matsubara_abs_error_from_archived_tau": 3.089152278912654e-07,
+          "max_abs_error_first_80_matsubara_from_g0": 3.0676539389216864e-07,
+          "fit_success": true
+        }
+      ]
+    },
+    {
+      "bath_levels_per_spin_per_orbital": 5,
+      "system_fermion_modes": 36,
+      "worst_max_abs_error_held_out_tau": 7.502314554597789e-05,
+      "orbitals": [
+        {
+          "orbital_zero_based": 0,
+          "bath_energies": [
+            -5.418360274757724,
+            -7.216377835121324,
+            -7.216848678754114,
+            -7.216897438153115,
+            -74.45685676726757
+          ],
+          "couplings": [
+            0.48582800197569254,
+            0.3701519851142966,
+            0.31410745890532293,
+            0.38883011838665554,
+            0.014351109462272362
+          ],
+          "max_abs_error_all_tau": 7.632692530634276e-05,
+          "max_abs_error_held_out_tau": 7.502314554597789e-05,
+          "rms_error_held_out_tau": 3.2417090874652475e-06,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 6.489982756772936e-06,
+          "lowest_matsubara_abs_error_from_archived_tau": 5.617612777774682e-06,
+          "max_abs_error_first_80_matsubara_from_g0": 3.5156261867421073e-06,
+          "fit_success": false
+        },
+        {
+          "orbital_zero_based": 1,
+          "bath_energies": [
+            -5.192894444102323,
+            -5.193948906171102,
+            -5.871180377735837,
+            -5.871250605259627,
+            -85.58064033461255
+          ],
+          "couplings": [
+            0.1986094755975892,
+            0.20531657135866063,
+            0.1919978433425326,
+            0.29671827160156106,
+            0.005590230678470366
+          ],
+          "max_abs_error_all_tau": 1.5152259338778463e-05,
+          "max_abs_error_held_out_tau": 1.4847499622595278e-05,
+          "rms_error_held_out_tau": 6.37971898268945e-07,
+          "max_abs_error_first_80_matsubara_from_archived_tau": 2.072470228881556e-06,
+          "lowest_matsubara_abs_error_from_archived_tau": 3.0684835814617295e-07,
+          "max_abs_error_first_80_matsubara_from_g0": 3.08655605713194e-07,
+          "fit_success": false
+        }
+      ]
+    }
+  ]
+}
