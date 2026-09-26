@@ -3,8 +3,8 @@ type: problem
 id: combinatorial-optimization
 title: Combinatorial optimization (QUBO, CSP, integer programming)
 title_zh: 组合优化（QUBO、约束满足、整数规划）
-summary: Unstructured search is capped at a quadratic (Grover) speedup that does not pay under error-correction overhead; QAOA has no evidence of scaling advantage; decoded quantum interferometry (DQI) is superpolynomial only on algebraic instances such as optimal polynomial intersection, and spin-glass arguments block it on random CSPs. Ground states of local Hamiltonians are QMA-complete, so "quantum computers solve ground states" is a misconception, not a route to optimization.
-summary_zh: 无结构搜索最多有二次（Grover）加速，在纠错开销下不划算；QAOA 没有标度优势的证据；译码量子干涉（DQI）只在最优多项式相交这类代数实例上是超多项式的，随机 CSP 上被自旋玻璃论证阻断。局域哈密顿量基态是 QMA 完全的，"量子计算机能解基态"是误解，不是通向优化的路径。
+summary: Unstructured search has at most a quadratic Grover speedup, while QAOA lacks established scaling advantage. On algebraic optimal polynomial intersection instances, DQI beats known polynomial-time classical approximation algorithms, with no classical superpolynomial lower bound. Spin-glass obstructions apply to specified random sparse CSP families. Generic local-Hamiltonian ground energy is QMA-complete.
+summary_zh: 无结构搜索最多有 Grover 的二次加速，QAOA 尚无确定的标度优势。在代数结构明确的最优多项式相交实例上，DQI 超过已知经典多项式逼近算法，但没有经典超多项式下界。自旋玻璃阻碍适用于特定随机稀疏约束族。一般局域哈密顿量基态能是 QMA 完全问题。
 status: seed
 last_verified: 2026-09-26
 verdict: uneconomic
@@ -15,7 +15,7 @@ dimensions:
 resources: {logical_qubits: "~900", gates: "~1e15", note: "JPMorgan end-to-end estimate for a quartic planted-inference speedup (tensor problems); quadratic Grover speedups need 5e5–6e7 iterations to break even at Toffoli ≈ 170 μs"}
 related:
   applications: [automotive-pricing-integer-programming, derivative-pricing]
-  problems: [ground-state-energy, integer-factoring-hidden-subgroup, monte-carlo-expectation]
+  problems: [ground-state-energy, integer-factoring-hidden-subgroup, monte-carlo-expectation, optimal-polynomial-intersection]
   methods: [dqi, grover-amplitude-estimation, vqe]
   claims: [dwave-beyond-classical-2025, bluequbit-peaked-circuits-2025]
   questions: [first-hand-payment-evidence, dqi-industrial-encoding-crossover]
@@ -42,13 +42,13 @@ Hardware claims have a half-life of months: D-Wave's 2025 annealing observables 
 
 - Unstructured: Grover and amplitude amplification give a quadratic speedup and BBBV proves that is optimal. Babbush et al. price it under surface-code overhead: with code distance 30 and a Toffoli every ~170 μs, break-even needs 5×10⁵ to 6×10⁷ iterations, that is 2.4 hours to 320 days of single-core classical time per instance, and parallel classical hardware pushes the crossover to years or worse [1]. Magic-state cultivation, qLDPC codes and algorithmic fault tolerance since 2024 buy roughly 10³ in total, moving "years" to "days"; the verdict does not flip.
 - QAOA: heuristic, no instance family with evidence of scaling advantage, and its expectation values on the Sherrington–Kirkpatrick model are semiclassical.
-- DQI: Jordan et al. map max-LINSAT to decoding the dual code and reach the "semicircle law" fraction of satisfied constraints; on optimal polynomial intersection (fit a degree < n polynomial over F_p through as many of p−1 given point-sets as possible), all known classical polynomial algorithms do markedly worse, for example 0.72 versus 0.55 satisfied at n/p ≈ 1/10 [2]. Kramer, Schubert and Eisert show that beating the random-assignment baseline r/q on general max-LINSAT is NP-hard, so any advantage must come from structure [4]. The published automotive option-package pricing ILP needs gadgets that inflate variables. Its actual encoding has code distance 3 independent of size; Gurobi optimally solves every tested matrix, and no quantum advantage is claimed [5]. The [industrial encoding benchmark](../questions/dqi-industrial-encoding-crossover.html) remains open.
+- DQI: Jordan et al. map max-LINSAT to decoding the dual code and reach the "semicircle law" fraction of satisfied constraints; on [optimal polynomial intersection](../problems/optimal-polynomial-intersection.html), the reported quantum fraction is about 0.7179 versus 0.55 for their polynomial-time Prange baseline at degree-to-field ratio near 1/10 [2]. No lower bound excludes an improved classical algorithm. Kramer, Schubert and Eisert show that beating the random-assignment baseline r/q on general max-LINSAT is NP-hard, so any efficient method must exploit structure [4]. The published automotive option-package pricing ILP needs gadgets that inflate variables. Its actual encoding has code distance 3 independent of size; Gurobi optimally solves every tested matrix, and no quantum advantage is claimed [5]. The [industrial encoding benchmark](../questions/dqi-industrial-encoding-crossover.html) remains open.
 - Planted inference: Schmidhuber et al. obtain a near-quartic speedup over the Kikuchi method for planted noisy kXOR [7], but Gupta, He, O'Donnell and Singer's classical quadratic improvement reduces it to quadratic at large k [8]. The JPMorgan end-to-end estimate for a related tensor problem is about 900 logical qubits and 10¹⁵ gates at depth 10¹², roughly four months of runtime against one exaflop-day classically [9].
 
 ## What survives
 
-Instances whose objective is a max-LINSAT with an efficiently decodable dual code and decoding radius near m/2: OPI over prime fields with |F_i| ≈ p/2 and rate 0.1–0.6 is the live candidate. No industrial problem is known to carry that structure; DQI is currently a solution looking for a problem.
+Instances whose objective is a max-LINSAT with an efficiently decodable dual code and a sufficiently large decoding radius. [OPI over prime fields](../problems/optimal-polynomial-intersection.html) is the clearest mathematical candidate. No documented industrial encoding preserves the required structure.
 
 ## Verdict
 
-Uneconomic. For unstructured and random instances the speedup is at most quadratic and the fault-tolerance overhead eats it; for structured instances a superpolynomial candidate exists (DQI on OPI) but no buyer and no hardness proof. What would change the page: an industrial objective shown to reduce to a decodable-dual-code max-LINSAT without gadget blow-up, or a classical polynomial algorithm for OPI in the balanced regime, which would close DQI.
+Uneconomic for the broad industrial optimization tasks currently assessed here. Unstructured search has only a quadratic query advantage, and specified random sparse families have DQI obstructions. The separate OPI page remains a foundational candidate with a quantum guarantee beyond known classical algorithms, but no classical hardness proof or buyer. An industrial objective retaining a decodable dual code after encoding, or a classical polynomial algorithm matching DQI on balanced OPI, would change the relevant verdict.
