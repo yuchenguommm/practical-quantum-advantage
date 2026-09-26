@@ -3,17 +3,17 @@ type: problem
 id: classical-data-machine-learning
 title: Machine learning on classical data (kernels, QNNs, low-rank linear algebra)
 title_zh: 经典数据上的机器学习（核方法、量子神经网络、低秩线性代数）
-summary: The quantum-machine-learning proposals of 2014–2019 assumed low-rank data with sample access and were dequantized by Tang and by Chia et al.; kernel and variational models are matched by random Fourier features and tensor-train surrogates. The only provable separations use datasets built from the discrete logarithm. A 2026 result gives exponential space and communication advantage on massive data with under 60 logical qubits, but it is a memory advantage, not a time advantage, and awaits scrutiny.
-summary_zh: 2014 到 2019 年的量子机器学习提案假设低秩数据和采样访问，被 Tang 与 Chia 等人去量子化；核方法和变分模型被随机 Fourier 特征和张量列代理追平。唯一可证明的分离用的是由离散对数构造的数据集。2026 年一项结果用不到 60 个逻辑比特在海量数据上给出指数级的空间和通信优势，但那是内存优势而不是时间优势，尚待检验。
+summary: Low-rank linear algebra with sample-and-query access and broad kernel-model families have classical counterparts, so their earlier exponential time claims do not survive matched access assumptions. This verdict concerns those tasks. A separate 2026 result proves an unconditional space separation for constructed classical-data streams; its real-dataset performance comparison remains an empirical open question.
+summary_zh: 在相同数据访问条件下，低秩线性代数及多类量子核模型已有经典算法，早期的指数级时间优势主张站不住脚。本页的判断只针对这些任务。另一项 2026 年结果对构造的经典数据流任务证明了无条件空间分离，其真实数据性能仍需独立检验。
 status: seed
-last_verified: 2026-09-26
+last_verified: 2026-09-27
 verdict: no-go
 dimensions:
-  classical_hardness: {level: none, note: "low-rank linear algebra with sample access is classically polynomial; kernel/QSVM/QNN predictions dequantized by random Fourier features; the only crypto-hard separation uses an artificial discrete-log dataset"}
-  quantum_easiness: {level: no, note: "loading N classical numbers costs Ω(N) without QRAM, and QRAM's fault-tolerant cost is comparable to classical memory; trainable variational models are the classically simulable ones"}
+  classical_hardness: {level: none, note: "low-rank linear algebra with sample access is classically polynomial and broad kernel/QSVM/QNN predictions have random-feature dequantizations; this grade excludes the separate streaming-space model"}
+  quantum_easiness: {level: no, note: "for the specified low-rank and kernel time-advantage routes, input loading and classical counterparts remove the claimed exponential gain; the separate streaming-space algorithm has a proved ideal-memory advantage"}
   willingness_to_pay: {level: none, note: "ML buyers are abundant but none has stated a task that classical ML fails and quantum ML meets"}
 related:
-  problems: [learning-from-quantum-experiments, sparse-linear-systems, sorting-fft-storage]
+  problems: [learning-from-quantum-experiments, sparse-linear-systems, sorting-fft-storage, streaming-classical-data-memory]
   methods: [hhl-qsvt, qram, vqe]
 references:
   - {arxiv: "1910.06151", title: "Sampling-based sublinear low-rank matrix arithmetic framework for dequantizing quantum machine learning", authors: "N.-H. Chia, A. Gilyén, T. Li, H.-H. Lin, E. Tang, C. Wang", year: 2020, note: "STOC 2020"}
@@ -33,13 +33,13 @@ For kernel and variational models, Sahebi et al. show that predictions of quantu
 ## Best quantum
 
 - The input bottleneck is fundamental. Loading N classical numbers into amplitudes costs Ω(N) without a QRAM, and Jaques and Rattew's survey argues that a fault-tolerant, actively error-corrected QRAM has an opportunity cost comparable to just doing the classical computation, while a cheap passive QRAM is "unlikely" [6].
-- Provable separation exists only on artificial data. Liu, Arunachalam and Temme construct a classification task from the discrete logarithm problem on which a quantum kernel classifier succeeds and every efficient classical learner fails, assuming discrete log is hard [3]. Nothing resembling a natural dataset has this structure.
-- The one recent positive result changes the resource being counted. Zhao, Zlokapa, Neven, Babbush, Preskill, McClean and Huang show that for certain tasks on massive classical data, a quantum processor of fewer than 60 logical qubits achieves exponential savings in memory and communication over any classical algorithm, with unconditional information-theoretic proofs, for a small number of specific problems [4]. This is a space advantage, not a time advantage; whether any of the stated tasks matches a real workload has not been examined independently.
+- A conditional time separation exists on constructed data. Liu, Arunachalam and Temme build a classification task from discrete logarithm on which a quantum kernel classifier succeeds under a classical hardness assumption [3]. The claim that this is the *only* provable separation for classical-data learning is too broad.
+- A different, unconditional separation counts **space under a sample budget**. Zhao and colleagues prove classical memory lower bounds for constructed streaming linear-system and classification tasks while their quantum oracle-sketching algorithm uses polylogarithmic ideal logical memory [4]. Their real-dataset plots pair classical ridge/PCA accuracy with a formula-derived quantum memory count; the public code does not execute the quantum learner on those datasets. See the [separate streaming-space problem](../problems/streaming-classical-data-memory.html). The result does not reinstate an exponential *time* advantage for the low-rank and kernel routes on this page.
 
 ## What survives
 
-Almost nothing on the "learn from classical data faster" axis. What survives is adjacent: learning from quantum data with quantum memory (see the learning-from-quantum-experiments page), and streaming or communication-limited settings where the count that matters is qubits stored rather than gates executed [4].
+Almost nothing on the "learn from classical data faster" axis for the low-rank and kernel proposals considered here. Two distinct tasks survive: learning from quantum data with quantum memory, and [classical-data streams under a memory limit](../problems/streaming-classical-data-memory.html). The latter has an unconditional space theorem [4].
 
 ## Verdict
 
-No-go. The dequantization results are theorems, the input barrier is structural, and the only rigorous separation lives on a cryptographic construction. The page would be reopened by an independent check that one of the massive-data tasks in Zhao et al. [4] corresponds to a workload someone runs, and that its memory saving translates into cost that a buyer would pay for.
+No-go **for the specified exponential time-advantage claims in low-rank linear algebra and broad kernel models** under matched data access. This is not a verdict on all learning from classical data. The [streaming-space entry](../problems/streaming-classical-data-memory.html) keeps the unconditional result [4] visible with its different memory/sample model and open real-data test.
