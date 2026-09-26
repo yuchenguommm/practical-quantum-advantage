@@ -1,0 +1,8506 @@
+{
+  "description": "seeded low-rate OPI classical search probe",
+  "environment": {
+    "python": "3.9.12",
+    "numpy": "1.24.4"
+  },
+  "parameters": {
+    "primes": [
+      31,
+      43,
+      61,
+      89,
+      97,
+      101,
+      109,
+      113,
+      127
+    ],
+    "instances": 20,
+    "budget": 100000,
+    "seed": 123,
+    "output": null
+  },
+  "rows": [
+    {
+      "p": 31,
+      "rhs_index": 0,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "eaef2150cab16d5cf29c94f2cec34fcf1ff38c5a3b9aaabfd026820820b09ff3",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 91,
+        "best_coefficients": [
+          16,
+          25,
+          24
+        ],
+        "seconds": 0.00029960000000001097
+      },
+      "prange_coordinate": {
+        "best": 21,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          6,
+          11,
+          26
+        ],
+        "restarts": 1,
+        "seconds": 0.00027199999999999447
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 1,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "b14aea0063fff0907d85d9c4bec96fbf6ce1b40b310f3e09f25d865f35209aa5",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 24,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 7,
+        "best_coefficients": [
+          20,
+          1,
+          10
+        ],
+        "seconds": 0.00019959999999999423
+      },
+      "prange_coordinate": {
+        "best": 22,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          30,
+          11,
+          5
+        ],
+        "restarts": 1,
+        "seconds": 0.0002041000000000126
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 2,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "0e1bff21ca8df99dc10e61e36d333a9533720afbe0becc4573d9035c667f14e6",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 128,
+        "best_coefficients": [
+          22,
+          18,
+          25
+        ],
+        "seconds": 0.0001709000000000016
+      },
+      "prange_coordinate": {
+        "best": 22,
+        "first_hit_evaluations": 63,
+        "evaluations": 63,
+        "best_coefficients": [
+          24,
+          15,
+          11
+        ],
+        "restarts": 1,
+        "seconds": 0.00022659999999999347
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 3,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "d268e32fbe3fd2229b48bde4b0a76400662ddffcf6c3decd3add12c556784d02",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 24,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 4,
+        "best_coefficients": [
+          4,
+          2,
+          0
+        ],
+        "seconds": 0.0001532999999999951
+      },
+      "prange_coordinate": {
+        "best": 20,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          22,
+          5,
+          4
+        ],
+        "restarts": 1,
+        "seconds": 0.00017610000000001236
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 4,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "e5174d2a080e83f2350b76f210418076c655abb0c1d6991be9c1afd76eba26ba",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 23,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 13,
+        "best_coefficients": [
+          14,
+          11,
+          2
+        ],
+        "seconds": 0.0001522999999999941
+      },
+      "prange_coordinate": {
+        "best": 20,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          30,
+          26,
+          21
+        ],
+        "restarts": 1,
+        "seconds": 0.0001733000000000151
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 5,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "b1f6ef00d6f63e2c49a3ddbcb636568def6beb57189713b8d4cef63f073d9202",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 24,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 15,
+        "best_coefficients": [
+          25,
+          27,
+          26
+        ],
+        "seconds": 0.00015660000000000673
+      },
+      "prange_coordinate": {
+        "best": 22,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          0,
+          24,
+          18
+        ],
+        "restarts": 1,
+        "seconds": 0.0001815000000000011
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 6,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "3c48828f386e937a011d713e2e8250c2e5cbca0e39624c603678c5866724eec8",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 10,
+        "best_coefficients": [
+          7,
+          26,
+          20
+        ],
+        "seconds": 0.00015300000000001424
+      },
+      "prange_coordinate": {
+        "best": 21,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          4,
+          15,
+          26
+        ],
+        "restarts": 1,
+        "seconds": 0.0002188999999999941
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 7,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "88c517960401a5bac060b518c02d4f9bf1a7af2f87e32f5d80fd06ed42f91e23",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 134,
+        "best_coefficients": [
+          9,
+          4,
+          5
+        ],
+        "seconds": 0.0001591000000000231
+      },
+      "prange_coordinate": {
+        "best": 21,
+        "first_hit_evaluations": 63,
+        "evaluations": 63,
+        "best_coefficients": [
+          29,
+          8,
+          23
+        ],
+        "restarts": 1,
+        "seconds": 0.00021450000000000635
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 8,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "54fd2f33bbdb9a4fbb2852affac304df2e799dcf9681a91112a67ad90eb086e1",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 18,
+        "best_coefficients": [
+          5,
+          1,
+          16
+        ],
+        "seconds": 0.0001593000000000011
+      },
+      "prange_coordinate": {
+        "best": 21,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          1,
+          17,
+          30
+        ],
+        "restarts": 1,
+        "seconds": 0.00017280000000000073
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 9,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "7d136e5beba654e048181dd3769da9f2f81377edd2cc41afbbdc103ce8aad4e9",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 25,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 6,
+        "best_coefficients": [
+          16,
+          14,
+          7
+        ],
+        "seconds": 0.00015019999999998923
+      },
+      "prange_coordinate": {
+        "best": 20,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          15,
+          14,
+          29
+        ],
+        "restarts": 1,
+        "seconds": 0.00018110000000001736
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 10,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "d6d591c49ab333fd436cf63898c1269446aaa2093fe6eaa07fe0a0616aa0dac5",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 10,
+        "best_coefficients": [
+          26,
+          2,
+          11
+        ],
+        "seconds": 0.0001512999999999931
+      },
+      "prange_coordinate": {
+        "best": 20,
+        "first_hit_evaluations": 94,
+        "evaluations": 94,
+        "best_coefficients": [
+          9,
+          5,
+          8
+        ],
+        "restarts": 1,
+        "seconds": 0.0002525999999999917
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 11,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "2bebddcde572fd0c8fb79fbd46907fb171f24302eb036c444fe67ccf1e0e8fa9",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 23,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 11,
+        "best_coefficients": [
+          30,
+          10,
+          29
+        ],
+        "seconds": 0.00016719999999997848
+      },
+      "prange_coordinate": {
+        "best": 21,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          13,
+          17,
+          23
+        ],
+        "restarts": 1,
+        "seconds": 0.00021609999999999685
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 12,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "a61953791316661ffdc0f557cb7d0ff3f8bf75672285b5f70a5ac05a6fd64e8b",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 23,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 3,
+        "best_coefficients": [
+          12,
+          10,
+          21
+        ],
+        "seconds": 0.00017360000000002374
+      },
+      "prange_coordinate": {
+        "best": 21,
+        "first_hit_evaluations": 1,
+        "evaluations": 1,
+        "best_coefficients": [
+          25,
+          7,
+          9
+        ],
+        "restarts": 1,
+        "seconds": 0.0001790999999999876
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 13,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "b21f9bc8c0c27fe34871255ba90079d7c1dbca5bcdccf8ef78a94f217ae7fa95",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 23,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 7,
+        "best_coefficients": [
+          4,
+          12,
+          21
+        ],
+        "seconds": 0.00015769999999998285
+      },
+      "prange_coordinate": {
+        "best": 23,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          7,
+          17,
+          13
+        ],
+        "restarts": 1,
+        "seconds": 0.00018529999999999935
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 14,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "04815f95d627b8382144f781ea9520b72767442cd5b618011be96145a0582c2e",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 23,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 52,
+        "best_coefficients": [
+          29,
+          5,
+          9
+        ],
+        "seconds": 0.00015860000000000873
+      },
+      "prange_coordinate": {
+        "best": 20,
+        "first_hit_evaluations": 1,
+        "evaluations": 1,
+        "best_coefficients": [
+          5,
+          14,
+          27
+        ],
+        "restarts": 1,
+        "seconds": 0.00013179999999998748
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 15,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "e9017173138f8619567a237691ab6950fa7a80149fe5848bcff23519e9ee50d6",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 24,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 23,
+        "best_coefficients": [
+          20,
+          10,
+          17
+        ],
+        "seconds": 0.0001961000000000046
+      },
+      "prange_coordinate": {
+        "best": 23,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          26,
+          30,
+          18
+        ],
+        "restarts": 1,
+        "seconds": 0.00019060000000001298
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 16,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "78a4037a1fd24e2a40814c8c34dff9e7c330fde39afa9184172e20dde1ef88e1",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 7,
+        "best_coefficients": [
+          14,
+          29,
+          1
+        ],
+        "seconds": 0.0001597000000000126
+      },
+      "prange_coordinate": {
+        "best": 20,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          26,
+          2,
+          4
+        ],
+        "restarts": 1,
+        "seconds": 0.00021140000000000048
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 17,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "3c4f313529dbd5296c0f352b7b5283fefc09fabd9343b9b8def8babb0ec7fb2f",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 16,
+        "best_coefficients": [
+          10,
+          16,
+          27
+        ],
+        "seconds": 0.00015640000000000098
+      },
+      "prange_coordinate": {
+        "best": 22,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          21,
+          29,
+          0
+        ],
+        "restarts": 1,
+        "seconds": 0.0001779000000000086
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 18,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "f09b95125c00b5a23c26c66935aa6b74a5aa11f343ea60b23f97c175d7bcc46e",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 21,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 75,
+        "best_coefficients": [
+          1,
+          6,
+          16
+        ],
+        "seconds": 0.00016180000000001749
+      },
+      "prange_coordinate": {
+        "best": 21,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          5,
+          12,
+          24
+        ],
+        "restarts": 1,
+        "seconds": 0.0001845000000000041
+      }
+    },
+    {
+      "p": 31,
+      "rhs_index": 19,
+      "n": 3,
+      "m": 30,
+      "r": 15,
+      "ell": 1,
+      "allowed_mask_sha256": "dcf603e4c25bd263d2ffcf6b3c18375486177a283923116abe176eab8543ab1a",
+      "output_qubits": 15,
+      "dqi_expected_fraction": 0.6643583106633482,
+      "integer_target": 20,
+      "random": {
+        "best": 22,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 2,
+        "best_coefficients": [
+          20,
+          25,
+          8
+        ],
+        "seconds": 0.00016250000000000986
+      },
+      "prange_coordinate": {
+        "best": 22,
+        "first_hit_evaluations": 32,
+        "evaluations": 32,
+        "best_coefficients": [
+          20,
+          17,
+          19
+        ],
+        "restarts": 1,
+        "seconds": 0.0001796999999999771
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 0,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "10aa229474ebef8fcacd76112ac7e3db3b9a0189ce37e4994e68889ae775caeb",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 31,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 196,
+        "best_coefficients": [
+          38,
+          12,
+          23,
+          6
+        ],
+        "seconds": 0.00023399999999998422
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 44,
+        "evaluations": 44,
+        "best_coefficients": [
+          4,
+          5,
+          28,
+          39
+        ],
+        "restarts": 1,
+        "seconds": 0.0002500000000000002
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 1,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "21be5e9bc420a3f5133a3af929e6a38f91dbeb36d9018654e1d52edc9145bfdc",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 444,
+        "best_coefficients": [
+          33,
+          36,
+          8,
+          29
+        ],
+        "seconds": 0.0002576999999999996
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 44,
+        "evaluations": 44,
+        "best_coefficients": [
+          18,
+          41,
+          42,
+          20
+        ],
+        "restarts": 1,
+        "seconds": 0.00023320000000001673
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 2,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "e8d29ff04cca5ec226d1f7f793ca472808993baf31541233e69827b116b3eeeb",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 31,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 612,
+        "best_coefficients": [
+          9,
+          25,
+          6,
+          16
+        ],
+        "seconds": 0.00043859999999998345
+      },
+      "prange_coordinate": {
+        "best": 31,
+        "first_hit_evaluations": 1122,
+        "evaluations": 1122,
+        "best_coefficients": [
+          5,
+          9,
+          27,
+          34
+        ],
+        "restarts": 4,
+        "seconds": 0.001689099999999999
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 3,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "795a76257786c6dbf06e55ca15266590f788cbe55712e0794f7fc5278c9dd059",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 32,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 593,
+        "best_coefficients": [
+          40,
+          40,
+          12,
+          39
+        ],
+        "seconds": 0.0006213999999999942
+      },
+      "prange_coordinate": {
+        "best": 31,
+        "first_hit_evaluations": 130,
+        "evaluations": 130,
+        "best_coefficients": [
+          5,
+          26,
+          14,
+          21
+        ],
+        "restarts": 1,
+        "seconds": 0.0005131000000000163
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 4,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "450d6d646a5a1cc19ef24dfb7dd07d5de1d39dc682de148f9f1f69b9486ed26c",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 3,
+        "best_coefficients": [
+          32,
+          19,
+          42,
+          6
+        ],
+        "seconds": 0.00033269999999999134
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 1769,
+        "evaluations": 1769,
+        "best_coefficients": [
+          37,
+          38,
+          20,
+          5
+        ],
+        "restarts": 6,
+        "seconds": 0.0037697000000000147
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 5,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "b571d0189d54f11e3c1665df0ffbdfc14be9e181e85c00422eed7757e8f70f9c",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 478,
+        "best_coefficients": [
+          26,
+          25,
+          15,
+          6
+        ],
+        "seconds": 0.0003404999999999936
+      },
+      "prange_coordinate": {
+        "best": 32,
+        "first_hit_evaluations": 949,
+        "evaluations": 949,
+        "best_coefficients": [
+          9,
+          37,
+          3,
+          6
+        ],
+        "restarts": 3,
+        "seconds": 0.0022028000000000048
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 6,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "75f608119a77d2e71358e30044963a7c8db4a975511c0fd1808c7772bbf45c59",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 1536,
+        "evaluations": 1536,
+        "first_hit_position": 1211,
+        "best_coefficients": [
+          8,
+          40,
+          20,
+          36
+        ],
+        "seconds": 0.000964699999999985
+      },
+      "prange_coordinate": {
+        "best": 34,
+        "first_hit_evaluations": 44,
+        "evaluations": 44,
+        "best_coefficients": [
+          16,
+          31,
+          27,
+          40
+        ],
+        "restarts": 1,
+        "seconds": 0.0003932000000000102
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 7,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "f4719fc0d67173a4a8d6176a7230d4b900805b3be5df18b9a9ec5c36ad8a776a",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 1536,
+        "evaluations": 1536,
+        "first_hit_position": 1123,
+        "best_coefficients": [
+          26,
+          42,
+          41,
+          25
+        ],
+        "seconds": 0.0009887999999999841
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 130,
+        "evaluations": 130,
+        "best_coefficients": [
+          33,
+          40,
+          29,
+          12
+        ],
+        "restarts": 1,
+        "seconds": 0.0004760000000000042
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 8,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "4541d2607d6b575ecdfae5196226e506f534a96a81efcb2d19a569951b848250",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 33,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 99,
+        "best_coefficients": [
+          29,
+          16,
+          36,
+          12
+        ],
+        "seconds": 0.0003546999999999856
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 475,
+        "evaluations": 475,
+        "best_coefficients": [
+          3,
+          29,
+          11,
+          34
+        ],
+        "restarts": 2,
+        "seconds": 0.0011994999999999922
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 9,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "b75028991d8f620a5d35e4a42379652977f427fb522fba290a9808e7bc38a343",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 31,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 259,
+        "best_coefficients": [
+          41,
+          33,
+          23,
+          39
+        ],
+        "seconds": 0.00022739999999998872
+      },
+      "prange_coordinate": {
+        "best": 31,
+        "first_hit_evaluations": 820,
+        "evaluations": 820,
+        "best_coefficients": [
+          42,
+          36,
+          11,
+          31
+        ],
+        "restarts": 3,
+        "seconds": 0.0012051000000000145
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 10,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "2b0515e1dd7b64403a19213c05b8736772500c8192fd2e9227e080a62bc28ff8",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 274,
+        "best_coefficients": [
+          34,
+          23,
+          26,
+          40
+        ],
+        "seconds": 0.00021339999999997472
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 475,
+        "evaluations": 475,
+        "best_coefficients": [
+          19,
+          0,
+          25,
+          25
+        ],
+        "restarts": 2,
+        "seconds": 0.0007405999999999802
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 11,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "2acac28d00849262f1cf10805e8fd30457c264d5101cbeeed6fac21f583b4f2f",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 427,
+        "best_coefficients": [
+          31,
+          33,
+          8,
+          42
+        ],
+        "seconds": 0.00024639999999997997
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 389,
+        "evaluations": 389,
+        "best_coefficients": [
+          41,
+          0,
+          4,
+          24
+        ],
+        "restarts": 2,
+        "seconds": 0.0006972000000000089
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 12,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "a56523bcd60461deec2b5f763ae9a9308edccce454971138df05914e12e8b63e",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 593,
+        "best_coefficients": [
+          10,
+          25,
+          32,
+          23
+        ],
+        "seconds": 0.00041170000000001483
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 1122,
+        "evaluations": 1122,
+        "best_coefficients": [
+          21,
+          12,
+          33,
+          35
+        ],
+        "restarts": 4,
+        "seconds": 0.001589900000000033
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 13,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "7f0641618ebe17e25c4a935d486ad7cce453caa1d4a2be70d1eaa165ae75eecf",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 31,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 710,
+        "best_coefficients": [
+          22,
+          36,
+          9,
+          32
+        ],
+        "seconds": 0.00043850000000000833
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 44,
+        "evaluations": 44,
+        "best_coefficients": [
+          14,
+          3,
+          10,
+          29
+        ],
+        "restarts": 1,
+        "seconds": 0.00022079999999996547
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 14,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "046f5c6d554d3c2bbe5659cbe36b38a1287c4c4a2e1d0f0555b16fd65a352c4a",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 31,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 188,
+        "best_coefficients": [
+          24,
+          27,
+          32,
+          20
+        ],
+        "seconds": 0.0002075000000000271
+      },
+      "prange_coordinate": {
+        "best": 31,
+        "first_hit_evaluations": 216,
+        "evaluations": 216,
+        "best_coefficients": [
+          20,
+          6,
+          36,
+          30
+        ],
+        "restarts": 1,
+        "seconds": 0.00037249999999999783
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 15,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "13c8c020b8079b972a6f498dbafdddeaf96dc8b86beda7f0999405df32ae9f5a",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 66,
+        "best_coefficients": [
+          4,
+          1,
+          35,
+          23
+        ],
+        "seconds": 0.0002147000000000121
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 130,
+        "evaluations": 130,
+        "best_coefficients": [
+          34,
+          10,
+          18,
+          16
+        ],
+        "restarts": 1,
+        "seconds": 0.00030689999999999884
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 16,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "f293cc6e90b74436f3cc0786cf75ea14124db5c952907608db9e97ff15651737",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 31,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 545,
+        "best_coefficients": [
+          38,
+          25,
+          32,
+          40
+        ],
+        "seconds": 0.00041530000000000733
+      },
+      "prange_coordinate": {
+        "best": 32,
+        "first_hit_evaluations": 1079,
+        "evaluations": 1079,
+        "best_coefficients": [
+          5,
+          4,
+          18,
+          13
+        ],
+        "restarts": 4,
+        "seconds": 0.0014935999999999838
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 17,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "f3c66f534435132dd640d9fd8a04ddee4388822fd95e8c50c98070d68d6d67d7",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 225,
+        "best_coefficients": [
+          39,
+          31,
+          12,
+          21
+        ],
+        "seconds": 0.00020930000000002336
+      },
+      "prange_coordinate": {
+        "best": 30,
+        "first_hit_evaluations": 173,
+        "evaluations": 173,
+        "best_coefficients": [
+          28,
+          28,
+          1,
+          2
+        ],
+        "restarts": 1,
+        "seconds": 0.0003359000000000001
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 18,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "3e60fcd76f9947b92a0d18cf8290ee3a9cc3d2f49fe84ca9a8ba0972983c9db4",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 909,
+        "best_coefficients": [
+          24,
+          41,
+          30,
+          33
+        ],
+        "seconds": 0.0004244999999999943
+      },
+      "prange_coordinate": {
+        "best": 31,
+        "first_hit_evaluations": 734,
+        "evaluations": 734,
+        "best_coefficients": [
+          0,
+          27,
+          8,
+          0
+        ],
+        "restarts": 3,
+        "seconds": 0.0010873000000000133
+      }
+    },
+    {
+      "p": 43,
+      "rhs_index": 19,
+      "n": 4,
+      "m": 42,
+      "r": 21,
+      "ell": 2,
+      "allowed_mask_sha256": "89690ddb1f39c9a5e420008043f3e1ac11eaef3e1c6c1e17635edc65beb50277",
+      "output_qubits": 24,
+      "dqi_expected_fraction": 0.7023807723711701,
+      "integer_target": 30,
+      "random": {
+        "best": 30,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 347,
+        "best_coefficients": [
+          10,
+          14,
+          32,
+          18
+        ],
+        "seconds": 0.00021490000000001785
+      },
+      "prange_coordinate": {
+        "best": 33,
+        "first_hit_evaluations": 1424,
+        "evaluations": 1424,
+        "best_coefficients": [
+          35,
+          32,
+          3,
+          6
+        ],
+        "restarts": 5,
+        "seconds": 0.0019889000000000157
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 0,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "d1df5e7a35859a848994e0867c97c98b407b56770fb67e4945ea2ab1eca4a623",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 4096,
+        "evaluations": 4096,
+        "first_hit_position": 3972,
+        "best_coefficients": [
+          26,
+          35,
+          30,
+          55,
+          31,
+          32
+        ],
+        "seconds": 0.0026035999999999837
+      },
+      "prange_coordinate": {
+        "best": 44,
+        "first_hit_evaluations": 9653,
+        "evaluations": 9653,
+        "best_coefficients": [
+          48,
+          56,
+          33,
+          41,
+          24,
+          34
+        ],
+        "restarts": 15,
+        "seconds": 0.011807599999999974
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 1,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "43ae1e6540bb2690b4b643ad659db0e32f2441b4ab75a7acf7ca5d7f4b8ef380",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 6656,
+        "evaluations": 6656,
+        "first_hit_position": 6644,
+        "best_coefficients": [
+          44,
+          21,
+          49,
+          29,
+          57,
+          2
+        ],
+        "seconds": 0.0042612000000000205
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 367,
+        "evaluations": 367,
+        "best_coefficients": [
+          10,
+          13,
+          48,
+          9,
+          23,
+          4
+        ],
+        "restarts": 1,
+        "seconds": 0.0005741000000000218
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 2,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "eec81349610e08454f8c83f34b61d5b2c00cdbb760439962c999843db46aa060",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 48,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 43,
+        "best_coefficients": [
+          20,
+          27,
+          1,
+          57,
+          45,
+          17
+        ],
+        "seconds": 0.00034039999999996295
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 1,
+        "evaluations": 1,
+        "best_coefficients": [
+          17,
+          52,
+          18,
+          6,
+          23,
+          44
+        ],
+        "restarts": 1,
+        "seconds": 0.00027780000000005023
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 3,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "1d86362b6fc537516b821ba31d89cf06a17c3f0fc58a778d04fbe15c53e7b73b",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 45,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 913,
+        "best_coefficients": [
+          8,
+          15,
+          9,
+          46,
+          10,
+          17
+        ],
+        "seconds": 0.0006521999999999917
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 2322,
+        "evaluations": 2322,
+        "best_coefficients": [
+          22,
+          33,
+          8,
+          56,
+          13,
+          5
+        ],
+        "restarts": 4,
+        "seconds": 0.003145399999999965
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 4,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "127baad0d7468b0d24b39ec8df1cc5abba30750641794481afc228f0e92ad245",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 11776,
+        "evaluations": 11776,
+        "first_hit_position": 11680,
+        "best_coefficients": [
+          34,
+          2,
+          18,
+          54,
+          24,
+          18
+        ],
+        "seconds": 0.0071238000000000135
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 1039,
+        "evaluations": 1039,
+        "best_coefficients": [
+          44,
+          44,
+          14,
+          24,
+          32,
+          35
+        ],
+        "restarts": 2,
+        "seconds": 0.0014080999999999677
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 5,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "ee82a29e97f54d8b6ed838db9a707f2afaa37a7368322ffcb863f9e03ad52e1f",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 44,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 286,
+        "best_coefficients": [
+          20,
+          26,
+          45,
+          31,
+          25,
+          8
+        ],
+        "seconds": 0.0003182000000000462
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 3543,
+        "evaluations": 3543,
+        "best_coefficients": [
+          33,
+          53,
+          20,
+          44,
+          39,
+          10
+        ],
+        "restarts": 5,
+        "seconds": 0.005027199999999954
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 6,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "5c19cb9a222d000e1e6e6604e66a378581dd5dce1701bdd6d39fe4c3d2dea174",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 3072,
+        "evaluations": 3072,
+        "first_hit_position": 2662,
+        "best_coefficients": [
+          36,
+          16,
+          11,
+          30,
+          46,
+          6
+        ],
+        "seconds": 0.0018754999999999744
+      },
+      "prange_coordinate": {
+        "best": 44,
+        "first_hit_evaluations": 3971,
+        "evaluations": 3971,
+        "best_coefficients": [
+          30,
+          24,
+          16,
+          5,
+          7,
+          60
+        ],
+        "restarts": 6,
+        "seconds": 0.004471399999999959
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 7,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "722ccacc0a5246b49c804f140cc93d4ca60b1e5a3896aed7338d440556b501d0",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 9216,
+        "evaluations": 9216,
+        "first_hit_position": 9013,
+        "best_coefficients": [
+          58,
+          2,
+          51,
+          15,
+          12,
+          45
+        ],
+        "seconds": 0.005550699999999964
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 1467,
+        "evaluations": 1467,
+        "best_coefficients": [
+          55,
+          47,
+          30,
+          11,
+          59,
+          41
+        ],
+        "restarts": 3,
+        "seconds": 0.0018906999999999674
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 8,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "bc4822eb598884ccd374e36760a2e395c137c97b07b8e734ba4f363a562efda2",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 6656,
+        "evaluations": 6656,
+        "first_hit_position": 6340,
+        "best_coefficients": [
+          16,
+          54,
+          7,
+          41,
+          33,
+          7
+        ],
+        "seconds": 0.004244099999999973
+      },
+      "prange_coordinate": {
+        "best": 44,
+        "first_hit_evaluations": 2565,
+        "evaluations": 2565,
+        "best_coefficients": [
+          16,
+          14,
+          38,
+          20,
+          14,
+          6
+        ],
+        "restarts": 3,
+        "seconds": 0.00273859999999998
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 9,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "8ed6db89ba4cf44f900f0e89742761c2c72312955ad74b22411f4b5b38588993",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 6656,
+        "evaluations": 6656,
+        "first_hit_position": 6204,
+        "best_coefficients": [
+          1,
+          43,
+          48,
+          52,
+          51,
+          51
+        ],
+        "seconds": 0.004038199999999992
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 19240,
+        "evaluations": 19240,
+        "best_coefficients": [
+          60,
+          40,
+          22,
+          41,
+          25,
+          6
+        ],
+        "restarts": 25,
+        "seconds": 0.02131820000000001
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 10,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "e82422f4bd66971515bab678cfa87bb618ce5d533c89aaf412587db11b7665cd",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 44,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 809,
+        "best_coefficients": [
+          35,
+          18,
+          42,
+          15,
+          60,
+          26
+        ],
+        "seconds": 0.0006410000000000027
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 5925,
+        "evaluations": 5925,
+        "best_coefficients": [
+          45,
+          19,
+          25,
+          3,
+          27,
+          48
+        ],
+        "restarts": 8,
+        "seconds": 0.006844899999999987
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 11,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "d59cbe89de41a5c1b08c5fec81ccdb60972b3f291a9820f7f1fc2dfa2ebea6d4",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 2048,
+        "evaluations": 2048,
+        "first_hit_position": 2012,
+        "best_coefficients": [
+          25,
+          12,
+          49,
+          32,
+          9,
+          7
+        ],
+        "seconds": 0.001249100000000003
+      },
+      "prange_coordinate": {
+        "best": 44,
+        "first_hit_evaluations": 24981,
+        "evaluations": 24981,
+        "best_coefficients": [
+          9,
+          24,
+          58,
+          25,
+          57,
+          43
+        ],
+        "restarts": 32,
+        "seconds": 0.030075399999999974
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 12,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "2b23b90185e13fe86c66e6fee4644d99d2287d5de4d548328afba4bab37c4f14",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 512,
+        "evaluations": 512,
+        "first_hit_position": 211,
+        "best_coefficients": [
+          15,
+          40,
+          12,
+          46,
+          14,
+          27
+        ],
+        "seconds": 0.0004597000000000073
+      },
+      "prange_coordinate": {
+        "best": 44,
+        "first_hit_evaluations": 2322,
+        "evaluations": 2322,
+        "best_coefficients": [
+          29,
+          59,
+          16,
+          33,
+          29,
+          28
+        ],
+        "restarts": 4,
+        "seconds": 0.0032620000000000426
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 13,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "edc8043b9897fa66a264b02d21b73badd485a04e863b819c90f3dbc3b203b61b",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 44,
+        "first_hit_evaluations": 9216,
+        "evaluations": 9216,
+        "first_hit_position": 9187,
+        "best_coefficients": [
+          44,
+          38,
+          47,
+          40,
+          26,
+          32
+        ],
+        "seconds": 0.007631800000000022
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 3665,
+        "evaluations": 3665,
+        "best_coefficients": [
+          18,
+          22,
+          57,
+          48,
+          13,
+          59
+        ],
+        "restarts": 5,
+        "seconds": 0.004545000000000021
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 14,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "eec791e278c710e452cff7e0f8394cbed53217368c013fd9621051a5c1287c9f",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 1024,
+        "evaluations": 1024,
+        "first_hit_position": 577,
+        "best_coefficients": [
+          4,
+          59,
+          14,
+          23,
+          52,
+          25
+        ],
+        "seconds": 0.0006397000000000208
+      },
+      "prange_coordinate": {
+        "best": 45,
+        "first_hit_evaluations": 123,
+        "evaluations": 123,
+        "best_coefficients": [
+          59,
+          24,
+          2,
+          27,
+          50,
+          39
+        ],
+        "restarts": 1,
+        "seconds": 0.0003946999999999701
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 15,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "0d03e4656661c792a9173d6d7713c1deea1bc97a8a699bc0506a5fbf47e08eb3",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 2048,
+        "evaluations": 2048,
+        "first_hit_position": 1639,
+        "best_coefficients": [
+          60,
+          15,
+          17,
+          5,
+          54,
+          44
+        ],
+        "seconds": 0.0012313000000000462
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 2994,
+        "evaluations": 2994,
+        "best_coefficients": [
+          51,
+          59,
+          2,
+          11,
+          1,
+          12
+        ],
+        "restarts": 5,
+        "seconds": 0.0036055999999999866
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 16,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "bb9559109cf717992e44e0aebd21e524687d0a6e8881f435a784e5df803d1595",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 43,
+        "first_hit_evaluations": 7168,
+        "evaluations": 7168,
+        "first_hit_position": 6892,
+        "best_coefficients": [
+          44,
+          41,
+          25,
+          41,
+          1,
+          16
+        ],
+        "seconds": 0.004277300000000039
+      },
+      "prange_coordinate": {
+        "best": 44,
+        "first_hit_evaluations": 1039,
+        "evaluations": 1039,
+        "best_coefficients": [
+          17,
+          3,
+          42,
+          0,
+          6,
+          28
+        ],
+        "restarts": 2,
+        "seconds": 0.0015870999999999524
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 17,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "b748523916095f56a36f743ce196350484e0834005c0428366732fbe23ca8f9e",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 44,
+        "first_hit_evaluations": 5120,
+        "evaluations": 5120,
+        "first_hit_position": 4977,
+        "best_coefficients": [
+          20,
+          59,
+          25,
+          14,
+          26,
+          2
+        ],
+        "seconds": 0.0031090999999999758
+      },
+      "prange_coordinate": {
+        "best": 44,
+        "first_hit_evaluations": 1894,
+        "evaluations": 1894,
+        "best_coefficients": [
+          3,
+          29,
+          35,
+          45,
+          49,
+          10
+        ],
+        "restarts": 3,
+        "seconds": 0.0023189000000000126
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 18,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "00747c50613c06dc5a780f168da75566e7de1ac64f595a4fe72a2092b736ca7f",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 44,
+        "first_hit_evaluations": 2048,
+        "evaluations": 2048,
+        "first_hit_position": 1850,
+        "best_coefficients": [
+          33,
+          45,
+          21,
+          14,
+          60,
+          19
+        ],
+        "seconds": 0.0012490000000000556
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 16919,
+        "evaluations": 16919,
+        "best_coefficients": [
+          25,
+          50,
+          1,
+          36,
+          51,
+          20
+        ],
+        "restarts": 22,
+        "seconds": 0.019390600000000036
+      }
+    },
+    {
+      "p": 61,
+      "rhs_index": 19,
+      "n": 6,
+      "m": 60,
+      "r": 30,
+      "ell": 3,
+      "allowed_mask_sha256": "76d82c5584efca141e2879635de5c7f41ce2debcbd4006cc6379c23dd9262475",
+      "output_qubits": 36,
+      "dqi_expected_fraction": 0.7105386102256703,
+      "integer_target": 43,
+      "random": {
+        "best": 44,
+        "first_hit_evaluations": 5120,
+        "evaluations": 5120,
+        "first_hit_position": 4650,
+        "best_coefficients": [
+          26,
+          36,
+          45,
+          49,
+          44,
+          6
+        ],
+        "seconds": 0.0065469999999999695
+      },
+      "prange_coordinate": {
+        "best": 43,
+        "first_hit_evaluations": 6475,
+        "evaluations": 6475,
+        "best_coefficients": [
+          17,
+          8,
+          4,
+          11,
+          43,
+          11
+        ],
+        "restarts": 9,
+        "seconds": 0.012486499999999956
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 0,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "0fa5bd521b5722f48d09f17669ac22e43a1a18b6347641fc9ed719e68c580420",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 4096,
+        "evaluations": 4096,
+        "first_hit_position": 3793,
+        "best_coefficients": [
+          45,
+          34,
+          82,
+          0,
+          88,
+          5,
+          63,
+          25,
+          28
+        ],
+        "seconds": 0.005892200000000014
+      },
+      "prange_coordinate": {
+        "best": 63,
+        "first_hit_evaluations": 13269,
+        "evaluations": 13269,
+        "best_coefficients": [
+          3,
+          37,
+          78,
+          20,
+          12,
+          39,
+          1,
+          17,
+          73
+        ],
+        "restarts": 8,
+        "seconds": 0.01754789999999995
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 1,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "53267e1dfd66970d8ec47af7209e20ee5861d98b3dc930e21837c7ec184cb1e9",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 5632,
+        "evaluations": 5632,
+        "first_hit_position": 5586,
+        "best_coefficients": [
+          3,
+          88,
+          7,
+          43,
+          8,
+          58,
+          27,
+          13,
+          28
+        ],
+        "seconds": 0.006002499999999911
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 18078,
+        "evaluations": 18078,
+        "best_coefficients": [
+          62,
+          75,
+          37,
+          70,
+          18,
+          29,
+          35,
+          77,
+          75
+        ],
+        "restarts": 11,
+        "seconds": 0.021148999999999973
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 2,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "7c690057332ac4aec9675361f9b8969188cfabbb8add3f07cf3cc33ac0d38e22",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 1536,
+        "evaluations": 1536,
+        "first_hit_position": 1307,
+        "best_coefficients": [
+          33,
+          54,
+          70,
+          72,
+          5,
+          59,
+          46,
+          82,
+          59
+        ],
+        "seconds": 0.0017281999999999575
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 5878,
+        "evaluations": 5878,
+        "best_coefficients": [
+          80,
+          6,
+          23,
+          79,
+          26,
+          88,
+          16,
+          51,
+          29
+        ],
+        "restarts": 4,
+        "seconds": 0.006956499999999921
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 3,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "bccf6ef913cea666cca0275a080c2c8df92adaa4e352517e7b584f2d9e719cfb",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 63,
+        "first_hit_evaluations": 57856,
+        "evaluations": 57856,
+        "first_hit_position": 57356,
+        "best_coefficients": [
+          50,
+          83,
+          68,
+          0,
+          51,
+          44,
+          22,
+          44,
+          28
+        ],
+        "seconds": 0.061887899999999996
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 11488,
+        "evaluations": 11488,
+        "best_coefficients": [
+          25,
+          16,
+          9,
+          13,
+          3,
+          7,
+          2,
+          75,
+          59
+        ],
+        "restarts": 7,
+        "seconds": 0.013295000000000057
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 4,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "e24f21348965131caee04e636d335f2e87d9caf6def887753893f9724aa5e24b",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 65,
+        "first_hit_evaluations": 57856,
+        "evaluations": 57856,
+        "first_hit_position": 57775,
+        "best_coefficients": [
+          78,
+          67,
+          84,
+          74,
+          35,
+          10,
+          2,
+          10,
+          31
+        ],
+        "seconds": 0.06322020000000006
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 43724,
+        "evaluations": 43724,
+        "best_coefficients": [
+          69,
+          23,
+          71,
+          86,
+          56,
+          57,
+          11,
+          55,
+          58
+        ],
+        "restarts": 25,
+        "seconds": 0.0494386
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 5,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "c5c65e455a034dd194e66cbd3b6a9f6127e513473e1faf952e19e3835f0d5e24",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 9728,
+        "evaluations": 9728,
+        "first_hit_position": 9539,
+        "best_coefficients": [
+          19,
+          77,
+          52,
+          88,
+          16,
+          16,
+          84,
+          4,
+          8
+        ],
+        "seconds": 0.010628300000000035
+      },
+      "prange_coordinate": {
+        "best": 63,
+        "first_hit_evaluations": 2850,
+        "evaluations": 2850,
+        "best_coefficients": [
+          31,
+          14,
+          39,
+          18,
+          66,
+          86,
+          4,
+          71,
+          10
+        ],
+        "restarts": 2,
+        "seconds": 0.003593700000000033
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 6,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "1b1959540fafbba7248ca63c9f0e821cf2b000cb965481c25f63bec1e770e7c7",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 63,
+        "first_hit_evaluations": 11264,
+        "evaluations": 11264,
+        "first_hit_position": 11208,
+        "best_coefficients": [
+          34,
+          37,
+          74,
+          36,
+          17,
+          30,
+          32,
+          82,
+          13
+        ],
+        "seconds": 0.012104799999999916
+      },
+      "prange_coordinate": {
+        "best": 63,
+        "first_hit_evaluations": 18167,
+        "evaluations": 18167,
+        "best_coefficients": [
+          14,
+          41,
+          35,
+          19,
+          16,
+          68,
+          56,
+          55,
+          64
+        ],
+        "restarts": 11,
+        "seconds": 0.02077810000000002
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 7,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "181e39c24fbae3d43a92a9ba63b5095152fbfe585a5c7464d5eac514e0dd1bf0",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 65,
+        "first_hit_evaluations": 2048,
+        "evaluations": 2048,
+        "first_hit_position": 1886,
+        "best_coefficients": [
+          63,
+          54,
+          27,
+          7,
+          68,
+          27,
+          51,
+          2,
+          3
+        ],
+        "seconds": 0.0022476000000000163
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 2583,
+        "evaluations": 2583,
+        "best_coefficients": [
+          44,
+          51,
+          73,
+          49,
+          64,
+          35,
+          9,
+          82,
+          49
+        ],
+        "restarts": 2,
+        "seconds": 0.0033130999999999577
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 8,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "6d97e47b303be75a730f306e1f16a36ea38fa2e99762ed3c5b43468eb62abeb9",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 3584,
+        "evaluations": 3584,
+        "first_hit_position": 3268,
+        "best_coefficients": [
+          60,
+          47,
+          53,
+          9,
+          49,
+          76,
+          28,
+          82,
+          76
+        ],
+        "seconds": 0.003944599999999965
+      },
+      "prange_coordinate": {
+        "best": 64,
+        "first_hit_evaluations": 17633,
+        "evaluations": 17633,
+        "best_coefficients": [
+          83,
+          75,
+          1,
+          85,
+          9,
+          75,
+          50,
+          63,
+          66
+        ],
+        "restarts": 11,
+        "seconds": 0.020475600000000038
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 9,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "29de3731e17f6733d79ca7d635e4ec85e9a16b3a43c42047b17c87ea25b0c668",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 50688,
+        "evaluations": 50688,
+        "first_hit_position": 50641,
+        "best_coefficients": [
+          5,
+          6,
+          38,
+          16,
+          76,
+          21,
+          63,
+          84,
+          62
+        ],
+        "seconds": 0.05410730000000008
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 32771,
+        "evaluations": 32771,
+        "best_coefficients": [
+          36,
+          22,
+          63,
+          80,
+          86,
+          19,
+          1,
+          16,
+          38
+        ],
+        "restarts": 19,
+        "seconds": 0.03759569999999979
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 10,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "d8a3a972491de141021a11b3e88b2a40b24e48fa665decd968ff23d1e3cc8a89",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 63,
+        "first_hit_evaluations": 3584,
+        "evaluations": 3584,
+        "first_hit_position": 3080,
+        "best_coefficients": [
+          38,
+          6,
+          56,
+          0,
+          78,
+          57,
+          84,
+          39,
+          59
+        ],
+        "seconds": 0.0038658000000000303
+      },
+      "prange_coordinate": {
+        "best": 63,
+        "first_hit_evaluations": 70795,
+        "evaluations": 70795,
+        "best_coefficients": [
+          32,
+          10,
+          41,
+          51,
+          3,
+          5,
+          85,
+          14,
+          7
+        ],
+        "restarts": 40,
+        "seconds": 0.10138010000000008
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 11,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "adc85ba1e69e0f36f3f05e0df8a3cb746d642be9bf020e63f4e8e364c5357e73",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 1536,
+        "evaluations": 1536,
+        "first_hit_position": 1345,
+        "best_coefficients": [
+          30,
+          74,
+          12,
+          23,
+          12,
+          49,
+          58,
+          72,
+          56
+        ],
+        "seconds": 0.002312300000000045
+      },
+      "prange_coordinate": {
+        "best": 61,
+        "first_hit_evaluations": null,
+        "evaluations": 99915,
+        "best_coefficients": [
+          10,
+          48,
+          52,
+          68,
+          15,
+          70,
+          13,
+          46,
+          78
+        ],
+        "restarts": 57,
+        "seconds": 0.13561940000000017
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 12,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "de01c9161daa73e5c6891bd5a8857bd31036af39da3d766e024a1a03ad0af640",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 63,
+        "first_hit_evaluations": 5632,
+        "evaluations": 5632,
+        "first_hit_position": 5420,
+        "best_coefficients": [
+          9,
+          53,
+          53,
+          71,
+          13,
+          32,
+          67,
+          75,
+          48
+        ],
+        "seconds": 0.0077536999999998635
+      },
+      "prange_coordinate": {
+        "best": 63,
+        "first_hit_evaluations": 11933,
+        "evaluations": 11933,
+        "best_coefficients": [
+          15,
+          82,
+          9,
+          10,
+          49,
+          31,
+          18,
+          16,
+          22
+        ],
+        "restarts": 7,
+        "seconds": 0.01687330000000009
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 13,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "653c961d36dd903e6db72c180f00750222ce6849991eafa963e647735965b8de",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 63,
+        "first_hit_evaluations": 8192,
+        "evaluations": 8192,
+        "first_hit_position": 8038,
+        "best_coefficients": [
+          8,
+          31,
+          8,
+          14,
+          66,
+          17,
+          35,
+          82,
+          32
+        ],
+        "seconds": 0.01156249999999992
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 53344,
+        "evaluations": 53344,
+        "best_coefficients": [
+          26,
+          11,
+          47,
+          45,
+          70,
+          85,
+          4,
+          45,
+          22
+        ],
+        "restarts": 33,
+        "seconds": 0.07715039999999984
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 14,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "a79a7bfe345071ff982c9b600810687da0d3c15975d9dc496b8f2a93629164a7",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 64,
+        "first_hit_evaluations": 10240,
+        "evaluations": 10240,
+        "first_hit_position": 9959,
+        "best_coefficients": [
+          71,
+          18,
+          1,
+          62,
+          1,
+          47,
+          12,
+          1,
+          13
+        ],
+        "seconds": 0.013729399999999892
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 23777,
+        "evaluations": 23777,
+        "best_coefficients": [
+          48,
+          11,
+          83,
+          22,
+          79,
+          37,
+          49,
+          37,
+          21
+        ],
+        "restarts": 14,
+        "seconds": 0.033491099999999996
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 15,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "adfd5eda7e41b002f7fce366f7cfca8162ba14b69b0804bed8bf3d7abd63a5a5",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 17920,
+        "evaluations": 17920,
+        "first_hit_position": 17840,
+        "best_coefficients": [
+          64,
+          84,
+          65,
+          7,
+          77,
+          68,
+          82,
+          29,
+          23
+        ],
+        "seconds": 0.024316299999999957
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 14692,
+        "evaluations": 14692,
+        "best_coefficients": [
+          28,
+          71,
+          78,
+          67,
+          15,
+          42,
+          84,
+          13,
+          32
+        ],
+        "restarts": 7,
+        "seconds": 0.01987810000000012
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 16,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "e5ff4bc7fba707bb61eb2a44eac94432936a5ae4ca8944d7dbe2359d63997370",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 14336,
+        "evaluations": 14336,
+        "first_hit_position": 14335,
+        "best_coefficients": [
+          12,
+          18,
+          39,
+          40,
+          59,
+          85,
+          51,
+          23,
+          10
+        ],
+        "seconds": 0.01928709999999989
+      },
+      "prange_coordinate": {
+        "best": 63,
+        "first_hit_evaluations": 7926,
+        "evaluations": 7926,
+        "best_coefficients": [
+          45,
+          16,
+          78,
+          67,
+          64,
+          22,
+          21,
+          28,
+          0
+        ],
+        "restarts": 5,
+        "seconds": 0.011365899999999929
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 17,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "6e73d1d16b964bb7227c97c2cc05479ec76e34086871ab5d8de976412dc25d72",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 44544,
+        "evaluations": 44544,
+        "first_hit_position": 44510,
+        "best_coefficients": [
+          25,
+          11,
+          82,
+          30,
+          79,
+          37,
+          21,
+          80,
+          10
+        ],
+        "seconds": 0.05987340000000008
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 25024,
+        "evaluations": 25024,
+        "best_coefficients": [
+          10,
+          82,
+          11,
+          16,
+          71,
+          86,
+          70,
+          41,
+          10
+        ],
+        "restarts": 15,
+        "seconds": 0.03533199999999992
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 18,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "1f29bee739ed22992ad958c534b17ce139f532c1118516b783f84a99801af6c4",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 17920,
+        "evaluations": 17920,
+        "first_hit_position": 17602,
+        "best_coefficients": [
+          86,
+          39,
+          30,
+          86,
+          27,
+          76,
+          75,
+          1,
+          77
+        ],
+        "seconds": 0.02738609999999997
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 13358,
+        "evaluations": 13358,
+        "best_coefficients": [
+          76,
+          46,
+          37,
+          72,
+          54,
+          26,
+          12,
+          41,
+          35
+        ],
+        "restarts": 8,
+        "seconds": 0.018582099999999935
+      }
+    },
+    {
+      "p": 89,
+      "rhs_index": 19,
+      "n": 9,
+      "m": 88,
+      "r": 44,
+      "ell": 4,
+      "allowed_mask_sha256": "b11eb520240736a97000feccc2b28be787e2ad51b4d5a3f3bcc5ee9d6f513824",
+      "output_qubits": 63,
+      "dqi_expected_fraction": 0.703178493989374,
+      "integer_target": 62,
+      "random": {
+        "best": 62,
+        "first_hit_evaluations": 1536,
+        "evaluations": 1536,
+        "first_hit_position": 1323,
+        "best_coefficients": [
+          31,
+          58,
+          48,
+          7,
+          17,
+          76,
+          5,
+          11,
+          12
+        ],
+        "seconds": 0.0020530000000000825
+      },
+      "prange_coordinate": {
+        "best": 62,
+        "first_hit_evaluations": 1960,
+        "evaluations": 1960,
+        "best_coefficients": [
+          22,
+          42,
+          71,
+          8,
+          38,
+          8,
+          88,
+          87,
+          30
+        ],
+        "restarts": 2,
+        "seconds": 0.0032916999999998975
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 0,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "1a1822989d585ac77eab055df0788c0c279edaae2e57f5a69c2f9e6569cd4548",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          18,
+          72,
+          44,
+          13,
+          5,
+          15,
+          43,
+          3,
+          69,
+          67
+        ],
+        "seconds": 0.20156020000000008
+      },
+      "prange_coordinate": {
+        "best": 69,
+        "first_hit_evaluations": 4077,
+        "evaluations": 4077,
+        "best_coefficients": [
+          8,
+          67,
+          27,
+          65,
+          95,
+          21,
+          22,
+          8,
+          33,
+          27
+        ],
+        "restarts": 3,
+        "seconds": 0.00657410000000036
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 1,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "c40e272a6e23d7b6a1cdedf7dd01afdaca5f324088a4df9d7f247d21d9c51bbd",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": 99328,
+        "evaluations": 99328,
+        "first_hit_position": 99160,
+        "best_coefficients": [
+          49,
+          62,
+          55,
+          63,
+          88,
+          87,
+          38,
+          85,
+          18,
+          80
+        ],
+        "seconds": 0.17156480000000007
+      },
+      "prange_coordinate": {
+        "best": 67,
+        "first_hit_evaluations": null,
+        "evaluations": 99955,
+        "best_coefficients": [
+          37,
+          68,
+          19,
+          32,
+          67,
+          71,
+          65,
+          58,
+          96,
+          63
+        ],
+        "restarts": 45,
+        "seconds": 0.13947699999999985
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 2,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "ba7798fdb7be4994eebeedaeea5841ac24ea73175ecd736409fa84fbe65d02d0",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": 58368,
+        "evaluations": 58368,
+        "first_hit_position": 58060,
+        "best_coefficients": [
+          66,
+          11,
+          63,
+          23,
+          2,
+          36,
+          18,
+          18,
+          13,
+          92
+        ],
+        "seconds": 0.10253300000000021
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": 65796,
+        "evaluations": 65796,
+        "best_coefficients": [
+          68,
+          30,
+          0,
+          12,
+          27,
+          47,
+          3,
+          86,
+          65,
+          79
+        ],
+        "restarts": 30,
+        "seconds": 0.09222570000000019
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 3,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "401a52f3207aa165bdcfbd522099b9e625e44de314760692fc5c449f183e5dac",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": 87040,
+        "evaluations": 87040,
+        "first_hit_position": 86912,
+        "best_coefficients": [
+          32,
+          87,
+          17,
+          32,
+          51,
+          96,
+          89,
+          58,
+          50,
+          14
+        ],
+        "seconds": 0.15197860000000007
+      },
+      "prange_coordinate": {
+        "best": 67,
+        "first_hit_evaluations": null,
+        "evaluations": 99959,
+        "best_coefficients": [
+          11,
+          77,
+          54,
+          42,
+          2,
+          75,
+          76,
+          83,
+          62,
+          3
+        ],
+        "restarts": 49,
+        "seconds": 0.1438157000000002
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 4,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "a6f4ff3f003a6efbd4e6ca63395b8422b6cd1d7deb1efa59bc6799a82c69d934",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          95,
+          40,
+          14,
+          95,
+          64,
+          71,
+          78,
+          34,
+          33,
+          78
+        ],
+        "seconds": 0.17679810000000007
+      },
+      "prange_coordinate": {
+        "best": 69,
+        "first_hit_evaluations": 32220,
+        "evaluations": 32220,
+        "best_coefficients": [
+          38,
+          29,
+          7,
+          31,
+          21,
+          60,
+          43,
+          91,
+          42,
+          68
+        ],
+        "restarts": 16,
+        "seconds": 0.04687580000000002
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 5,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "16d7c72b4c4da5d8a73ccd2c2f78b0c4b4cbfbd40f08fbb0c0f17dac66d1cc4d",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          42,
+          91,
+          37,
+          51,
+          31,
+          54,
+          94,
+          67,
+          96,
+          48
+        ],
+        "seconds": 0.1750033000000002
+      },
+      "prange_coordinate": {
+        "best": 67,
+        "first_hit_evaluations": null,
+        "evaluations": 99958,
+        "best_coefficients": [
+          86,
+          81,
+          28,
+          6,
+          51,
+          0,
+          70,
+          69,
+          67,
+          77
+        ],
+        "restarts": 48,
+        "seconds": 0.1417398999999997
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 6,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "5e0c6a8adbdedfe89ddd7c871f9f3ea646b4773cf266247d3b2bc9c4b4d47124",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": 81920,
+        "evaluations": 81920,
+        "first_hit_position": 81570,
+        "best_coefficients": [
+          8,
+          48,
+          8,
+          71,
+          42,
+          63,
+          70,
+          34,
+          76,
+          96
+        ],
+        "seconds": 0.14400980000000008
+      },
+      "prange_coordinate": {
+        "best": 66,
+        "first_hit_evaluations": null,
+        "evaluations": 99960,
+        "best_coefficients": [
+          88,
+          57,
+          24,
+          65,
+          56,
+          30,
+          14,
+          29,
+          52,
+          20
+        ],
+        "restarts": 50,
+        "seconds": 0.14317139999999995
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 7,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "478d1ec10f5db2d29a8bad0bed28f32a49ef4b9a1bca429d99a9b348d6e52223",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          37,
+          11,
+          78,
+          58,
+          62,
+          4,
+          86,
+          8,
+          52,
+          34
+        ],
+        "seconds": 0.1731957999999998
+      },
+      "prange_coordinate": {
+        "best": 67,
+        "first_hit_evaluations": null,
+        "evaluations": 99957,
+        "best_coefficients": [
+          42,
+          26,
+          80,
+          42,
+          69,
+          63,
+          66,
+          42,
+          28,
+          79
+        ],
+        "restarts": 47,
+        "seconds": 0.13977780000000006
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 8,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "862c3ee9c8085e79a8f621ae39ff683f0ef4a760c5b11f4a003d2e751cb2017a",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": 70144,
+        "evaluations": 70144,
+        "first_hit_position": 69688,
+        "best_coefficients": [
+          8,
+          38,
+          17,
+          66,
+          3,
+          15,
+          55,
+          54,
+          96,
+          16
+        ],
+        "seconds": 0.13191620000000004
+      },
+      "prange_coordinate": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 99959,
+        "best_coefficients": [
+          76,
+          32,
+          89,
+          3,
+          92,
+          48,
+          32,
+          62,
+          13,
+          86
+        ],
+        "restarts": 49,
+        "seconds": 0.12189409999999956
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 9,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "0f076c6fc9bcced660bfb7d9e18b4c39080a58cdc0eafeb36733a9caaded37d2",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          55,
+          48,
+          38,
+          6,
+          36,
+          66,
+          30,
+          49,
+          1,
+          11
+        ],
+        "seconds": 0.1637107999999996
+      },
+      "prange_coordinate": {
+        "best": 69,
+        "first_hit_evaluations": 70069,
+        "evaluations": 70069,
+        "best_coefficients": [
+          86,
+          52,
+          33,
+          11,
+          80,
+          74,
+          31,
+          55,
+          7,
+          66
+        ],
+        "restarts": 35,
+        "seconds": 0.10048619999999975
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 10,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "f75418d171344e02d2f9e4636ea7d814ffbb724b0a20541d3cbb6263b6938115",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": 24576,
+        "evaluations": 24576,
+        "first_hit_position": 24113,
+        "best_coefficients": [
+          49,
+          63,
+          71,
+          30,
+          81,
+          35,
+          9,
+          78,
+          79,
+          58
+        ],
+        "seconds": 0.04132870000000022
+      },
+      "prange_coordinate": {
+        "best": 70,
+        "first_hit_evaluations": 41148,
+        "evaluations": 41148,
+        "best_coefficients": [
+          0,
+          36,
+          93,
+          40,
+          44,
+          5,
+          21,
+          68,
+          16,
+          31
+        ],
+        "restarts": 20,
+        "seconds": 0.05799129999999941
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 11,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "cbcbda5fa8a934cb78acb80b4940051dbe584dc79c22e9f1f600d0cfde9d512f",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 67,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          22,
+          25,
+          12,
+          60,
+          29,
+          82,
+          41,
+          80,
+          31,
+          16
+        ],
+        "seconds": 0.1667556999999995
+      },
+      "prange_coordinate": {
+        "best": 66,
+        "first_hit_evaluations": null,
+        "evaluations": 99958,
+        "best_coefficients": [
+          93,
+          65,
+          84,
+          88,
+          33,
+          92,
+          47,
+          58,
+          38,
+          33
+        ],
+        "restarts": 48,
+        "seconds": 0.1395666999999996
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 12,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "76372cc0d0bdad4753c3e39ea878cdfc04f7be0faf27733ec06e0fd2d3996887",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": 37376,
+        "evaluations": 37376,
+        "first_hit_position": 37140,
+        "best_coefficients": [
+          90,
+          23,
+          46,
+          70,
+          19,
+          67,
+          9,
+          65,
+          56,
+          82
+        ],
+        "seconds": 0.06300620000000023
+      },
+      "prange_coordinate": {
+        "best": 69,
+        "first_hit_evaluations": 61141,
+        "evaluations": 61141,
+        "best_coefficients": [
+          80,
+          60,
+          53,
+          36,
+          92,
+          20,
+          12,
+          66,
+          35,
+          7
+        ],
+        "restarts": 31,
+        "seconds": 0.08510519999999921
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 13,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "d19ec64f88c2a78a7e5ac99fa8cb4dbdbee6d0c4ac3c86a9f7c0311844544d83",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": 32768,
+        "evaluations": 32768,
+        "first_hit_position": 32436,
+        "best_coefficients": [
+          44,
+          30,
+          7,
+          74,
+          96,
+          35,
+          16,
+          43,
+          67,
+          52
+        ],
+        "seconds": 0.05113149999999944
+      },
+      "prange_coordinate": {
+        "best": 67,
+        "first_hit_evaluations": null,
+        "evaluations": 99957,
+        "best_coefficients": [
+          53,
+          31,
+          95,
+          72,
+          93,
+          69,
+          1,
+          76,
+          49,
+          69
+        ],
+        "restarts": 47,
+        "seconds": 0.13518909999999984
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 14,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "12ee93c48efe5847cf6e29f8fbd8495b16aedd1d8cd7e99fa7762e09ee21c680",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": 45568,
+        "evaluations": 45568,
+        "first_hit_position": 45342,
+        "best_coefficients": [
+          89,
+          24,
+          6,
+          75,
+          13,
+          14,
+          0,
+          64,
+          45,
+          36
+        ],
+        "seconds": 0.06808260000000033
+      },
+      "prange_coordinate": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 99956,
+        "best_coefficients": [
+          21,
+          56,
+          49,
+          52,
+          70,
+          81,
+          42,
+          44,
+          4,
+          67
+        ],
+        "restarts": 46,
+        "seconds": 0.14089829999999992
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 15,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "d9e9604211228f87fd07df2e6c88838dde38136a19a13230644b9a04f27c3807",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": 23552,
+        "evaluations": 23552,
+        "first_hit_position": 23094,
+        "best_coefficients": [
+          88,
+          3,
+          18,
+          45,
+          61,
+          62,
+          38,
+          18,
+          48,
+          69
+        ],
+        "seconds": 0.03952939999999927
+      },
+      "prange_coordinate": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 99958,
+        "best_coefficients": [
+          4,
+          78,
+          39,
+          50,
+          8,
+          90,
+          42,
+          73,
+          67,
+          71
+        ],
+        "restarts": 48,
+        "seconds": 0.13945669999999932
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 16,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "bd91a2afc5ee1bd671853e09294e47723fb7d12d81e274e1a5403b0e181c64e5",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 66,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          25,
+          64,
+          21,
+          36,
+          30,
+          49,
+          22,
+          93,
+          64,
+          80
+        ],
+        "seconds": 0.1675424999999997
+      },
+      "prange_coordinate": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 99958,
+        "best_coefficients": [
+          79,
+          9,
+          95,
+          73,
+          83,
+          86,
+          11,
+          82,
+          68,
+          16
+        ],
+        "restarts": 48,
+        "seconds": 0.13986460000000012
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 17,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "45597b958acb3ceed80f9397a172569df9dfe7e4783ccd72a908fa1ef3cbedf4",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": 77824,
+        "evaluations": 77824,
+        "first_hit_position": 77400,
+        "best_coefficients": [
+          66,
+          19,
+          24,
+          27,
+          1,
+          44,
+          19,
+          39,
+          37,
+          11
+        ],
+        "seconds": 0.12931010000000054
+      },
+      "prange_coordinate": {
+        "best": 69,
+        "first_hit_evaluations": 6696,
+        "evaluations": 6696,
+        "best_coefficients": [
+          71,
+          45,
+          59,
+          24,
+          58,
+          92,
+          9,
+          11,
+          61,
+          6
+        ],
+        "restarts": 3,
+        "seconds": 0.009344200000000136
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 18,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "8a09dd2ab9040c16bf3641d938a97f9bed5aed87fd81c9aa16befdae0b05e76d",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": 73216,
+        "evaluations": 73216,
+        "first_hit_position": 72964,
+        "best_coefficients": [
+          30,
+          37,
+          69,
+          95,
+          36,
+          36,
+          79,
+          70,
+          44,
+          87
+        ],
+        "seconds": 0.12252550000000006
+      },
+      "prange_coordinate": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 99957,
+        "best_coefficients": [
+          21,
+          17,
+          62,
+          43,
+          88,
+          22,
+          23,
+          40,
+          81,
+          47
+        ],
+        "restarts": 47,
+        "seconds": 0.13960469999999958
+      }
+    },
+    {
+      "p": 97,
+      "rhs_index": 19,
+      "n": 10,
+      "m": 96,
+      "r": 48,
+      "ell": 5,
+      "allowed_mask_sha256": "ad6e9054cbc75fec6f80361938c79b221d6185cd3bd4326cafff7ec87e6297c8",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7175655883391379,
+      "integer_target": 69,
+      "random": {
+        "best": 68,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          58,
+          92,
+          3,
+          56,
+          74,
+          52,
+          19,
+          68,
+          32,
+          0
+        ],
+        "seconds": 0.16697639999999936
+      },
+      "prange_coordinate": {
+        "best": 67,
+        "first_hit_evaluations": null,
+        "evaluations": 99957,
+        "best_coefficients": [
+          3,
+          53,
+          60,
+          67,
+          9,
+          77,
+          5,
+          42,
+          2,
+          51
+        ],
+        "restarts": 47,
+        "seconds": 0.13877969999999973
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 0,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "73ba168f184f03b874bf1e35585e961cea5bdf3fcdc97af0de0384f03d6b41e8",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 72,
+        "first_hit_evaluations": 15872,
+        "evaluations": 15872,
+        "first_hit_position": 15635,
+        "best_coefficients": [
+          83,
+          22,
+          99,
+          82,
+          24,
+          51,
+          21,
+          87,
+          25,
+          57
+        ],
+        "seconds": 0.03059030000000007
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 99935,
+        "best_coefficients": [
+          42,
+          29,
+          52,
+          96,
+          32,
+          48,
+          89,
+          45,
+          27,
+          93
+        ],
+        "restarts": 46,
+        "seconds": 0.1470437999999996
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 1,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "27371e2263076c8983db3b5b6461ea6877aafdcfdf8cd7f9bd6364a6c33953f7",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          46,
+          68,
+          32,
+          28,
+          44,
+          98,
+          63,
+          13,
+          0,
+          25
+        ],
+        "seconds": 0.1750273999999994
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 99934,
+        "best_coefficients": [
+          52,
+          20,
+          68,
+          38,
+          46,
+          67,
+          64,
+          4,
+          46,
+          93
+        ],
+        "restarts": 45,
+        "seconds": 0.1172083000000006
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 2,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "f06f80c8624a3db688c5b01914d9a32e622a2e9d6df160d89d20f52d7bb01959",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 72,
+        "first_hit_evaluations": 66048,
+        "evaluations": 66048,
+        "first_hit_position": 65759,
+        "best_coefficients": [
+          93,
+          38,
+          31,
+          17,
+          50,
+          43,
+          39,
+          40,
+          5,
+          92
+        ],
+        "seconds": 0.11818680000000015
+      },
+      "prange_coordinate": {
+        "best": 69,
+        "first_hit_evaluations": null,
+        "evaluations": 99934,
+        "best_coefficients": [
+          32,
+          46,
+          39,
+          95,
+          42,
+          26,
+          10,
+          57,
+          65,
+          48
+        ],
+        "restarts": 45,
+        "seconds": 0.14083820000000014
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 3,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "3233de0f505195ca0ab20a9c4210256e3c9c574e64ca4987a722042ed0d364f7",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 77,
+        "first_hit_evaluations": 8704,
+        "evaluations": 8704,
+        "first_hit_position": 8258,
+        "best_coefficients": [
+          84,
+          50,
+          52,
+          34,
+          42,
+          55,
+          37,
+          94,
+          38,
+          23
+        ],
+        "seconds": 0.014903799999999912
+      },
+      "prange_coordinate": {
+        "best": 72,
+        "first_hit_evaluations": 12632,
+        "evaluations": 12632,
+        "best_coefficients": [
+          66,
+          85,
+          57,
+          13,
+          13,
+          88,
+          52,
+          71,
+          18,
+          23
+        ],
+        "restarts": 7,
+        "seconds": 0.01883239999999997
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 4,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "6956522def241b38e140f28d851a4ddc5e48f06d018a8853b6bf404c25a37315",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 73,
+        "first_hit_evaluations": 64512,
+        "evaluations": 64512,
+        "first_hit_position": 64133,
+        "best_coefficients": [
+          36,
+          16,
+          65,
+          58,
+          78,
+          31,
+          53,
+          64,
+          72,
+          34
+        ],
+        "seconds": 0.10847349999999967
+      },
+      "prange_coordinate": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 99935,
+        "best_coefficients": [
+          54,
+          36,
+          76,
+          79,
+          7,
+          91,
+          3,
+          75,
+          20,
+          92
+        ],
+        "restarts": 46,
+        "seconds": 0.14045289999999966
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 5,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "62cc9deddd83dfaa54238953f1b742e301426940254ea2a17cb39412be80949a",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          49,
+          90,
+          18,
+          55,
+          5,
+          70,
+          77,
+          37,
+          27,
+          9
+        ],
+        "seconds": 0.16787939999999946
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 99937,
+        "best_coefficients": [
+          77,
+          61,
+          22,
+          25,
+          13,
+          1,
+          10,
+          20,
+          100,
+          44
+        ],
+        "restarts": 48,
+        "seconds": 0.14285450000000033
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 6,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "a792e7db342ed8fdc9b2baa85b30ecf69e5815d0fb27339fcd36a513a210c210",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 74,
+        "first_hit_evaluations": 66048,
+        "evaluations": 66048,
+        "first_hit_position": 66043,
+        "best_coefficients": [
+          33,
+          92,
+          93,
+          89,
+          3,
+          54,
+          42,
+          76,
+          94,
+          13
+        ],
+        "seconds": 0.11048480000000005
+      },
+      "prange_coordinate": {
+        "best": 73,
+        "first_hit_evaluations": 910,
+        "evaluations": 910,
+        "best_coefficients": [
+          6,
+          38,
+          15,
+          13,
+          11,
+          83,
+          50,
+          89,
+          40,
+          0
+        ],
+        "restarts": 1,
+        "seconds": 0.0018416999999999462
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 7,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "2a0fb35ffc4d41aeac0b0bca99fe79fcf64fb14f8cb1e63e1f57c691619ce380",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 72,
+        "first_hit_evaluations": 84480,
+        "evaluations": 84480,
+        "first_hit_position": 83996,
+        "best_coefficients": [
+          3,
+          8,
+          76,
+          100,
+          58,
+          1,
+          89,
+          47,
+          90,
+          2
+        ],
+        "seconds": 0.1408839000000004
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 99934,
+        "best_coefficients": [
+          55,
+          89,
+          11,
+          39,
+          1,
+          9,
+          62,
+          96,
+          67,
+          41
+        ],
+        "restarts": 45,
+        "seconds": 0.1399904000000003
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 8,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "a8913408b56a47ff1eaa1b479b184597443b6c9a69a60af43e2be15dc4ab25cc",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          92,
+          84,
+          58,
+          12,
+          50,
+          90,
+          2,
+          11,
+          38,
+          15
+        ],
+        "seconds": 0.16655979999999992
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 99934,
+        "best_coefficients": [
+          81,
+          35,
+          61,
+          74,
+          78,
+          26,
+          3,
+          96,
+          82,
+          29
+        ],
+        "restarts": 45,
+        "seconds": 0.13919360000000047
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 9,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "1e50b93ba8f2a76f571c8d942fe5aeed3edf1de8494b688c07414af7f651ce8f",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          63,
+          87,
+          48,
+          42,
+          32,
+          86,
+          50,
+          44,
+          19,
+          83
+        ],
+        "seconds": 0.16932650000000038
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 99936,
+        "best_coefficients": [
+          11,
+          58,
+          75,
+          9,
+          1,
+          40,
+          99,
+          47,
+          49,
+          8
+        ],
+        "restarts": 47,
+        "seconds": 0.1407632000000003
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 10,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "ee0c31e05b5206a58c1f07026b89b6100894c2a8aa93be4e8ba5e1b358bbbc4d",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 72,
+        "first_hit_evaluations": 29184,
+        "evaluations": 29184,
+        "first_hit_position": 28770,
+        "best_coefficients": [
+          25,
+          30,
+          6,
+          79,
+          72,
+          89,
+          68,
+          31,
+          73,
+          0
+        ],
+        "seconds": 0.04995769999999844
+      },
+      "prange_coordinate": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 99937,
+        "best_coefficients": [
+          76,
+          19,
+          41,
+          58,
+          68,
+          57,
+          61,
+          78,
+          86,
+          5
+        ],
+        "restarts": 48,
+        "seconds": 0.14575969999999927
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 11,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "ff11b3595108403ce2e582e1cc5b95deaef07087e916d826eec962a8ffce874b",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 72,
+        "first_hit_evaluations": 40960,
+        "evaluations": 40960,
+        "first_hit_position": 40816,
+        "best_coefficients": [
+          80,
+          40,
+          29,
+          4,
+          72,
+          1,
+          73,
+          75,
+          99,
+          9
+        ],
+        "seconds": 0.07413960000000053
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 99934,
+        "best_coefficients": [
+          6,
+          20,
+          33,
+          49,
+          42,
+          10,
+          79,
+          93,
+          78,
+          4
+        ],
+        "restarts": 45,
+        "seconds": 0.1455044000000001
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 12,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "14500f02f8d809d305b274a5e92744a7a13d4d964c7779dc1823461ec46c4472",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          2,
+          66,
+          75,
+          86,
+          71,
+          30,
+          66,
+          71,
+          75,
+          80
+        ],
+        "seconds": 0.16865100000000055
+      },
+      "prange_coordinate": {
+        "best": 72,
+        "first_hit_evaluations": 88719,
+        "evaluations": 88719,
+        "best_coefficients": [
+          49,
+          58,
+          4,
+          64,
+          32,
+          9,
+          43,
+          18,
+          15,
+          17
+        ],
+        "restarts": 41,
+        "seconds": 0.12466819999999856
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 13,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "c4fe92752775c745fce5ee5c4005d6d2a36935af2cf11ff91bdfcf6932512077",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          28,
+          50,
+          32,
+          80,
+          65,
+          61,
+          63,
+          84,
+          29,
+          54
+        ],
+        "seconds": 0.19247320000000023
+      },
+      "prange_coordinate": {
+        "best": 72,
+        "first_hit_evaluations": 46683,
+        "evaluations": 46683,
+        "best_coefficients": [
+          20,
+          96,
+          21,
+          37,
+          100,
+          19,
+          39,
+          54,
+          59,
+          50
+        ],
+        "restarts": 21,
+        "seconds": 0.0690413999999997
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 14,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "ccf5d70aa8e5050909a79ca7341812dc3898621cc067edd78737856b2331138c",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 74,
+        "first_hit_evaluations": 13312,
+        "evaluations": 13312,
+        "first_hit_position": 13180,
+        "best_coefficients": [
+          13,
+          60,
+          19,
+          27,
+          98,
+          48,
+          45,
+          14,
+          29,
+          95
+        ],
+        "seconds": 0.02373760000000047
+      },
+      "prange_coordinate": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 99935,
+        "best_coefficients": [
+          21,
+          26,
+          25,
+          7,
+          76,
+          100,
+          96,
+          96,
+          65,
+          34
+        ],
+        "restarts": 46,
+        "seconds": 0.14543240000000068
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 15,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "8f3d7c9d4aab1a26cb33754e841381006ad526ac6e29db0faf8dfdbfc7156d85",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          89,
+          58,
+          50,
+          87,
+          76,
+          88,
+          3,
+          60,
+          32,
+          60
+        ],
+        "seconds": 0.17497700000000016
+      },
+      "prange_coordinate": {
+        "best": 71,
+        "first_hit_evaluations": null,
+        "evaluations": 99934,
+        "best_coefficients": [
+          51,
+          9,
+          16,
+          53,
+          70,
+          50,
+          93,
+          89,
+          44,
+          80
+        ],
+        "restarts": 45,
+        "seconds": 0.14369370000000004
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 16,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "5e2a7f5beb3388fadfb3c0fd5c2755e2835a1d7f3edbfce126c606580fd83e11",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 69,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          15,
+          47,
+          82,
+          38,
+          22,
+          62,
+          21,
+          93,
+          59,
+          89
+        ],
+        "seconds": 0.1723018000000014
+      },
+      "prange_coordinate": {
+        "best": 72,
+        "first_hit_evaluations": 72751,
+        "evaluations": 72751,
+        "best_coefficients": [
+          56,
+          29,
+          66,
+          54,
+          86,
+          18,
+          67,
+          41,
+          19,
+          84
+        ],
+        "restarts": 31,
+        "seconds": 0.10584219999999966
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 17,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "29491ffb97e80f5c966f6781c58a29532c4d49adbd6fa269efe2b76a6fc862d5",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          68,
+          91,
+          88,
+          37,
+          16,
+          65,
+          69,
+          98,
+          88,
+          85
+        ],
+        "seconds": 0.15391840000000023
+      },
+      "prange_coordinate": {
+        "best": 69,
+        "first_hit_evaluations": null,
+        "evaluations": 99936,
+        "best_coefficients": [
+          27,
+          54,
+          97,
+          43,
+          8,
+          75,
+          3,
+          18,
+          83,
+          90
+        ],
+        "restarts": 47,
+        "seconds": 0.14546199999999843
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 18,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "fcae0643174e98db8016f36ea01ff99acb6d39a97589169098eabe1715eab3f7",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 72,
+        "first_hit_evaluations": 96768,
+        "evaluations": 96768,
+        "first_hit_position": 96540,
+        "best_coefficients": [
+          55,
+          52,
+          92,
+          95,
+          86,
+          60,
+          20,
+          39,
+          21,
+          66
+        ],
+        "seconds": 0.16105519999999984
+      },
+      "prange_coordinate": {
+        "best": 70,
+        "first_hit_evaluations": null,
+        "evaluations": 99935,
+        "best_coefficients": [
+          15,
+          50,
+          47,
+          19,
+          80,
+          91,
+          94,
+          23,
+          49,
+          42
+        ],
+        "restarts": 46,
+        "seconds": 0.11461629999999978
+      }
+    },
+    {
+      "p": 101,
+      "rhs_index": 19,
+      "n": 10,
+      "m": 100,
+      "r": 50,
+      "ell": 5,
+      "allowed_mask_sha256": "7fbdb59622cac73c8a50b12b710e31038e818b86489e63df6acfed93310676f7",
+      "output_qubits": 70,
+      "dqi_expected_fraction": 0.7134788188421302,
+      "integer_target": 72,
+      "random": {
+        "best": 72,
+        "first_hit_evaluations": 71168,
+        "evaluations": 71168,
+        "first_hit_position": 70966,
+        "best_coefficients": [
+          14,
+          82,
+          89,
+          13,
+          66,
+          94,
+          88,
+          25,
+          83,
+          42
+        ],
+        "seconds": 0.09619020000000056
+      },
+      "prange_coordinate": {
+        "best": 69,
+        "first_hit_evaluations": null,
+        "evaluations": 99936,
+        "best_coefficients": [
+          71,
+          89,
+          87,
+          13,
+          64,
+          17,
+          93,
+          58,
+          81,
+          100
+        ],
+        "restarts": 47,
+        "seconds": 0.11622850000000007
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 0,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "71ed634cc86ca5f3f46440a49b2080ee63e86212c096447e127fc16b9a60727e",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          92,
+          82,
+          102,
+          47,
+          69,
+          16,
+          47,
+          69,
+          2,
+          99,
+          83
+        ],
+        "seconds": 0.1625747000000004
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99994,
+        "best_coefficients": [
+          63,
+          55,
+          7,
+          11,
+          26,
+          108,
+          31,
+          35,
+          0,
+          48,
+          91
+        ],
+        "restarts": 41,
+        "seconds": 0.12164549999999963
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 1,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "5d0f5fd5e2c84cb78fd7b5b22683ba8cc9593e397fbc3d5b702a58cd16a1783e",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 77,
+        "first_hit_evaluations": 36864,
+        "evaluations": 36864,
+        "first_hit_position": 36434,
+        "best_coefficients": [
+          42,
+          59,
+          84,
+          78,
+          28,
+          83,
+          69,
+          87,
+          68,
+          13,
+          39
+        ],
+        "seconds": 0.05967670000000069
+      },
+      "prange_coordinate": {
+        "best": 77,
+        "first_hit_evaluations": 7088,
+        "evaluations": 7088,
+        "best_coefficients": [
+          62,
+          80,
+          62,
+          65,
+          7,
+          86,
+          14,
+          79,
+          58,
+          49,
+          90
+        ],
+        "restarts": 3,
+        "seconds": 0.008940200000001397
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 2,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "9a88bfdfeaff8fbe037bdb0efcfcef561f8d3cdc1127afea5e7da13be498c510",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          43,
+          108,
+          39,
+          63,
+          70,
+          46,
+          29,
+          9,
+          22,
+          17,
+          100
+        ],
+        "seconds": 0.16144540000000163
+      },
+      "prange_coordinate": {
+        "best": 74,
+        "first_hit_evaluations": null,
+        "evaluations": 99990,
+        "best_coefficients": [
+          6,
+          19,
+          108,
+          2,
+          22,
+          39,
+          51,
+          32,
+          55,
+          70,
+          74
+        ],
+        "restarts": 37,
+        "seconds": 0.12126500000000107
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 3,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "5c33f4f14e4e2dda8d013b3515697d3f2e412b15ff87e1c9256e3ac6a4933bbe",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          51,
+          42,
+          96,
+          88,
+          98,
+          80,
+          51,
+          106,
+          64,
+          44,
+          80
+        ],
+        "seconds": 0.15964780000000012
+      },
+      "prange_coordinate": {
+        "best": 74,
+        "first_hit_evaluations": null,
+        "evaluations": 99993,
+        "best_coefficients": [
+          70,
+          2,
+          78,
+          22,
+          66,
+          58,
+          94,
+          34,
+          60,
+          78,
+          62
+        ],
+        "restarts": 40,
+        "seconds": 0.1219235999999988
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 4,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "610b6a1394cdb85e52ab3f51ab5ec57aa024412ccdc0bcadbf04fd05cc676a96",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          32,
+          34,
+          84,
+          44,
+          82,
+          49,
+          65,
+          88,
+          0,
+          26,
+          61
+        ],
+        "seconds": 0.1618018999999986
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99991,
+        "best_coefficients": [
+          49,
+          18,
+          91,
+          0,
+          10,
+          83,
+          2,
+          34,
+          94,
+          62,
+          43
+        ],
+        "restarts": 38,
+        "seconds": 0.12312359999999956
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 5,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "eecacf334a09f72512f3e148e43d1d539be11abcbcd24885b5ce182c2242861b",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 74,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          3,
+          62,
+          13,
+          20,
+          2,
+          103,
+          65,
+          47,
+          92,
+          10,
+          15
+        ],
+        "seconds": 0.19023269999999926
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99993,
+        "best_coefficients": [
+          55,
+          105,
+          87,
+          82,
+          11,
+          96,
+          107,
+          40,
+          19,
+          108,
+          77
+        ],
+        "restarts": 40,
+        "seconds": 0.12373239999999974
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 6,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "e8d430a2f81e6e119ed9d4211e214fd3a93d22a709e767813339fc35d3eee4a5",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          32,
+          105,
+          36,
+          20,
+          73,
+          52,
+          62,
+          101,
+          29,
+          24,
+          2
+        ],
+        "seconds": 0.1663306999999996
+      },
+      "prange_coordinate": {
+        "best": 74,
+        "first_hit_evaluations": null,
+        "evaluations": 99993,
+        "best_coefficients": [
+          1,
+          45,
+          81,
+          47,
+          73,
+          80,
+          35,
+          56,
+          49,
+          68,
+          102
+        ],
+        "restarts": 40,
+        "seconds": 0.1237756000000001
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 7,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "0b323dc320ab58726b4b1ef9ea30c1b7116a7ab6a0c38be7dc28299d3f577936",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          100,
+          15,
+          52,
+          45,
+          57,
+          100,
+          37,
+          25,
+          98,
+          61,
+          10
+        ],
+        "seconds": 0.1642872999999998
+      },
+      "prange_coordinate": {
+        "best": 74,
+        "first_hit_evaluations": null,
+        "evaluations": 99991,
+        "best_coefficients": [
+          36,
+          16,
+          7,
+          101,
+          88,
+          4,
+          30,
+          75,
+          46,
+          85,
+          32
+        ],
+        "restarts": 38,
+        "seconds": 0.1250891000000003
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 8,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "8c2f62f2d4b2c3e2dd2b202f79901f7b2ad2a293fdb8572d39c59ee2f8e070e8",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 77,
+        "first_hit_evaluations": 35840,
+        "evaluations": 35840,
+        "first_hit_position": 35521,
+        "best_coefficients": [
+          108,
+          7,
+          67,
+          7,
+          102,
+          17,
+          66,
+          68,
+          36,
+          102,
+          94
+        ],
+        "seconds": 0.058559999999999945
+      },
+      "prange_coordinate": {
+        "best": 77,
+        "first_hit_evaluations": 1091,
+        "evaluations": 1091,
+        "best_coefficients": [
+          46,
+          88,
+          97,
+          103,
+          53,
+          103,
+          4,
+          29,
+          107,
+          6,
+          63
+        ],
+        "restarts": 1,
+        "seconds": 0.0018579000000009671
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 9,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "06209dec5894f19ca4458f0959c172925afc76d27567e581578b9db92b924b85",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          45,
+          44,
+          51,
+          7,
+          97,
+          57,
+          64,
+          98,
+          26,
+          7,
+          108
+        ],
+        "seconds": 0.1622603999999992
+      },
+      "prange_coordinate": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 99994,
+        "best_coefficients": [
+          69,
+          72,
+          34,
+          95,
+          73,
+          21,
+          94,
+          61,
+          81,
+          5,
+          61
+        ],
+        "restarts": 41,
+        "seconds": 0.12469169999999963
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 10,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "2189eef11ff880e08ce8adb7f7460ada194b2e5787fc48a823e9362512f5f8a9",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          21,
+          50,
+          72,
+          95,
+          107,
+          39,
+          22,
+          1,
+          107,
+          52,
+          9
+        ],
+        "seconds": 0.16259600000000063
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99992,
+        "best_coefficients": [
+          101,
+          107,
+          21,
+          66,
+          15,
+          21,
+          78,
+          88,
+          85,
+          105,
+          27
+        ],
+        "restarts": 39,
+        "seconds": 0.12258440000000093
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 11,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "2d3e06718511dc70f9bd7768abebb37194a153d147e030a4a14416e9d1af5d8d",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          36,
+          106,
+          95,
+          32,
+          28,
+          55,
+          88,
+          31,
+          65,
+          64,
+          90
+        ],
+        "seconds": 0.16132290000000005
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99991,
+        "best_coefficients": [
+          78,
+          48,
+          58,
+          84,
+          15,
+          94,
+          11,
+          17,
+          1,
+          40,
+          6
+        ],
+        "restarts": 38,
+        "seconds": 0.12209449999999933
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 12,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "1ffdc310729c0fa3a5819a9b496c7f048c21f6f983a38f442e5f4b48dee2cb3e",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          51,
+          40,
+          59,
+          38,
+          67,
+          33,
+          87,
+          48,
+          75,
+          17,
+          8
+        ],
+        "seconds": 0.18395880000000098
+      },
+      "prange_coordinate": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 99990,
+        "best_coefficients": [
+          11,
+          44,
+          54,
+          85,
+          79,
+          72,
+          91,
+          27,
+          38,
+          24,
+          7
+        ],
+        "restarts": 37,
+        "seconds": 0.1446158000000004
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 13,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "f505ca47d66474f2d3f0b9b567658dd756868e8dc9a71c84e8f327951bd8520a",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          87,
+          92,
+          28,
+          101,
+          15,
+          63,
+          70,
+          82,
+          98,
+          15,
+          94
+        ],
+        "seconds": 0.20265440000000012
+      },
+      "prange_coordinate": {
+        "best": 74,
+        "first_hit_evaluations": null,
+        "evaluations": 99991,
+        "best_coefficients": [
+          17,
+          97,
+          33,
+          5,
+          4,
+          99,
+          62,
+          66,
+          58,
+          9,
+          97
+        ],
+        "restarts": 38,
+        "seconds": 0.14759559999999894
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 14,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "67360f61d9c7e5dd417fff694d114dcdbf881f8b3779273a19974ed556d3f17e",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          40,
+          5,
+          75,
+          108,
+          40,
+          28,
+          4,
+          51,
+          35,
+          14,
+          49
+        ],
+        "seconds": 0.20014690000000002
+      },
+      "prange_coordinate": {
+        "best": 73,
+        "first_hit_evaluations": null,
+        "evaluations": 99993,
+        "best_coefficients": [
+          79,
+          86,
+          29,
+          59,
+          24,
+          94,
+          91,
+          57,
+          0,
+          5,
+          48
+        ],
+        "restarts": 40,
+        "seconds": 0.15053590000000128
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 15,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "ef80a6fc30296895deb1b36c9a374b53d77ac2ee262aeae36e76e03fc7b52389",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          98,
+          68,
+          35,
+          93,
+          84,
+          92,
+          30,
+          53,
+          81,
+          22,
+          16
+        ],
+        "seconds": 0.2167230999999994
+      },
+      "prange_coordinate": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 99993,
+        "best_coefficients": [
+          13,
+          26,
+          74,
+          104,
+          41,
+          87,
+          10,
+          78,
+          92,
+          90,
+          42
+        ],
+        "restarts": 40,
+        "seconds": 0.15088589999999868
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 16,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "febeca5dfaeee3d35e44c72876a99a40bde98bbf49e56924e519ef48c3c952ab",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          5,
+          4,
+          106,
+          8,
+          68,
+          55,
+          53,
+          34,
+          0,
+          52,
+          42
+        ],
+        "seconds": 0.21179190000000148
+      },
+      "prange_coordinate": {
+        "best": 74,
+        "first_hit_evaluations": null,
+        "evaluations": 99992,
+        "best_coefficients": [
+          77,
+          63,
+          43,
+          102,
+          96,
+          34,
+          6,
+          65,
+          68,
+          73,
+          10
+        ],
+        "restarts": 39,
+        "seconds": 0.15036810000000145
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 17,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "3d4a8f5a9f004db756f3715102c23a6121f241fa02e64edddcf771e45ae96fbf",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          64,
+          41,
+          54,
+          86,
+          3,
+          100,
+          64,
+          2,
+          100,
+          22,
+          69
+        ],
+        "seconds": 0.20335529999999835
+      },
+      "prange_coordinate": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 99992,
+        "best_coefficients": [
+          89,
+          107,
+          16,
+          25,
+          23,
+          63,
+          35,
+          17,
+          81,
+          57,
+          91
+        ],
+        "restarts": 39,
+        "seconds": 0.14978010000000097
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 18,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "251e23b3c4acb3b90d6ac1d478a76a136145b75290c71b89426706bf2e4acc43",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 89600,
+        "evaluations": 89600,
+        "first_hit_position": 89531,
+        "best_coefficients": [
+          19,
+          61,
+          38,
+          69,
+          88,
+          108,
+          79,
+          66,
+          98,
+          79,
+          77
+        ],
+        "seconds": 0.1836049000000024
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99992,
+        "best_coefficients": [
+          12,
+          18,
+          4,
+          57,
+          48,
+          78,
+          20,
+          72,
+          55,
+          72,
+          57
+        ],
+        "restarts": 39,
+        "seconds": 0.14946710000000252
+      }
+    },
+    {
+      "p": 109,
+      "rhs_index": 19,
+      "n": 11,
+      "m": 108,
+      "r": 54,
+      "ell": 5,
+      "allowed_mask_sha256": "d69a022a37f47456312463666cd2cd5b2d73e563547a5b57d3a34ae3da21553f",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7059547693831851,
+      "integer_target": 77,
+      "random": {
+        "best": 75,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          91,
+          25,
+          16,
+          89,
+          0,
+          22,
+          42,
+          104,
+          16,
+          75,
+          69
+        ],
+        "seconds": 0.21010319999999894
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99991,
+        "best_coefficients": [
+          88,
+          99,
+          71,
+          102,
+          69,
+          103,
+          21,
+          105,
+          66,
+          38,
+          51
+        ],
+        "restarts": 38,
+        "seconds": 0.14931290000000175
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 0,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "f2aeca77aecc75dd1acbbbbe1da3bfc8b9ad4c320d193636f5a2d2da7a808e55",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          50,
+          21,
+          5,
+          91,
+          60,
+          111,
+          54,
+          54,
+          103,
+          92,
+          52
+        ],
+        "seconds": 0.21674480000000074
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99930,
+        "best_coefficients": [
+          95,
+          7,
+          67,
+          71,
+          63,
+          45,
+          43,
+          53,
+          76,
+          44,
+          39
+        ],
+        "restarts": 38,
+        "seconds": 0.14962059999999866
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 1,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "7b3ecaad7ee1fe691094eb0bab3c7a5200b0b11c07fac733e6012bd90a405f8e",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 77,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          28,
+          23,
+          93,
+          69,
+          17,
+          4,
+          94,
+          36,
+          96,
+          31,
+          60
+        ],
+        "seconds": 0.22185359999999932
+      },
+      "prange_coordinate": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 99930,
+        "best_coefficients": [
+          74,
+          49,
+          3,
+          46,
+          67,
+          15,
+          45,
+          53,
+          84,
+          45,
+          22
+        ],
+        "restarts": 38,
+        "seconds": 0.1485094999999994
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 2,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "c9e6d4abe1f2c7d3add6b2ea6147438c1bad9332781d62cc54c9a9a6cb39cf98",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          50,
+          111,
+          55,
+          30,
+          86,
+          18,
+          107,
+          7,
+          63,
+          111,
+          91
+        ],
+        "seconds": 0.210481699999999
+      },
+      "prange_coordinate": {
+        "best": 79,
+        "first_hit_evaluations": 61046,
+        "evaluations": 61046,
+        "best_coefficients": [
+          37,
+          22,
+          80,
+          74,
+          13,
+          79,
+          18,
+          80,
+          44,
+          5,
+          1
+        ],
+        "restarts": 26,
+        "seconds": 0.09288940000000068
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 3,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "930635320ffa8414dcc14b5c3975c66f3475cf07acd8c46e118f7659004d5534",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 80,
+        "first_hit_evaluations": 83968,
+        "evaluations": 83968,
+        "first_hit_position": 83891,
+        "best_coefficients": [
+          78,
+          84,
+          32,
+          24,
+          20,
+          8,
+          51,
+          73,
+          8,
+          88,
+          29
+        ],
+        "seconds": 0.17578100000000063
+      },
+      "prange_coordinate": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 99927,
+        "best_coefficients": [
+          43,
+          28,
+          80,
+          110,
+          85,
+          53,
+          104,
+          30,
+          78,
+          71,
+          7
+        ],
+        "restarts": 35,
+        "seconds": 0.16256320000000102
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 4,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "3abf541d37030969edf2a4eacc3b8e8c08ab96ff654d0801808ba5f806c95392",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 51712,
+        "evaluations": 51712,
+        "first_hit_position": 51599,
+        "best_coefficients": [
+          26,
+          107,
+          25,
+          68,
+          86,
+          82,
+          41,
+          54,
+          69,
+          28,
+          29
+        ],
+        "seconds": 0.08453680000000219
+      },
+      "prange_coordinate": {
+        "best": 79,
+        "first_hit_evaluations": 66580,
+        "evaluations": 66580,
+        "best_coefficients": [
+          34,
+          75,
+          63,
+          96,
+          48,
+          0,
+          109,
+          39,
+          74,
+          26,
+          65
+        ],
+        "restarts": 23,
+        "seconds": 0.0798891000000026
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 5,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "099bb43d981a793862e90f15358fc76f8655a1c7d6ee0f1e08b7535d0f5d140e",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 99328,
+        "evaluations": 99328,
+        "first_hit_position": 99159,
+        "best_coefficients": [
+          82,
+          59,
+          15,
+          93,
+          111,
+          76,
+          66,
+          48,
+          102,
+          15,
+          40
+        ],
+        "seconds": 0.1662385999999998
+      },
+      "prange_coordinate": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 99929,
+        "best_coefficients": [
+          45,
+          85,
+          22,
+          98,
+          5,
+          89,
+          111,
+          78,
+          90,
+          4,
+          68
+        ],
+        "restarts": 37,
+        "seconds": 0.12245719999999949
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 6,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "a07d8b98f427e41645331c815c444841ab81f2e7e0f0957a29a0f82aea08ef94",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 26624,
+        "evaluations": 26624,
+        "first_hit_position": 26135,
+        "best_coefficients": [
+          61,
+          72,
+          88,
+          110,
+          46,
+          51,
+          67,
+          10,
+          30,
+          85,
+          23
+        ],
+        "seconds": 0.04447219999999774
+      },
+      "prange_coordinate": {
+        "best": 77,
+        "first_hit_evaluations": null,
+        "evaluations": 99928,
+        "best_coefficients": [
+          112,
+          25,
+          65,
+          27,
+          88,
+          39,
+          0,
+          41,
+          23,
+          19,
+          40
+        ],
+        "restarts": 36,
+        "seconds": 0.12100390000000161
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 7,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "245c55c11eb7ecca4d43fcf5dfc3fd02f36b7ad4d16fe0213eead9367a3800f2",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 80,
+        "first_hit_evaluations": 99328,
+        "evaluations": 99328,
+        "first_hit_position": 99202,
+        "best_coefficients": [
+          5,
+          45,
+          112,
+          29,
+          30,
+          73,
+          56,
+          3,
+          68,
+          100,
+          40
+        ],
+        "seconds": 0.16623369999999937
+      },
+      "prange_coordinate": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 99929,
+        "best_coefficients": [
+          14,
+          44,
+          92,
+          105,
+          95,
+          91,
+          17,
+          14,
+          97,
+          24,
+          48
+        ],
+        "restarts": 37,
+        "seconds": 0.12459420000000065
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 8,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "54c854f1c1f6c8aeff9d43e3647847944be9f7859076dd5040f05122aab87590",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 77,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          0,
+          29,
+          37,
+          57,
+          33,
+          29,
+          73,
+          80,
+          4,
+          75,
+          74
+        ],
+        "seconds": 0.20230949999999837
+      },
+      "prange_coordinate": {
+        "best": 81,
+        "first_hit_evaluations": 68732,
+        "evaluations": 68732,
+        "best_coefficients": [
+          77,
+          44,
+          57,
+          4,
+          55,
+          70,
+          72,
+          14,
+          0,
+          103,
+          22
+        ],
+        "restarts": 28,
+        "seconds": 0.10274139999999932
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 9,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "f6c8aba766ff8bd0766c05ba5672391c7762bbfe09a7d470d58c37df0115de1a",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 77,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          73,
+          39,
+          60,
+          65,
+          95,
+          4,
+          25,
+          85,
+          21,
+          40,
+          3
+        ],
+        "seconds": 0.20633319999999955
+      },
+      "prange_coordinate": {
+        "best": 80,
+        "first_hit_evaluations": 72234,
+        "evaluations": 72234,
+        "best_coefficients": [
+          52,
+          47,
+          42,
+          94,
+          63,
+          4,
+          2,
+          81,
+          73,
+          50,
+          20
+        ],
+        "restarts": 27,
+        "seconds": 0.10605229999999821
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 10,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "8f8abfeecbb2b719942c219208e287684a608d4c9525b41eba331e6a172d8d24",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 88064,
+        "evaluations": 88064,
+        "first_hit_position": 87655,
+        "best_coefficients": [
+          41,
+          91,
+          81,
+          6,
+          74,
+          56,
+          89,
+          73,
+          67,
+          30,
+          52
+        ],
+        "seconds": 0.1806012999999993
+      },
+      "prange_coordinate": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 99926,
+        "best_coefficients": [
+          106,
+          87,
+          42,
+          84,
+          30,
+          26,
+          38,
+          38,
+          28,
+          5,
+          87
+        ],
+        "restarts": 34,
+        "seconds": 0.1440987999999983
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 11,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "462debd9b1ba912e3e9c5828f9b648eecb1b43fd4927aa8d3835faa40d6b2d1c",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 58880,
+        "evaluations": 58880,
+        "first_hit_position": 58655,
+        "best_coefficients": [
+          56,
+          103,
+          8,
+          43,
+          7,
+          98,
+          58,
+          48,
+          21,
+          16,
+          70
+        ],
+        "seconds": 0.12225210000000075
+      },
+      "prange_coordinate": {
+        "best": 77,
+        "first_hit_evaluations": null,
+        "evaluations": 99929,
+        "best_coefficients": [
+          93,
+          97,
+          74,
+          13,
+          75,
+          95,
+          66,
+          99,
+          66,
+          46,
+          55
+        ],
+        "restarts": 37,
+        "seconds": 0.14694399999999774
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 12,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "792de6230db7f42fcb6911eadad9445f6ddece49715af346cd18038d04f8976e",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          72,
+          34,
+          69,
+          66,
+          27,
+          84,
+          4,
+          112,
+          72,
+          2,
+          22
+        ],
+        "seconds": 0.21134430000000037
+      },
+      "prange_coordinate": {
+        "best": 79,
+        "first_hit_evaluations": 53582,
+        "evaluations": 53582,
+        "best_coefficients": [
+          107,
+          40,
+          99,
+          1,
+          100,
+          34,
+          12,
+          104,
+          71,
+          34,
+          53
+        ],
+        "restarts": 20,
+        "seconds": 0.07981260000000034
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 13,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "393623349b598e7c02ae39dde512af6d3ab717099a4a5bfc1bd08af3bbbd8840",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 80,
+        "first_hit_evaluations": 21504,
+        "evaluations": 21504,
+        "first_hit_position": 21365,
+        "best_coefficients": [
+          23,
+          45,
+          26,
+          97,
+          58,
+          100,
+          17,
+          87,
+          76,
+          80,
+          12
+        ],
+        "seconds": 0.04160699999999906
+      },
+      "prange_coordinate": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 99927,
+        "best_coefficients": [
+          85,
+          34,
+          18,
+          17,
+          42,
+          93,
+          61,
+          24,
+          37,
+          20,
+          76
+        ],
+        "restarts": 35,
+        "seconds": 0.14595110000000133
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 14,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "6717f8d092531d8f6a0c7915ba8e5b7036a5b1a2a9e1c837facfec8463b8d356",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          82,
+          102,
+          59,
+          27,
+          89,
+          91,
+          83,
+          30,
+          57,
+          61,
+          11
+        ],
+        "seconds": 0.18100469999999902
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99930,
+        "best_coefficients": [
+          77,
+          1,
+          21,
+          106,
+          78,
+          53,
+          79,
+          71,
+          37,
+          23,
+          51
+        ],
+        "restarts": 38,
+        "seconds": 0.14052330000000168
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 15,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "d85d10f3b2210139be3c8d9e5d437979b927729efd44198f54b3e9bfa9ab5e4a",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          19,
+          92,
+          73,
+          21,
+          15,
+          85,
+          25,
+          103,
+          90,
+          23,
+          74
+        ],
+        "seconds": 0.1683880000000002
+      },
+      "prange_coordinate": {
+        "best": 79,
+        "first_hit_evaluations": 69068,
+        "evaluations": 69068,
+        "best_coefficients": [
+          93,
+          64,
+          95,
+          14,
+          29,
+          27,
+          17,
+          108,
+          82,
+          72,
+          68
+        ],
+        "restarts": 25,
+        "seconds": 0.08484070000000088
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 16,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "08e903d0b2103a066c41a70709540518e44dca3c3044821337c2e88fd3321e13",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 47616,
+        "evaluations": 47616,
+        "first_hit_position": 47233,
+        "best_coefficients": [
+          97,
+          34,
+          55,
+          112,
+          9,
+          12,
+          40,
+          103,
+          2,
+          72,
+          49
+        ],
+        "seconds": 0.0804019000000018
+      },
+      "prange_coordinate": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 99930,
+        "best_coefficients": [
+          74,
+          76,
+          90,
+          54,
+          25,
+          87,
+          60,
+          51,
+          5,
+          3,
+          27
+        ],
+        "restarts": 38,
+        "seconds": 0.1233569999999986
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 17,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "954bea466ce4ffe6cb8178cf9bd2dcbeca3cf2b94e99af2dd0df55df7589097b",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 3072,
+        "evaluations": 3072,
+        "first_hit_position": 2779,
+        "best_coefficients": [
+          15,
+          37,
+          68,
+          76,
+          18,
+          2,
+          87,
+          47,
+          12,
+          53,
+          48
+        ],
+        "seconds": 0.005120099999999184
+      },
+      "prange_coordinate": {
+        "best": 78,
+        "first_hit_evaluations": null,
+        "evaluations": 99931,
+        "best_coefficients": [
+          42,
+          21,
+          60,
+          0,
+          61,
+          33,
+          27,
+          41,
+          36,
+          84,
+          62
+        ],
+        "restarts": 39,
+        "seconds": 0.12432330000000036
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 18,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "bd9ad1ad0a79c35522bd268dab2fa8c756d0822203ccd4b5160087b8eb29d59d",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 79,
+        "first_hit_evaluations": 35840,
+        "evaluations": 35840,
+        "first_hit_position": 35592,
+        "best_coefficients": [
+          53,
+          0,
+          25,
+          96,
+          106,
+          71,
+          105,
+          3,
+          75,
+          19,
+          34
+        ],
+        "seconds": 0.06086329999999762
+      },
+      "prange_coordinate": {
+        "best": 77,
+        "first_hit_evaluations": null,
+        "evaluations": 99930,
+        "best_coefficients": [
+          32,
+          99,
+          75,
+          100,
+          56,
+          34,
+          26,
+          79,
+          71,
+          82,
+          14
+        ],
+        "restarts": 38,
+        "seconds": 0.12111829999999912
+      }
+    },
+    {
+      "p": 113,
+      "rhs_index": 19,
+      "n": 11,
+      "m": 112,
+      "r": 56,
+      "ell": 5,
+      "allowed_mask_sha256": "a1ef42257991054a7e231e50c5a3a39c672c57011615856033cda20ad3090e41",
+      "output_qubits": 77,
+      "dqi_expected_fraction": 0.7024806593688908,
+      "integer_target": 79,
+      "random": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          33,
+          47,
+          19,
+          52,
+          54,
+          109,
+          103,
+          33,
+          62,
+          69,
+          46
+        ],
+        "seconds": 0.21247590000000116
+      },
+      "prange_coordinate": {
+        "best": 76,
+        "first_hit_evaluations": null,
+        "evaluations": 99931,
+        "best_coefficients": [
+          5,
+          10,
+          95,
+          85,
+          82,
+          99,
+          71,
+          78,
+          33,
+          47,
+          50
+        ],
+        "restarts": 39,
+        "seconds": 0.15074479999999824
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 0,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "d31cceea816e34ba6b9bf2cd5da16a4e2e854d2f7d9bf0285583ef13a83afe09",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 88,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          23,
+          107,
+          44,
+          97,
+          103,
+          77,
+          80,
+          0,
+          108,
+          58,
+          19,
+          28,
+          88
+        ],
+        "seconds": 0.2744761999999987
+      },
+      "prange_coordinate": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 99976,
+        "best_coefficients": [
+          102,
+          87,
+          118,
+          49,
+          121,
+          76,
+          9,
+          14,
+          8,
+          47,
+          21,
+          41,
+          97
+        ],
+        "restarts": 27,
+        "seconds": 0.1583180000000013
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 1,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "c35c51cc6481876fae24aadbd93f3fc8d1198374e02b7be7a5680111009a4c12",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 85,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          83,
+          45,
+          46,
+          82,
+          42,
+          59,
+          116,
+          22,
+          23,
+          16,
+          39,
+          64,
+          17
+        ],
+        "seconds": 0.25527139999999804
+      },
+      "prange_coordinate": {
+        "best": 88,
+        "first_hit_evaluations": null,
+        "evaluations": 99978,
+        "best_coefficients": [
+          59,
+          117,
+          96,
+          53,
+          100,
+          59,
+          65,
+          77,
+          52,
+          69,
+          52,
+          37,
+          1
+        ],
+        "restarts": 29,
+        "seconds": 0.15944400000000059
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 2,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "07793b4fa6fa54933228a13d5291ace4941edbe86350141ba6519407121e24ad",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 85,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          77,
+          94,
+          50,
+          64,
+          68,
+          60,
+          43,
+          12,
+          70,
+          124,
+          81,
+          56,
+          61
+        ],
+        "seconds": 0.2615035999999975
+      },
+      "prange_coordinate": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 99977,
+        "best_coefficients": [
+          6,
+          101,
+          88,
+          102,
+          84,
+          95,
+          76,
+          97,
+          7,
+          11,
+          63,
+          90,
+          17
+        ],
+        "restarts": 28,
+        "seconds": 0.15982879999999966
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 3,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "a23c0cb22b427c0e79222828be13b917140f3eb3f59a28febcae1404f9880b3d",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 89,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          105,
+          66,
+          123,
+          47,
+          23,
+          98,
+          120,
+          55,
+          68,
+          60,
+          35,
+          31,
+          121
+        ],
+        "seconds": 0.26317820000000225
+      },
+      "prange_coordinate": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 99977,
+        "best_coefficients": [
+          79,
+          21,
+          111,
+          34,
+          62,
+          52,
+          57,
+          70,
+          3,
+          96,
+          35,
+          91,
+          81
+        ],
+        "restarts": 28,
+        "seconds": 0.17420279999999977
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 4,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "228f1b27b0c4b7fd426840c9206c1819720667b046454f7925be65a58353c170",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          84,
+          103,
+          16,
+          64,
+          116,
+          37,
+          11,
+          57,
+          64,
+          19,
+          29,
+          111,
+          60
+        ],
+        "seconds": 0.2060947000000013
+      },
+      "prange_coordinate": {
+        "best": 84,
+        "first_hit_evaluations": null,
+        "evaluations": 99978,
+        "best_coefficients": [
+          125,
+          76,
+          77,
+          7,
+          92,
+          39,
+          101,
+          126,
+          77,
+          122,
+          66,
+          12,
+          60
+        ],
+        "restarts": 29,
+        "seconds": 0.12965840000000028
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 5,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "921ea3ca0034a0d82f56d30b9a8cbf743cd5250518573257ce8e22a32a55bfd6",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          7,
+          102,
+          78,
+          13,
+          121,
+          28,
+          106,
+          104,
+          47,
+          96,
+          45,
+          14,
+          119
+        ],
+        "seconds": 0.21258450000000195
+      },
+      "prange_coordinate": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 99978,
+        "best_coefficients": [
+          20,
+          125,
+          2,
+          57,
+          30,
+          32,
+          103,
+          122,
+          41,
+          62,
+          26,
+          101,
+          91
+        ],
+        "restarts": 29,
+        "seconds": 0.13226799999999983
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 6,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "bf354c837457922578f24ad7e5b4f1a943e6913fc7fe86e7bde644131ab299f3",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          6,
+          26,
+          38,
+          82,
+          57,
+          92,
+          100,
+          46,
+          40,
+          3,
+          125,
+          63,
+          9
+        ],
+        "seconds": 0.23567689999999786
+      },
+      "prange_coordinate": {
+        "best": 85,
+        "first_hit_evaluations": null,
+        "evaluations": 99977,
+        "best_coefficients": [
+          91,
+          76,
+          92,
+          71,
+          30,
+          41,
+          3,
+          46,
+          34,
+          114,
+          116,
+          124,
+          73
+        ],
+        "restarts": 28,
+        "seconds": 0.14982699999999838
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 7,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "2343f95c0a66a5330ba251eb793de93310e4e37508906ffe50eff9c5601dcadc",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          126,
+          66,
+          38,
+          113,
+          82,
+          110,
+          100,
+          35,
+          6,
+          52,
+          43,
+          105,
+          110
+        ],
+        "seconds": 0.20831830000000195
+      },
+      "prange_coordinate": {
+        "best": 84,
+        "first_hit_evaluations": null,
+        "evaluations": 99979,
+        "best_coefficients": [
+          23,
+          74,
+          87,
+          45,
+          31,
+          1,
+          71,
+          5,
+          95,
+          14,
+          7,
+          105,
+          111
+        ],
+        "restarts": 30,
+        "seconds": 0.13125559999999936
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 8,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "910893c55c295e17bba4089ca83bd2c60f6ad4840c3bfac340dbde53d3f579b0",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          22,
+          119,
+          8,
+          5,
+          36,
+          36,
+          93,
+          99,
+          3,
+          23,
+          65,
+          105,
+          29
+        ],
+        "seconds": 0.2094313000000021
+      },
+      "prange_coordinate": {
+        "best": 85,
+        "first_hit_evaluations": null,
+        "evaluations": 99977,
+        "best_coefficients": [
+          28,
+          126,
+          28,
+          5,
+          49,
+          26,
+          20,
+          26,
+          5,
+          120,
+          85,
+          101,
+          55
+        ],
+        "restarts": 28,
+        "seconds": 0.13089410000000257
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 9,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "a753c547dae1738605c640610a5d429c907a09b91ec79c98a0f2ef31e6672930",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 85,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          47,
+          56,
+          119,
+          62,
+          9,
+          9,
+          13,
+          23,
+          98,
+          87,
+          88,
+          9,
+          28
+        ],
+        "seconds": 0.20663729999999703
+      },
+      "prange_coordinate": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 99978,
+        "best_coefficients": [
+          95,
+          36,
+          13,
+          110,
+          106,
+          102,
+          70,
+          98,
+          53,
+          39,
+          116,
+          46,
+          22
+        ],
+        "restarts": 29,
+        "seconds": 0.1335511000000018
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 10,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "374cb0436ee92d2da2af29e64ed3eab21830d41908cee2c37fe579fa904e20fa",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          77,
+          100,
+          52,
+          43,
+          67,
+          37,
+          22,
+          33,
+          8,
+          94,
+          45,
+          34,
+          105
+        ],
+        "seconds": 0.21734700000000018
+      },
+      "prange_coordinate": {
+        "best": 88,
+        "first_hit_evaluations": null,
+        "evaluations": 99975,
+        "best_coefficients": [
+          32,
+          91,
+          35,
+          7,
+          115,
+          87,
+          102,
+          66,
+          57,
+          11,
+          71,
+          11,
+          12
+        ],
+        "restarts": 26,
+        "seconds": 0.12760529999999903
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 11,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "f157285b8ea9ab48741ba285e84cd1a2ccf33fd271fdbe95857ec0085d44abc6",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          43,
+          104,
+          3,
+          109,
+          117,
+          111,
+          71,
+          78,
+          30,
+          79,
+          103,
+          20,
+          71
+        ],
+        "seconds": 0.2067085000000013
+      },
+      "prange_coordinate": {
+        "best": 88,
+        "first_hit_evaluations": null,
+        "evaluations": 99979,
+        "best_coefficients": [
+          41,
+          108,
+          106,
+          31,
+          94,
+          10,
+          22,
+          96,
+          37,
+          26,
+          93,
+          15,
+          125
+        ],
+        "restarts": 30,
+        "seconds": 0.13197530000000057
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 12,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "13182e622ce62e56b11fd9ad8a4bf6c5ae6670295ca7322f6a206c363579320d",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          42,
+          17,
+          39,
+          84,
+          62,
+          17,
+          39,
+          46,
+          97,
+          90,
+          84,
+          74,
+          95
+        ],
+        "seconds": 0.24922690000000003
+      },
+      "prange_coordinate": {
+        "best": 90,
+        "first_hit_evaluations": 72156,
+        "evaluations": 72156,
+        "best_coefficients": [
+          118,
+          19,
+          25,
+          58,
+          63,
+          110,
+          41,
+          73,
+          8,
+          22,
+          59,
+          108,
+          76
+        ],
+        "restarts": 20,
+        "seconds": 0.11274489999999915
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 13,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "80856b7ae6a660484d96698d7100769214b843fba8d1682500fd6f0c9e0c341d",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 88,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          9,
+          75,
+          48,
+          116,
+          116,
+          93,
+          109,
+          124,
+          120,
+          48,
+          72,
+          120,
+          91
+        ],
+        "seconds": 0.25641410000000064
+      },
+      "prange_coordinate": {
+        "best": 90,
+        "first_hit_evaluations": 76858,
+        "evaluations": 76858,
+        "best_coefficients": [
+          11,
+          72,
+          87,
+          37,
+          22,
+          40,
+          106,
+          23,
+          41,
+          119,
+          51,
+          32,
+          105
+        ],
+        "restarts": 23,
+        "seconds": 0.12100199999999717
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 14,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "5d86c083d72a5744b72359f799a358f96cf10585289d33d3107d1a7840d1dd79",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 85,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          58,
+          5,
+          97,
+          120,
+          122,
+          116,
+          63,
+          108,
+          46,
+          23,
+          24,
+          12,
+          93
+        ],
+        "seconds": 0.25823330000000055
+      },
+      "prange_coordinate": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 99977,
+        "best_coefficients": [
+          116,
+          88,
+          54,
+          105,
+          71,
+          92,
+          123,
+          63,
+          114,
+          64,
+          75,
+          70,
+          98
+        ],
+        "restarts": 28,
+        "seconds": 0.157021799999999
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 15,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "458eb2ecead2941791d91c4bcfc4a3dfcbdf91a7e4fa75da4dbb56bdc9994855",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 89,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          22,
+          1,
+          60,
+          10,
+          52,
+          48,
+          51,
+          61,
+          52,
+          25,
+          109,
+          29,
+          79
+        ],
+        "seconds": 0.25601800000000097
+      },
+      "prange_coordinate": {
+        "best": 84,
+        "first_hit_evaluations": null,
+        "evaluations": 99977,
+        "best_coefficients": [
+          85,
+          74,
+          78,
+          9,
+          10,
+          36,
+          101,
+          69,
+          81,
+          10,
+          36,
+          109,
+          94
+        ],
+        "restarts": 28,
+        "seconds": 0.15835549999999898
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 16,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "467e0a621468d5af74a4c70e72bbba97b98eb73375d5fd3b9dea2e787ebff5b8",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 88,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          12,
+          22,
+          65,
+          11,
+          7,
+          52,
+          30,
+          40,
+          81,
+          67,
+          125,
+          103,
+          121
+        ],
+        "seconds": 0.2651114000000021
+      },
+      "prange_coordinate": {
+        "best": 88,
+        "first_hit_evaluations": null,
+        "evaluations": 99978,
+        "best_coefficients": [
+          17,
+          110,
+          121,
+          22,
+          94,
+          107,
+          65,
+          77,
+          75,
+          124,
+          97,
+          58,
+          3
+        ],
+        "restarts": 29,
+        "seconds": 0.1588428999999998
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 17,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "f101265b0bd651e5d11f42bbcebb96f19f8fcc1bcc279223652f09ce27861bff",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          20,
+          26,
+          38,
+          79,
+          121,
+          91,
+          122,
+          118,
+          73,
+          25,
+          85,
+          58,
+          72
+        ],
+        "seconds": 0.25259110000000007
+      },
+      "prange_coordinate": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 99976,
+        "best_coefficients": [
+          126,
+          73,
+          14,
+          44,
+          26,
+          73,
+          122,
+          40,
+          61,
+          21,
+          33,
+          30,
+          31
+        ],
+        "restarts": 27,
+        "seconds": 0.12615200000000115
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 18,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "f7676c36a7eb2d51474f7aabc5f1aed511ac5141ca3fd3d9aa9cc360e61d2863",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 86,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          86,
+          69,
+          34,
+          56,
+          36,
+          4,
+          8,
+          31,
+          91,
+          43,
+          41,
+          76,
+          60
+        ],
+        "seconds": 0.23242660000000015
+      },
+      "prange_coordinate": {
+        "best": 84,
+        "first_hit_evaluations": null,
+        "evaluations": 99978,
+        "best_coefficients": [
+          73,
+          120,
+          45,
+          96,
+          97,
+          32,
+          91,
+          66,
+          109,
+          37,
+          6,
+          67,
+          119
+        ],
+        "restarts": 29,
+        "seconds": 0.1674053000000022
+      }
+    },
+    {
+      "p": 127,
+      "rhs_index": 19,
+      "n": 13,
+      "m": 126,
+      "r": 63,
+      "ell": 6,
+      "allowed_mask_sha256": "6a23c8595a86fab8c1d6c7156c43fbb4d172b9677ab97a7e8f7b55b2e01d9e9b",
+      "output_qubits": 91,
+      "dqi_expected_fraction": 0.709390198416784,
+      "integer_target": 90,
+      "random": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 100000,
+        "first_hit_position": null,
+        "best_coefficients": [
+          75,
+          52,
+          46,
+          1,
+          115,
+          91,
+          113,
+          70,
+          61,
+          49,
+          48,
+          31,
+          80
+        ],
+        "seconds": 0.3448191999999999
+      },
+      "prange_coordinate": {
+        "best": 87,
+        "first_hit_evaluations": null,
+        "evaluations": 99978,
+        "best_coefficients": [
+          66,
+          66,
+          36,
+          102,
+          87,
+          6,
+          108,
+          59,
+          65,
+          6,
+          50,
+          50,
+          58
+        ],
+        "restarts": 29,
+        "seconds": 0.16311810000000193
+      }
+    }
+  ]
+}
