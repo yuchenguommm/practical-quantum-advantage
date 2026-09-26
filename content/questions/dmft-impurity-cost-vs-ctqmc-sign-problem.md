@@ -116,6 +116,20 @@ For a **material-derived input**, the pinned TRIQS Sr₂RuO₄ benchmark [12] is
 
 The archive does not record an average sign. A numerically diagonal bath does not by itself prove a good Monte Carlo sign for a Kanamori interaction, but neither this input nor its runtime documents a severe sign problem. The anomalous `G(τ)` points are in the archived output itself; we did not infer their cause. A same-instance bath fit should use the pinned `Δ(τ)` input, then seek a cleaned or independently replicated `G(τ)` with uncertainty bars. The archived run is a useful baseline to audit, not yet a certified accuracy target for a quantum solver.
 
+**Output consistency and sensitivity.** We Fourier-transformed the archived `G(τ)` numerically and compared it with the separately stored `G(iω)` on the first 80 positive fermionic frequencies. The largest difference is `1.04 × 10⁻⁵` across all six spin-orbital diagonals. This close agreement is an internal serialization check, **not** an independent solver replication: the repository script saves `S.G_iw_raw`, and the two arrays may derive from the same Monte Carlo measurement [12]. As a diagnostic only, replacing the four `|G(τ)|>1` points with the mean of their immediate neighbors shifts some low-frequency `G(iω)` values by as much as `0.00677`. The replacement is not a corrected physical curve; there may be other noisy bins within the allowed `|G|≤1` range.
+
+The input bath is identical for up and down spins, and its orbital 1/2 curves differ by less than `4 × 10⁻¹⁰`. The corresponding archived output has visible symmetry differences:
+
+| Output comparison, first 80 Matsubara frequencies | Largest absolute difference | Lowest-frequency absolute difference |
+|---|---:|---:|
+| Up versus down, orbital 0 | `0.0210` | `0.00800` |
+| Up versus down, orbital 1 | `0.0383` | `0.0128` |
+| Up versus down, orbital 2 | `0.0454` | `0.000894` |
+| Orbital 1 versus 2, up spin | `0.0319` | `0.00699` |
+| Orbital 1 versus 2, down spin | `0.0362` | `0.0200` |
+
+These are discrepancies in **one archived run**, not confidence intervals or a rigorous error floor. The [consistency script and per-orbital numbers](https://github.com/yuchenguommm/practical-quantum-advantage/blob/main/numerics/sr2ruo4_green_consistency.py) make the checks repeatable. The output differences are much larger than our bath-*input* fit errors below, so another classical run or raw Monte Carlo bin data with uncertainty estimates is needed before an interacting-`G` convergence or quantum cost–accuracy curve is meaningful.
+
 **Finite bath on the same archived input.** We fitted nonnegative-weight discrete bath poles to the archived diagonal `Δ(τ)` for the two distinct orbital curves. The two spins have identical bath inputs, and orbitals 1 and 2 differ by less than `4 × 10⁻¹⁰` in the archive. Fitting used 352 selected imaginary-time points; the other 9649 points were held out. We also reconstructed `Δ(iω)` independently from the archived `G₀(iω)`, the pinned Wannier onsite matrix and the model's chemical potential. The first 80 Matsubara values agree with the numerical Fourier transform of archived `Δ(τ)` within `6.82 × 10⁻⁶` maximum absolute difference. The [fit script, bath energies, couplings and all errors](https://github.com/yuchenguommm/practical-quantum-advantage/blob/main/numerics/sr2ruo4_finite_bath_fit.py) are public.
 
 | Bath levels per spin per correlated orbital | System fermion modes, including six impurity modes | Worst maximum held-out `Δ(τ)` error across orbitals | Worst maximum `Δ(iω)` error on first 80 frequencies versus archived `G₀` |

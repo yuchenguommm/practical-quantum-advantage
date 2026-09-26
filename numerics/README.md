@@ -10,6 +10,14 @@ python numerics/sr2ruo4_archive_audit.py --output numerics/results/sr2ruo4_cthyb
 
 The archive reports ten million Monte Carlo cycles, 280 MPI processes and 2536 seconds. The current repository script specifies one million cycles; the embedded original script agrees with the archive. The particular non-SOC bath has negligible off-diagonal hybridisation, and the archive contains four isolated diagonal `G(tau)` entries exceeding magnitude one. The script records the worst coordinates. It does not determine the average sign or repair the Green's-function output. A new solver comparison should first reproduce a physically consistent curve with error bars; no quantum or finite-bath result is produced here.
 
+`sr2ruo4_green_consistency.py` tests whether the archive's saved `G(iw)` is numerically consistent with its `G_tau`, and compares output channels whose input bath and local Hamiltonian are symmetry-equivalent. It also reports the sensitivity of the first 80 frequencies to **diagnostically interpolating** only the four diagonal `|G_tau|>1` samples:
+
+```sh
+python numerics/sr2ruo4_green_consistency.py --output numerics/results/sr2ruo4_green_consistency.json
+```
+
+The raw Fourier transform and archived `G(iw)` agree within about `1e-5`, so these files do not provide two independent classical answers. Output up/down differences reach `0.0454` despite identical bath inputs; orbital-1/2 differences reach `0.0362`. Interpolation shifts some frequencies by up to `0.00677`, but it is **not** a statistical correction. The single archive has no repeated-run uncertainty estimate. Do not use these descriptive discrepancies as formal error bars or infer their precise cause.
+
 `sr2ruo4_finite_bath_fit.py` fits the **same archive's noninteracting hybridisation input**, using a nonnegative-weight sum of negative-energy bath poles. It needs NumPy, SciPy and h5py. The script verifies the archive and pinned Wannier file by SHA-256, fits 352 selected imaginary-time points and checks 9649 held-out points. It independently reconstructs the Matsubara hybridisation from the archived `G0_iw`, onsite Wannier matrix and `mu=5.3938` in the pinned model:
 
 ```sh

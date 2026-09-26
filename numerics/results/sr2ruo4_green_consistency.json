@@ -1,0 +1,141 @@
+{
+  "source": "https://raw.githubusercontent.com/TRIQS/benchmarks/e51cbe48ac0e7106c5b9e0b1b80e17af58e4548f/Sr2RuO4/results/cthyb.h5",
+  "sha256": "2fe7dbc3bb1d58f6816b61e6dd182196c34354eac5bda04cdfd117952e7f443d",
+  "beta": 25.0,
+  "input_bath_max_up_down_difference": 0.0,
+  "input_bath_max_orbital_1_2_difference": 3.893804723098526e-10,
+  "output_symmetry_checks_first_80_matsubara": {
+    "up_down_max_abs_difference_by_orbital": [
+      0.021038697881198193,
+      0.03828103895890151,
+      0.04541555448298557
+    ],
+    "up_down_lowest_frequency_abs_difference_by_orbital": [
+      0.007998234938748553,
+      0.012781908555527435,
+      0.000893694213144322
+    ],
+    "orbital_1_2_max_abs_difference_by_spin": {
+      "up": 0.0319175920708415,
+      "dn": 0.036159569160106826
+    },
+    "orbital_1_2_lowest_frequency_abs_difference_by_spin": {
+      "up": 0.006990744263590173,
+      "dn": 0.020026986635176436
+    }
+  },
+  "method": "Trapezoidal Fourier transform of archived G_tau at 80 positive fermionic Matsubara frequencies; compare with archived G; replace only diagonal samples with |G_tau|>1 by neighbor mean as a sensitivity test.",
+  "limitations": [
+    "The stored G(iw) may have been calculated from the same G(tau); agreement is internal consistency, not independent validation.",
+    "Spin and orbital output asymmetries in a symmetric input are empirical discrepancies in one archived run, not statistical confidence intervals.",
+    "Interpolation is diagnostic only and does not recover an unbiased CT-HYB estimator or uncertainty bars.",
+    "A canonical diagonal fermionic G(tau) should have magnitude at most one; this test does not diagnose the cause of the outliers."
+  ],
+  "rows": [
+    {
+      "spin": "up",
+      "orbital_zero_based": 0,
+      "endpoint_sum_real": -1.0,
+      "endpoint_sum_imag": 0.0,
+      "max_abs_archived_g_tau": 0.8869304348793436,
+      "spikes_abs_gt_1": [],
+      "max_abs_raw_tau_fourier_vs_archived_g_iw_first_80": 1.0406958452974235e-05,
+      "max_abs_frequency_shift_after_interpolating_spikes_first_80": 0.0,
+      "lowest_frequency_shift_after_interpolating_spikes": 0.0,
+      "lowest_abs_archived_g_iw": 0.7527134825479913,
+      "max_abs_corrected_tau_fourier_vs_archived_g_iw_first_80": 1.0406958452974235e-05
+    },
+    {
+      "spin": "up",
+      "orbital_zero_based": 1,
+      "endpoint_sum_real": -1.0,
+      "endpoint_sum_imag": 0.0,
+      "max_abs_archived_g_tau": 0.9861360253543995,
+      "spikes_abs_gt_1": [],
+      "max_abs_raw_tau_fourier_vs_archived_g_iw_first_80": 1.0406958450649706e-05,
+      "max_abs_frequency_shift_after_interpolating_spikes_first_80": 0.0,
+      "lowest_frequency_shift_after_interpolating_spikes": 0.0,
+      "lowest_abs_archived_g_iw": 0.28367398527432314,
+      "max_abs_corrected_tau_fourier_vs_archived_g_iw_first_80": 1.0406958450649706e-05
+    },
+    {
+      "spin": "up",
+      "orbital_zero_based": 2,
+      "endpoint_sum_real": -1.0,
+      "endpoint_sum_imag": 0.0,
+      "max_abs_archived_g_tau": 1.0914429417246825,
+      "spikes_abs_gt_1": [
+        {
+          "tau_index": 1160,
+          "tau": 2.9,
+          "archived_real": -1.0914429417246825,
+          "neighbor_mean_real": 1.6015618529003213e-07
+        },
+        {
+          "tau_index": 9719,
+          "tau": 24.2975,
+          "archived_real": -1.0097273993056437,
+          "neighbor_mean_real": -0.28017481355291407
+        }
+      ],
+      "max_abs_raw_tau_fourier_vs_archived_g_iw_first_80": 1.0406958450212556e-05,
+      "max_abs_frequency_shift_after_interpolating_spikes_first_80": 0.0045520809095805715,
+      "lowest_frequency_shift_after_interpolating_spikes": 0.0013494991923887387,
+      "lowest_abs_archived_g_iw": 0.2766862573997336,
+      "max_abs_corrected_tau_fourier_vs_archived_g_iw_first_80": 0.004552340208698466
+    },
+    {
+      "spin": "dn",
+      "orbital_zero_based": 0,
+      "endpoint_sum_real": -1.0,
+      "endpoint_sum_imag": 0.0,
+      "max_abs_archived_g_tau": 0.8927351370490236,
+      "spikes_abs_gt_1": [],
+      "max_abs_raw_tau_fourier_vs_archived_g_iw_first_80": 1.040695845370282e-05,
+      "max_abs_frequency_shift_after_interpolating_spikes_first_80": 0.0,
+      "lowest_frequency_shift_after_interpolating_spikes": 0.0,
+      "lowest_abs_archived_g_iw": 0.7606186077618108,
+      "max_abs_corrected_tau_fourier_vs_archived_g_iw_first_80": 1.040695845370282e-05
+    },
+    {
+      "spin": "dn",
+      "orbital_zero_based": 1,
+      "endpoint_sum_real": -1.0,
+      "endpoint_sum_imag": 0.0,
+      "max_abs_archived_g_tau": 2.890410350637864,
+      "spikes_abs_gt_1": [
+        {
+          "tau_index": 9639,
+          "tau": 24.0975,
+          "archived_real": -2.890410350637864,
+          "neighbor_mean_real": -0.18259198797095974
+        }
+      ],
+      "max_abs_raw_tau_fourier_vs_archived_g_iw_first_80": 1.0406958457304105e-05,
+      "max_abs_frequency_shift_after_interpolating_spikes_first_80": 0.006769545906670787,
+      "lowest_frequency_shift_after_interpolating_spikes": 0.0067695459066707125,
+      "lowest_abs_archived_g_iw": 0.295725053433294,
+      "max_abs_corrected_tau_fourier_vs_archived_g_iw_first_80": 0.006777721047834309
+    },
+    {
+      "spin": "dn",
+      "orbital_zero_based": 2,
+      "endpoint_sum_real": -1.0,
+      "endpoint_sum_imag": 0.0,
+      "max_abs_archived_g_tau": 2.3211573522006854,
+      "spikes_abs_gt_1": [
+        {
+          "tau_index": 9499,
+          "tau": 23.7475,
+          "archived_real": -2.3211573522006854,
+          "neighbor_mean_real": -0.13441314936139884
+        }
+      ],
+      "max_abs_raw_tau_fourier_vs_archived_g_iw_first_80": 1.0406958451350534e-05,
+      "max_abs_frequency_shift_after_interpolating_spikes_first_80": 0.005466860507097285,
+      "lowest_frequency_shift_after_interpolating_spikes": 0.005466860507097184,
+      "lowest_abs_archived_g_iw": 0.27599090900426265,
+      "max_abs_corrected_tau_fourier_vs_archived_g_iw_first_80": 0.005475267021185638
+    }
+  ]
+}
