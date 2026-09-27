@@ -35,6 +35,12 @@ python tools/build.py
 python tools/check_site.py
 ```
 
+The reference check uses `data/arxiv_titles.json`, a committed snapshot of titles already
+checked against arXiv. A new arXiv ID triggers an online lookup; commit the updated snapshot
+with your PR. Run `python tools/verify_refs.py --strict --refresh` to recheck every ID online.
+If arXiv is unavailable, leave the new reference unverified and retry rather than inventing a
+title. The offline snapshot keeps unrelated PRs independent of arXiv API availability.
+
 **Review standard.** arXiv title matching checks that a cited identifier exists; it does not show that the paper supports a sentence. Reviewers check the cited passage, the numerical assumptions, the best classical comparison and the quantum algorithm's preconditions. The `seed` status means these checks are not complete. Use `reviewed` only after a maintainer has recorded the source and claim checks in the pull request. Use `disputed` when a published conclusion has a documented live challenge. Updating an older page should update `last_verified` to the date of the new source check.
 
 For a review PR, give the entry ID, the date searched, the sources checked, the exact claims checked, and any remaining uncertainty. The reviewer should check both confirming and contrary papers. A fresh date or an added citation by itself does not make a page `reviewed`; a scheduled reminder does not change a verdict automatically. Keep disputed and refuted pages in the catalogue with their history.

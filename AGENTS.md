@@ -112,8 +112,9 @@ You may add further sections. Keep pages under about 1,200 words. Write in Engli
 ## Rules for evidence
 
 1. Every application, problem, method and claim page cites at least one reference. Prefer arXiv
-   IDs; CI resolves each ID against the arXiv API and compares titles, so a fabricated ID or a
-   wrong title fails the build.
+   IDs; CI checks IDs and titles against the committed, previously verified arXiv title
+   snapshot. New IDs are fetched from the arXiv API; commit the refreshed snapshot after
+   adding a reference. A fabricated ID or wrong title fails the build.
 2. Numbers (qubit counts, gate counts, runtimes, prices) must be traceable to a reference or to a
    script under `numerics/`. State the assumptions the number depends on. Do not cite private or
    unpublished notes; if a number is your own estimate, say so and show the arithmetic.
@@ -135,7 +136,8 @@ You may add further sections. Keep pages under about 1,200 words. Write in Engli
 
 ```
 python tools/validate.py       # schema, required sections, cross-links
-python tools/verify_refs.py    # arXiv IDs resolve and titles match (needs network)
+python tools/verify_refs.py --strict    # check titles against the verified snapshot
+python tools/verify_refs.py --strict --refresh    # recheck all IDs online and update the snapshot
 python tools/build.py          # writes ./site
 ```
 
