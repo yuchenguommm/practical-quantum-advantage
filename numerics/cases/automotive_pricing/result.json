@@ -74,7 +74,7 @@
   },
   "upstream_dqi_encoding": {
     "upstream_commit": "8456eaddb0033fa703c169c19ff264b51ccd0711",
-    "source_sha256": "bc1500e94eb4182935600894f620c338de24b9c95bcfef7577ab23f3a76690d5",
+    "source_sha256": "4c9578c6abec2a0fecb34da58eefa22af590a33542e8643f10e9da2384c12db4",
     "binary_matrix_rows": 827,
     "binary_matrix_columns": 345,
     "nonzero_entries": 1842,

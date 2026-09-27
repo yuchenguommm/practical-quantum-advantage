@@ -1,0 +1,23 @@
+{
+  "source_url": "https://raw.githubusercontent.com/BCG-X-Official/dqi/8456eaddb0033fa703c169c19ff264b51ccd0711/pipelines/data/milp_formulation.json",
+  "source_sha256": "4c9578c6abec2a0fecb34da58eefa22af590a33542e8643f10e9da2384c12db4",
+  "input_sha256_lf": "851ecb7e5b0f7aeebdb45e4f46a477434b868ac3032d0ed4d8a3690321137a2f",
+  "feasible_assignments": 382,
+  "qualifying_assignments": 9,
+  "optimum": 1547,
+  "sorting_certificate": [
+    7,
+    2,
+    8,
+    1,
+    5
+  ],
+  "ideal_grover_success_probability_formula": 0.9883637502920734,
+  "scope": "Pinned input, exact enumeration, sorting certificate and ideal formula only",
+  "not_checked": [
+    "DQI encoding",
+    "oracle circuit",
+    "compiled gate counts",
+    "hardware performance"
+  ]
+}

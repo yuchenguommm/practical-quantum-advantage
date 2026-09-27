@@ -48,3 +48,13 @@ python numerics/cases/automotive_pricing/run.py
 ```
 
 The upstream code is imported only when `--upstream` is supplied; the case does not copy its implementation. Qiskit's basis gate count is compiler-version dependent. The exact optimum and sorted certificate are not.
+
+## Source and arithmetic cross-check
+
+The standard-library [checker](verify_public_input.py) downloads the ILP file from the authors' pinned Git commit, compares its three input fields with [our instance](instance.json), and independently enumerates all 512 assignments. It checks the sorting certificate, target count and ideal Grover probability against [the recorded result](result.json). Its [machine-readable receipt](verification.json) records the checks and their limits:
+
+```sh
+python numerics/cases/automotive_pricing/verify_public_input.py --output numerics/cases/automotive_pricing/verification.json
+```
+
+The source SHA-256 is `4c9578c6abec2a0fecb34da58eefa22af590a33542e8643f10e9da2384c12db4` for the **Git blob's LF bytes**. An earlier result recorded `bc1500e94eb4182935600894f620c338de24b9c95bcfef7577ab23f3a76690d5`, the hash of the same file after a Windows checkout converted its newlines to CRLF. `run.py` now hashes the canonical Git blob, and normalizes the local input's newlines before hashing. No objective, constraint or numerical result changed. The checker is a second implementation by this project, not an independent peer review; it does not verify the DQI encoder, compiled circuit or hardware performance.

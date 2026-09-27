@@ -24,6 +24,7 @@
     <a href="{{ BASE_URL }}/blob/main/numerics/cases/{{ c.folder }}/{{ c.protocol }}">02 · Target and methods</a>
     <a href="{{ BASE_URL }}/blob/main/numerics/cases/{{ c.folder }}/{{ c.code }}">03 · Executable code</a>
     <a href="{{ BASE_URL }}/blob/main/numerics/cases/{{ c.folder }}/{{ c.result }}">04 · Machine-readable result</a>
+    {% if c.verification %}<a href="{{ BASE_URL }}/blob/main/numerics/cases/{{ c.folder }}/{{ c.verification }}">05 · Input and arithmetic cross-check</a>{% endif %}
   </div>
 </article>
 {% endfor %}

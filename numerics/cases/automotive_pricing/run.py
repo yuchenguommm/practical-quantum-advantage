@@ -15,6 +15,12 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+PINNED_UPSTREAM_COMMIT = "8456eaddb0033fa703c169c19ff264b51ccd0711"
+
+
+def portable_sha256(path):
+    """Hash the repository's LF-form input, independent of checkout line endings."""
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
 def evaluate(weights, assignment):
@@ -38,7 +44,7 @@ def exact_audit(data, threshold):
     theta = math.asin(math.sqrt(m / n))
     iterations = max(0, round(math.pi / (4 * theta) - 0.5))
     result = {
-        "input_sha256": hashlib.sha256((HERE / "instance.json").read_bytes()).hexdigest(),
+        "input_sha256": portable_sha256(HERE / "instance.json"),
         "variables": len(weights), "capacity": capacity, "threshold": threshold,
         "all_assignments": n, "feasible_assignments": len(feasible),
         "optimum": best[0], "optimal_bits": list(direct),
@@ -146,7 +152,20 @@ def audit_upstream_encoding(data, upstream):
 
     upstream = upstream.resolve()
     source = upstream / "pipelines/data/milp_formulation.json"
-    source_data = json.loads(source.read_text(encoding="utf-8"))
+    commit = subprocess.check_output(
+        ["git", "-C", str(upstream), "rev-parse", "HEAD"], text=True).strip()
+    if commit != PINNED_UPSTREAM_COMMIT:
+        raise ValueError(f"Expected pinned upstream commit {PINNED_UPSTREAM_COMMIT}, got {commit}")
+    dirty = subprocess.check_output(
+        ["git", "-C", str(upstream), "status", "--porcelain", "--untracked-files=no"],
+        text=True).strip()
+    if dirty:
+        raise ValueError("Upstream tracked files differ from the pinned commit")
+    source_bytes = subprocess.check_output(
+        ["git", "-C", str(upstream), "show", "HEAD:pipelines/data/milp_formulation.json"])
+    source_data = json.loads(source_bytes)
+    if json.loads(source.read_text(encoding="utf-8")) != source_data:
+        raise ValueError("Upstream working-tree input differs from the pinned Git blob")
     if any(source_data[k] != data[k] for k in ("objective", "constraints", "constraints_rhs")):
         raise ValueError("Public ILP differs from the pinned local copy")
     sys.path.insert(0, str(upstream))
@@ -158,9 +177,7 @@ def audit_upstream_encoding(data, upstream):
     B, v, ell, distance, maxsat, _ = generate_B_matrix_and_rhs(
         np.asarray(data["constraints"]), np.asarray(data["constraints_rhs"]),
         shifted, beta=beta)
-    commit = subprocess.check_output(
-        ["git", "-C", str(upstream), "rev-parse", "HEAD"], text=True).strip()
-    return {"upstream_commit": commit, "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+    return {"upstream_commit": commit, "source_sha256": hashlib.sha256(source_bytes).hexdigest(),
             "binary_matrix_rows": int(B.shape[0]), "binary_matrix_columns": int(B.shape[1]),
             "nonzero_entries": int(B.sum()), "rhs_ones": int(v.sum()),
             "reported_generator_row_min_weight": int(distance), "ell": ell,

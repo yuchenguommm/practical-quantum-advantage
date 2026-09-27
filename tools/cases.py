@@ -55,6 +55,10 @@ def load_cases(entries):
             name = case[field]
             if not isinstance(name, str) or Path(name).name != name or not (manifest.parent / name).is_file():
                 errors.append(f"{label}: missing or unsafe {field}: {name}")
+        if "verification" in case:
+            name = case["verification"]
+            if not isinstance(name, str) or Path(name).name != name or not (manifest.parent / name).is_file():
+                errors.append(f"{label}: missing or unsafe verification: {name}")
         case["folder"] = manifest.parent.name
         cases.append(case)
     seen = set()

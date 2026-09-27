@@ -10,8 +10,26 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from common import load_all  # noqa: E402
 import cases  # noqa: E402
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "numerics" / "cases" / "automotive_pricing"))
+import run as automotive_run  # noqa: E402
+import verify_public_input  # noqa: E402
+
 
 class CasesTest(unittest.TestCase):
+    def test_automotive_public_input_arithmetic(self):
+        receipt = verify_public_input.verify(download=False)
+        self.assertEqual(receipt["optimum"], 1547)
+        self.assertEqual(receipt["feasible_assignments"], 382)
+        self.assertEqual(receipt["qualifying_assignments"], 9)
+
+    def test_automotive_input_hash_is_checkout_independent(self):
+        source = Path(automotive_run.HERE / "instance.json").read_bytes()
+        with tempfile.TemporaryDirectory() as directory:
+            copy = Path(directory) / "instance.json"
+            copy.write_bytes(source.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n"))
+            self.assertEqual(automotive_run.portable_sha256(copy),
+                             automotive_run.portable_sha256(automotive_run.HERE / "instance.json"))
+
     def test_published_case_is_valid(self):
         found, errors = cases.load_cases(load_all())
         self.assertEqual(errors, [])

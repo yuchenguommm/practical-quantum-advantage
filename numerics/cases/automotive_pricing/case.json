@@ -11,5 +11,6 @@
   "result": "result.json",
   "protocol": "README.md",
   "code": "run.py",
+  "verification": "verification.json",
   "last_checked": "2026-09-27"
 }
