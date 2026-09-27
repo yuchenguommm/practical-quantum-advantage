@@ -35,10 +35,10 @@ An operational forecast combines observations with a previous model state, integ
 
 ## Computational problems
 
-- [PDE solving](../problems/pde-solving.html): the integration step. Every proposed quantum route (linear-system solvers, Hamiltonian simulation, Carleman linearisation) is assessed there.
+- [PDE solving](../problems/pde-solving.html): the integration step. The catalogue assesses linear-system solvers, local linear dynamics and Carleman linearisation there; conclusions remain specific to each model and output.
 - [Sparse linear systems](../problems/sparse-linear-systems.html): the implicit solves and the variational data-assimilation step.
 - [Monte Carlo expectation](../problems/monte-carlo-expectation.html): ensemble statistics.
-- [Sorting, FFT and storage](../problems/sorting-fft-storage.html): the spectral transforms and the observation database, both of which are pure classical-data I/O.
+- [Sorting, FFT and storage](../problems/sorting-fft-storage.html): spectral transforms compute on forecast data; the observation database adds storage and data-movement costs.
 
 ## What current bounds actually constrain
 
