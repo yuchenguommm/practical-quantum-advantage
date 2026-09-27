@@ -17,6 +17,7 @@ related:
   applications: [weather-forecasting, turbulence-cfd, radar-cross-section, derivative-pricing]
   problems: [sparse-linear-systems, monte-carlo-expectation]
   methods: [hhl-qsvt]
+  questions: [cfd-drag-same-instance-crossover]
 references:
   - {arxiv: "2307.09593", title: "Limitations for Quantum Algorithms to Solve Turbulent and Chaotic Systems", authors: "D. Lewis, S. Eidenbenz, B. Nadiga, Y. Subaşı", year: 2024, note: "Quantum 8, 1509"}
   - {arxiv: "2505.10445", title: "On the quantum computational complexity of classical linear dynamics with geometrically local interactions: Dequantization and universality", authors: "K. Sakamoto, K. Fujii", year: 2026, note: "Quantum 10, 2182"}
@@ -25,7 +26,7 @@ references:
   - {arxiv: "1010.2745", title: "High-order quantum algorithm for solving linear differential equations", authors: "D. W. Berry", year: 2014, note: "J. Phys. A 47, 105301; the linear-ODE-to-linear-system route"}
   - {arxiv: "2011.03185", title: "Efficient quantum algorithm for dissipative nonlinear differential equations", authors: "J.-P. Liu, H. Ø. Kolden, H. K. Krovi, N. F. Loureiro, K. Trivisa, A. M. Childs", year: 2021, note: "PNAS 118, e2026805118; Carleman linearisation"}
   - {arxiv: "1505.06552", title: "Concrete resource analysis of the quantum linear system algorithm used to compute the electromagnetic scattering cross section of a 2D target", authors: "A. Scherer et al.", year: 2017, note: "Quantum Inf. Process. 16, 60"}
-  - {arxiv: "2512.03758", title: "An end-to-end quantum algorithm for nonlinear fluid dynamics with bounded quantum advantage", authors: "D. Jennings, K. Korzekwa, M. Lostaglio, R. Ashworth, E. Marsili, S. Rolston", year: 2025}
+  - {arxiv: "2512.03758", doi: "10.1103/xysy-q3fp", title: "An end-to-end quantum algorithm for nonlinear fluid dynamics with bounded quantum advantage", authors: "D. Jennings, K. Korzekwa, M. Lostaglio, R. Ashworth, E. Marsili, S. Rolston", year: 2026, note: "PRX Quantum 7, 033060; published title omits initial 'An'"}
   - {arxiv: "2607.12688", title: "Quantum PDE Solvers in Practice: Application-Driven Benchmarking of the Heat Equation", authors: "M. ElKarargy, A. Rahwan, A. Elsayed, F. Hatem", year: 2026}
   - {arxiv: "2011.04149", title: "Focus beyond quadratic speedups for error-corrected quantum advantage", authors: "R. Babbush, J. R. McClean, M. Newman, C. Gidney, S. Boixo, H. Neven", year: 2021, note: "PRX Quantum 2, 010103"}
 ---
