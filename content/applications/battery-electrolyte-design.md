@@ -3,50 +3,47 @@ type: application
 id: battery-electrolyte-design
 title: Battery electrolyte and SEI design
 title_zh: 电池电解液与 SEI 设计
-summary: "Fault-tolerant resource estimates exist for battery electrolyte molecules, but a resource estimate does not establish an industrial advantage. This page asks whether a specific formulation decision needs electronic-structure accuracy beyond the best classical workflow, and whether its value would cover the quantum cost."
-summary_zh: "电解液分子已有容错量子计算的资源估计，但资源估计本身不能证明产业优势。需要明确哪一项配方决策受限于经典方法的电子结构精度，以及改善这项决策的价值能否覆盖量子计算成本。"
-status: seed
-last_verified: 2026-09-26
-verdict: uneconomic
+summary: "A published ethylene-carbonate decomposition benchmark finds a large spread in DFT barriers but also an accessible correlated classical reference. Quantum resource estimates study related electrolyte molecules, without a matched reaction-path or formulation-decision comparison."
+summary_zh: "已发表的碳酸乙烯酯分解基准显示，不同 DFT 泛函预测的势垒差异很大，同时也有可计算的高精度经典参照。量子资源估计涉及相关电解液分子，尚未提供同一反应路径和配方决策上的比较。"
+status: reviewed
+last_verified: 2026-09-27
+verdict: surviving
 dimensions:
-  classical_hardness: {level: none, note: "closed-shell organic solvents and salts; DFT/DLPNO-CCSD(T) reach the accuracy the screening workflow uses; residual failures (SEI single-electron reduction potentials, anion redox) are self-interaction errors fixed by hybrid functionals or CCSD(T), not multireference character"}
-  quantum_easiness: {level: conditional, note: "phase estimation applies and initial-state overlap is unproblematic for closed-shell molecules; the task is simply not hard enough to need it"}
-  willingness_to_pay: {level: none, note: "the public references listed here do not give a buyer-defined accuracy target and payment threshold for a quantum electrolyte calculation"}
-resources: {logical_qubits: "not the constraint", gates: "1e10–1e12 T per periodic-solid instance", note: "Ivanov et al. estimate 1e10–1e12 T gates for 200–900 spin-orbital NiO/PdO cells; per-molecule fault-tolerant estimates for electrolyte molecules exist (Kim et al.) but the same molecules are routine for DFT"}
+  classical_hardness: {level: none, note: "Debnath et al. computed the studied EC decomposition path with canonical CCSD(T), DLPNO-CCSD(T), and AFQMC; this named molecular case has no demonstrated classical hardness. Larger interfaces and solution-phase mechanisms remain unassessed here."}
+  quantum_easiness: {level: conditional, note: "Kim et al. resource-estimate QPE for EC, FEC, PF6- and Li-containing variants; they do not give a matched ring-opening transition-state calculation, input-state overlap measurement, or end-to-end advantage over the benchmarked classical methods."}
+  willingness_to_pay: {level: none, note: "Neither cited study supplies a buyer acceptance threshold, a formulation decision changed by the computed barrier, or a price for the calculation."}
+resources: {logical_qubits: "thousands in the published full-electron electrolyte QPE scenario, not a 50–100-logical-qubit demonstration", gates: "hundreds of billions of operations described for the published scenario; no matched EC barrier estimate", note: "Kim et al. study isolated EC, FEC, PF6- and Li-containing molecules at 1 mHartree per energy, with DFT geometries and no frozen core or active-space reduction. Their cost is not a resource estimate for the transition-state path benchmarked by Debnath et al."}
 related:
   applications: [battery-cathode-spectroscopy, oled-emitters]
   problems: [ground-state-energy]
   methods: [phase-estimation]
   questions: [first-hand-payment-evidence]
 references:
-  - {arxiv: "2104.10653", title: "Fault-tolerant resource estimate for quantum chemical simulations: Case study on Li-ion battery electrolyte molecules", authors: "I. H. Kim et al. (PsiQuantum)", year: 2021, note: "resource estimate for electrolyte molecules on a photonic fault-tolerant architecture"}
-  - {arxiv: "2210.02403", title: "Quantum Computation for Periodic Solids in Second Quantization", authors: "A. V. Ivanov et al.", year: 2022, note: "1e10–1e12 T gates for 200–900 spin-orbital transition-metal-oxide cells"}
-  - {arxiv: "2204.11890", title: "Simulating key properties of lithium-ion batteries with a fault-tolerant quantum computer", authors: "A. Delgado et al. (Xanadu)", year: 2022, note: "cathode-material resource estimate; illustrates the battery narrative"}
-  - {arxiv: "2603.19081", title: "Utility-scale quantum computational chemistry", authors: "D. Castaldo, M. Reiher", year: 2026, note: "argues that value in chemistry comes from throughput, which classical wavefunction methods are narrowing"}
-  - {arxiv: "2511.09124", title: "The Grand Challenge of Quantum Applications", authors: "R. Babbush et al. (Google Quantum AI)", year: 2025, note: "concedes that connecting chemistry resource estimates to a decision someone pays for is the missing step"}
+  - {arxiv: "2104.10653", title: "Fault-tolerant resource estimate for quantum chemical simulations: Case study on Li-ion battery electrolyte molecules", authors: "I. H. Kim et al.", year: 2022, note: "Sections II.1-II.2: EC, FEC, PF6- and variants; 1 mHartree per total energy; no frozen core or active-space reduction; DFT geometries"}
+  - {doi: "10.1021/acs.jpca.3c04369", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10795021/", title: "Accurate Quantum Chemical Reaction Energies for Lithium-Mediated Electrolyte Decomposition and Evaluation of Density Functional Approximations", authors: "S. Debnath et al.", year: 2023, note: "EC ring-opening barrier and six-step reaction-energy comparison; supporting information includes individual energies and molecular coordinates"}
 ---
 
 ## Who needs it
 
-Cell makers and their materials suppliers (CATL, LG Energy Solution, Samsung SDI, Panasonic, BYD, and the solvent and salt vendors behind them). The engineering questions are which solvent and additive combination gives a stable solid-electrolyte interphase (SEI), a wide electrochemical window, adequate ionic conductivity at low temperature, and no gas evolution at high voltage. Candidate formulations are combinatorial: a handful of carbonate or ether solvents, one or two lithium salts, and a long list of additives at percent-level loadings.
+Battery developers choose solvents, lithium salts and additives to control electrolyte stability, solid-electrolyte interphase (SEI) formation and transport. An electronic reaction energy is useful only if it helps choose between actual formulations. The papers cited here do not report a buyer's accuracy threshold, the value of a better prediction, or a changed formulation decision.
 
 ## Bottleneck
 
-Screening electrolytes involves both electronic-structure calculations and finite-temperature sampling. The resource studies [1–3] show how selected calculations might be performed on a fault-tolerant machine. They do not by themselves show that improved electronic energies would change a formulation decision or be worth the resulting runtime. That connection needs a public, application-specific benchmark.
+The named classical benchmark is lithium-mediated reductive decomposition of ethylene carbonate (EC). For its ring-opening transition state, the tested DFT functionals predict barriers from 3.01 to 17.15 kcal/mol, while canonical CCSD(T) gives 12.84 kcal/mol [2]. The range matters for evaluating a particular reaction mechanism. It does not show that *all* electrolyte predictions are inaccurate or that a quantum computer can improve a formulation decision.
 
-For each proposed target, the relevant comparison is against a converged classical workflow at the accuracy required for that property. Errors from functional choice, sampling and solvation must be separated from the many-electron correlation error a quantum solver aims to reduce. A useful benchmark should state these error contributions explicitly.
-
-Castaldo and Reiher make the general version of this argument: as classical wavefunction methods close the accuracy gap, any value quantum computers could add to chemistry has to come from high throughput, and a fault-tolerant machine running phase estimation at 10^10 T gates per energy is the opposite of high throughput [4]. Google's own applications review concedes that connecting a chemistry resource estimate to a decision a buyer will pay for is the step nobody has completed [5].
+The quantum resource study instead calculates total energies of isolated EC, fluoroethylene carbonate (FEC), PF6- and Li-containing variants at 1 mHartree per energy. It optimizes geometries classically with DFT and includes all electrons rather than choosing an active space [1]. Its molecule list does not specify the same EC ring-opening reactant and transition-state Hamiltonians used in the classical benchmark. Total-energy precision alone therefore cannot be read as a barrier error or a battery-performance gain.
 
 ## Computational problems
 
-- [Ground-state energy](../problems/ground-state-energy.html) of closed-shell organic molecules and ion–solvent clusters, needed to about 1 kcal/mol for potentials and barriers, which DFT with a good functional and DLPNO-CCSD(T) already provide.
-- Finite-temperature sampling of the liquid and of SEI growth, which is a classical molecular-dynamics problem and not a quantum-computing target.
+- [Ground-state energies](../problems/ground-state-energy.html) for specified reactant, intermediate and transition-state geometries, followed by reaction-energy and barrier differences.
+- Molecular and interfacial structure, solvation, finite-temperature sampling and reaction-network selection. Their errors have to be assessed alongside electronic correlation before attributing a formulation failure to the electronic solver.
 
 ## Best classical today
 
-DFT (usually a range-separated hybrid with implicit solvation) for screening; DLPNO-CCSD(T) for benchmarks on molecules of 50–100 atoms; machine-learned potentials trained on DFT for the liquid-state properties. Fault-tolerant resource estimates exist for exactly the molecules in this workflow: PsiQuantum estimated the cost of simulating Li-ion electrolyte molecules on a photonic fault-tolerant architecture [1], Xanadu did the same for a cathode material [3], and Ivanov et al. estimate 10^10–10^12 T gates for periodic transition-metal-oxide cells of 200–900 spin-orbitals [2]. These estimates describe a machine that would reproduce, at large cost, numbers the screening pipeline already trusts.
+On the published six-step EC decomposition path, the best-performing tested DFT functionals have a mean absolute deviation around 1.5–1.7 kcal/mol against canonical CCSD(T); PBE-D3 has 6.83 kcal/mol [2]. The paper reports 1.38 kcal/mol for default DLPNO-CCSD(T) across the six steps, falling to 0.64 kcal/mol when the two transition-state steps are excluded. Its default errors on those steps are 2.70 and 3.01 kcal/mol; tighter pair-natural-orbital extrapolation with improved triples lowers them to 1.94 and 0.23 kcal/mol [2]. These are errors against a *computed* CCSD(T) reference, not experimental formulation-prediction errors. The authors' diagnostics indicate the species on this path are qualitatively single-reference [2].
+
+This benchmark rules out a blanket claim that ordinary DFT is already accurate enough. It also shows why a proposed quantum calculation must be compared with selected functionals and improved classical correlated methods on the same structures, basis, Hamiltonian and target observable. The study supplies individual reaction energies and molecular coordinates in its supporting information [2].
 
 ## Verdict
 
-Uneconomic under the cost assumptions used in this seed assessment. The cited resource studies do not establish a cost advantage over the classical screening workflow or document a buyer-defined value for extra accuracy. Evidence that would reopen this verdict is a public target for a named electrolyte property, a failure of the best classical approach at that target, and a quantum cost estimate on the same instance.
+Surviving as an application question, with no demonstrated quantum advantage. The published small-molecule path is accessible to strong classical methods; the quantum study estimates a much larger all-electron calculation on related molecules and has no matched barrier or buyer comparison. A decisive next test would specify a formulation choice whose ranking changes at a stated barrier uncertainty, publish the reactant and transition-state inputs, compare the best classical cost–error curve, and estimate quantum preparation, energy-difference and wall-time costs on those same inputs. Until then, the resource estimate supports feasibility analysis, not an industrial advantage claim.
