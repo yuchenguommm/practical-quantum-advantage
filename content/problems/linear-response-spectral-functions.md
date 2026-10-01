@@ -6,7 +6,7 @@ title_zh: 线性响应与谱函数（格林函数、XAS、ARPES、INS）
 summary: Spectra help interpret correlated materials, but an application-level quantum advantage requires a named impurity, output and measured classical bottleneck. A cited cathode XPS study used classical CT-QMC for the DMFT step and a separate multiplet code for the core-level spectrum. A 50–100-system-qubit count does not establish cost, and zero-temperature quantum response cannot be directly compared with finite-temperature classical Green's functions.
 summary_zh: 谱学有助于解读关联材料，但量子优势需要具体杂质、输出量和可测量的经典瓶颈。所引正极 XPS 研究用经典 CT-QMC 完成 DMFT 步骤，再以独立的多重态程序计算核能级谱。50 到 100 个系统比特的计数不能确定成本；零温量子响应也不能直接与有限温经典格林函数比较。
 status: seed
-last_verified: 2026-09-27
+last_verified: 2026-10-01
 verdict: surviving
 dimensions:
   classical_hardness: {level: empirical, note: "CT-HYB has a sign problem on some multi-orbital models, but the cited cathode impurity was solved classically; a matched hard application instance has not been supplied"}
@@ -27,6 +27,7 @@ references:
   - {arxiv: "2603.15741", title: "Neural-network quantum embedding solvers for correlated materials", authors: "A. Valenti, I. Park, A. Georges, A. J. Millis, O. Parcollet", year: 2026}
   - {arxiv: "2207.06135", title: "Learning Feynman Diagrams with Tensor Trains", authors: "Y. Núñez Fernández, M. Jeannin, P. T. Dumitrescu, T. Kloss, J. Kaye, O. Parcollet, X. Waintal", year: 2022, note: "tensor cross interpolation; sign-problem-free diagrammatic summation"}
   - {arxiv: "1504.07979", title: "Electronic structure and core-level spectra of light actinide dioxides in the dynamical mean-field theory", authors: "J. Kolorenč, A. B. Shick, A. I. Lichtenstein", year: 2015, note: "finite-bath exact diagonalisation of UO2/NpO2/PuO2, including XPS"}
+  - {arxiv: "1908.03759", title: "Hardware-efficient quantum algorithm for the simulation of open-system dynamics and thermalisation", authors: "H.-Y. Su, Y. Li", year: 2019, note: "compresses a model environment by matching selected reservoir correlation functions; no general small-bath guarantee"}
 ---
 
 ## Best classical
@@ -40,6 +41,8 @@ The bottleneck inside some DMFT calculations is the impurity solver. Continuous-
 Bauer, Wecker, Millis, Hastings and Troyer proposed in 2016 that the impurity problem be handed to a quantum computer of "about one hundred logical qubits", with the lattice self-consistency kept classical [1]. Their algorithm prepares a **zero-temperature ground state** and measures real-time response. Qubit arithmetic is simple: (orbitals × 2 spins) × (1 + bath sites per spin-orbital). A 5-orbital d shell with 4 bath sites per spin-orbital is 50 system qubits, with 8 it is 90; a 7-orbital f shell with 3–6 bath sites is 56–98. These are mapping examples, excluding ancillas, and do not establish bath convergence for a named material.
 
 The Green's function can be approached through time evolution and interferometric measurements [1], or Krylov and Arnoldi constructions [5]. These methods differ in their input state and output. The Arnoldi paper describes a thermofield-double route to thermal Green's functions, but its reported numerical resource study used a zero-temperature single-impurity Anderson model with at most five bath sites and a ground state obtained by classical exact diagonalisation [5]. No result cited here compiles an end-to-end quantum cost for the finite-temperature, multi-orbital impurity used in the strong classical sign-problem benchmark. A comparison requires the same temperature, hybridisation, Green's-function definition and error tolerance on both sides.
+
+Equilibrium linear response can often be expressed through correlation or Green's functions of a prepared equilibrium state. A pump-driven excited state or another nonequilibrium process needs a different initial-state and response specification; one equilibrium spectrum does not determine its full dynamics. Coupling to an environment adds a further modelling choice. A bath can sometimes be represented by a compact set of modes, ancillas or effective open-system evolution: Su and Li construct one such compression by matching reservoir correlation functions at a chosen expansion order [9]. That result does not guarantee a small register for a named material, long memory time or high-order response. The qubit budget must include the selected bath representation and the error in the target observable.
 
 ## What survives
 
